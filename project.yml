@@ -1,0 +1,372 @@
+# XcodeGen-Spezifikation für Software Regisseur.
+# Erzeugen: xcodegen generate  →  SoftwareRegisseur.xcodeproj (nicht eingecheckt)
+# Signier- und CloudKit-Werte stehen ausschließlich in Config/Local.xcconfig (ADR-0013).
+name: SoftwareRegisseur
+
+options:
+  developmentLanguage: de-AT
+  deploymentTarget:
+    iOS: "26.0"
+    macOS: "26.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  xcodeVersion: "27.0"
+
+configs:
+  Debug: debug
+  Release: release
+
+configFiles:
+  Debug: Config/Debug.xcconfig
+  Release: Config/Release.xcconfig
+
+settings:
+  base:
+    # Explizit hier, damit XcodeGen-Voreinstellungen die xcconfig nicht überschreiben.
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+
+packages:
+  SoftwareRegisseurIPC:
+    path: Packages/SoftwareRegisseurIPC
+  # iOS-App (ADR-0022: lokale Packages)
+  SoftwareRegisseurDomain:
+    path: Packages/SoftwareRegisseurDomain
+  SoftwareRegisseurPersistence:
+    path: Packages/SoftwareRegisseurPersistence
+  SoftwareRegisseurSync:
+    path: Packages/SoftwareRegisseurSync
+  SoftwareRegisseurAI:
+    path: Packages/SoftwareRegisseurAI
+  SoftwareRegisseurSecrets:
+    path: Packages/SoftwareRegisseurSecrets
+  SoftwareRegisseurAppCore:
+    path: Packages/SoftwareRegisseurAppCore
+  # Agent Service (Mac): Jobs, Arbeitsbereich, Agenten, Git, Prozesse.
+  SoftwareRegisseurJobs:
+    path: Packages/SoftwareRegisseurJobs
+  SoftwareRegisseurWorkspace:
+    path: Packages/SoftwareRegisseurWorkspace
+  SoftwareRegisseurAgents:
+    path: Packages/SoftwareRegisseurAgents
+  SoftwareRegisseurGit:
+    path: Packages/SoftwareRegisseurGit
+  SoftwareRegisseurProcess:
+    path: Packages/SoftwareRegisseurProcess
+  # Mac-UI: ADR-Vorlage (F4) und Datenexport aus der Nur-Lese-Datenbank (Q1, A34).
+  SoftwareRegisseurMarkdown:
+    path: Packages/SoftwareRegisseurMarkdown
+  SoftwareRegisseurPortability:
+    path: Packages/SoftwareRegisseurPortability
+  # Mac-Updates (ADR-0017). Exakt gepinnt; Tag 2.10.1 am 2026-10-30 per git ls-remote geprüft.
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle
+    exactVersion: 2.10.1
+
+targetTemplates:
+  SigningCheck:
+    preBuildScripts:
+      - name: Signierkonfiguration prüfen
+        path: Scripts/check-signing-config.sh
+        inputFiles:
+          - $(SRCROOT)/Scripts/check-signing-config.sh
+        basedOnDependencyAnalysis: false
+        showEnvVars: false
+
+targets:
+  SoftwareRegisseur-iOS:
+    templates: [SigningCheck]
+    type: application
+    platform: iOS
+    sources:
+      - path: Apps/SoftwareRegisseur-iOS/Sources
+      - path: Apps/SoftwareRegisseur-iOS/Resources
+    dependencies:
+      - package: SoftwareRegisseurAppCore
+      - package: SoftwareRegisseurDomain
+      - package: SoftwareRegisseurPersistence
+      - package: SoftwareRegisseurSync
+        product: SoftwareRegisseurSync
+      - package: SoftwareRegisseurAI
+      - package: SoftwareRegisseurSecrets
+      # Datenexport und kontrolliertes Löschen (Q1, A34).
+      - package: SoftwareRegisseurPortability
+    info:
+      path: Apps/SoftwareRegisseur-iOS/Info.plist
+      properties:
+        CFBundleDisplayName: Software Regisseur
+        CFBundleDevelopmentRegion: $(DEVELOPMENT_LANGUAGE)
+        # v1 nur Deutsch (Österreich), Pflichtenheft P.
+        CFBundleLocalizations: [de-AT]
+        ITSAppUsesNonExemptEncryption: false
+        # Wie am Mac aus Config/Base.xcconfig; für TestFlight je Upload eine höhere Build-Nummer
+        # (CURRENT_PROJECT_VERSION=… beim Archivieren überschreiben).
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        # Pflichtenheft Q4 / H2. Weitere Sprachen später über Resources/InfoPlist.xcstrings.
+        NSMicrophoneUsageDescription: Software Regisseur verwendet das Mikrofon, um gesprochene Ideen und Notizen aufzunehmen.
+        NSSpeechRecognitionUsageDescription: Software Regisseur wandelt Sprachaufnahmen mit der Spracherkennung von Apple in Text um, damit Sie Ideen diktieren können.
+        # CloudKit nur, wenn der Build signiert ist und ein echtes Team hat (sonst fehlt die
+        # iCloud-Berechtigung und CKContainer würde abstürzen). Auswertung: CloudSyncAvailability.
+        SRCloudKitContainerIdentifier: $(SR_CLOUDKIT_CONTAINER)
+        SRCodeSigningAllowed: $(CODE_SIGNING_ALLOWED)
+        SRDevelopmentTeam: $(SR_DEVELOPMENT_TEAM)
+        SRTemplateTeamPlaceholder: $(SR_TEMPLATE_TEAM_PLACEHOLDER)
+    settings:
+      base:
+        PRODUCT_NAME: SoftwareRegisseur
+        PRODUCT_BUNDLE_IDENTIFIER: $(SR_IOS_BUNDLE_ID)
+        # Entitlements-Dateien sind eingecheckt; Platzhalter-Umleitung siehe Config/Base.xcconfig.
+        CODE_SIGN_ENTITLEMENTS: $(SR_PLACEHOLDER_ENTITLEMENTS_$(SR_DEVELOPMENT_TEAM):default=Apps/SoftwareRegisseur-iOS/SoftwareRegisseur-iOS.entitlements)
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+
+  # XCUITests der iOS-App (A29, A07–A10, A26; ADR-0025): Navigation, Bedienungshilfen-Audit, Dark Mode,
+  # Dynamic Type, Berechtigungs-Erklärbildschirm (Q4), Schnellerfassung, Agentenstart. Startet die
+  # Debug-App mit `-SRScreenshotFixtures YES`; Ablauf und Simulatoren: Apps/SoftwareRegisseur-iOS/UITests/UITestSupport.swift.
+  SoftwareRegisseur-iOSUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: Apps/SoftwareRegisseur-iOS/UITests
+    dependencies:
+      - target: SoftwareRegisseur-iOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(SR_IOS_BUNDLE_ID).UITests
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+        TEST_TARGET_NAME: SoftwareRegisseur-iOS
+
+  SoftwareRegisseur-macOS:
+    templates: [SigningCheck]
+    type: application
+    platform: macOS
+    sources:
+      - path: Apps/SoftwareRegisseur-macOS/Sources
+      - path: Apps/SoftwareRegisseur-macOS/Logic
+      - path: Apps/SoftwareRegisseur-macOS/Resources
+    dependencies:
+      - package: SoftwareRegisseurIPC
+      # Lesen über die Nur-Lese-Datenbank (ADR-0019), Jobprüfung/BYOK-Schlüssel aus AppCore (IPC-README).
+      - package: SoftwareRegisseurDomain
+      - package: SoftwareRegisseurPersistence
+      - package: SoftwareRegisseurAppCore
+      - package: SoftwareRegisseurAI
+      - package: SoftwareRegisseurSecrets
+      - package: SoftwareRegisseurMarkdown
+      - package: SoftwareRegisseurPortability
+      # Diff-Anzeige über den gehärteten GitClient (SR-SEC-10/13).
+      - package: SoftwareRegisseurGit
+      # Sparkle nur in der Haupt-App; der eingebettete Agent Service wird mit dem Bundle ersetzt (ADR-0017).
+      - package: Sparkle
+        product: Sparkle
+      - target: SoftwareRegisseurAgentService
+        embed: true
+        codeSign: true
+        copy:
+          destination: wrapper
+          subpath: Contents/Library/LoginItems
+    info:
+      path: Apps/SoftwareRegisseur-macOS/Info.plist
+      properties:
+        CFBundleDisplayName: Software Regisseur
+        CFBundleDevelopmentRegion: $(DEVELOPMENT_LANGUAGE)
+        CFBundleLocalizations: [de-AT]
+        LSApplicationCategoryType: public.app-category.developer-tools
+        # Nur Menüleiste, kein Dock-Symbol (Pflichtenheft D1).
+        LSUIElement: true
+        # XPC-Mach-Service und SMAppService-Plist (ADR-0020).
+        SRAppGroupIdentifier: $(SR_APP_GROUP_MAC)
+        SRAgentLaunchdPlistName: $(SR_AGENT_LAUNCHD_PLIST_NAME)
+        # SR-SEC-05: XPC nur mit dem eingebetteten Dienst (Signing-Identifier = Bundle-ID).
+        SRAgentBundleIdentifier: $(SR_AGENT_BUNDLE_ID)
+        # BYOK-Schlüssel für die KI-Ausarbeitung am Mac: gleiche Gruppe wie der Dienst (IPC-README, H4).
+        SRKeychainSharedGroup: $(SR_KEYCHAIN_SHARED_GROUP)
+        SRTemplateTeamPlaceholder: $(SR_TEMPLATE_TEAM_PLACEHOLDER)
+        # Versionen aus MARKETING_VERSION/CURRENT_PROJECT_VERSION (Config/Base.xcconfig, von
+        # Scripts/release.sh überschrieben). Sparkle vergleicht CFBundleVersion – muss je Release steigen.
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        # Sparkle 2 (ADR-0017). Bei Platzhalterwerten deaktiviert SoftwareUpdater.swift die Updates.
+        SUFeedURL: $(SR_SPARKLE_FEED_URL)
+        SUPublicEDKey: $(SR_SPARKLE_PUBLIC_ED_KEY)
+        # Appcast und Release Notes müssen EdDSA-signiert sein (Sparkle ≥ 2.9).
+        SURequireSignedFeed: true
+        # Archiv vor dem Entpacken prüfen (Sparkle ≥ 2.7).
+        SUVerifyUpdateBeforeExtraction: true
+        # Täglich prüfen, Installation erst nach Bestätigung (laufende Agentenjobs, ADR-0007).
+        SUEnableAutomaticChecks: true
+        SUAutomaticallyUpdate: false
+    postBuildScripts:
+      - name: launchd-Plist einbetten
+        path: Scripts/embed-launchd-plist.sh
+        inputFiles:
+          - $(SRCROOT)/Scripts/embed-launchd-plist.sh
+        outputFiles:
+          - $(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Library/LaunchAgents/$(SR_AGENT_LAUNCHD_PLIST_NAME)
+        showEnvVars: false
+    settings:
+      base:
+        PRODUCT_NAME: SoftwareRegisseur
+        PRODUCT_BUNDLE_IDENTIFIER: $(SR_MAC_BUNDLE_ID)
+        CODE_SIGN_ENTITLEMENTS: $(SR_PLACEHOLDER_ENTITLEMENTS_$(SR_DEVELOPMENT_TEAM):default=Apps/SoftwareRegisseur-macOS/SoftwareRegisseur-macOS.entitlements)
+        ENABLE_HARDENED_RUNTIME: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        COMBINE_HIDPI_IMAGES: YES
+
+  # Unit-Tests der Mac-UI-Logik (Filter, Befehlsbau, Zustandsabbildung) ohne App-Host.
+  SoftwareRegisseur-macOSTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Apps/SoftwareRegisseur-macOS/Logic
+      - path: Apps/SoftwareRegisseur-macOS/Tests
+    dependencies:
+      - package: SoftwareRegisseurIPC
+      - package: SoftwareRegisseurDomain
+      - package: SoftwareRegisseurPersistence
+      - package: SoftwareRegisseurAppCore
+      # „Mit KI besprechen“ (ConversationSession, Manifest) in der Mac-Logik.
+      - package: SoftwareRegisseurAI
+      - package: SoftwareRegisseurMarkdown
+      - package: SoftwareRegisseurGit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(SR_MAC_BUNDLE_ID).Tests
+        GENERATE_INFOPLIST_FILE: YES
+
+  SoftwareRegisseurAgentService:
+    templates: [SigningCheck]
+    type: application
+    platform: macOS
+    sources:
+      - path: Services/SoftwareRegisseurAgentService/Sources
+      - path: Services/SoftwareRegisseurAgentService/Core
+    dependencies:
+      - package: SoftwareRegisseurIPC
+      - package: SoftwareRegisseurDomain
+      - package: SoftwareRegisseurPersistence
+      - package: SoftwareRegisseurSync
+        product: SoftwareRegisseurSync
+      - package: SoftwareRegisseurWorkspace
+      - package: SoftwareRegisseurJobs
+      - package: SoftwareRegisseurAgents
+      - package: SoftwareRegisseurGit
+      - package: SoftwareRegisseurProcess
+      - package: SoftwareRegisseurAI
+      - package: SoftwareRegisseurSecrets
+      - package: SoftwareRegisseurAppCore
+      # ADR-Vorlage/Frontmatter (F4) und kontrollierte Löschung im Dienst (Q1, A34; IPC-Protokoll 3).
+      - package: SoftwareRegisseurMarkdown
+      - package: SoftwareRegisseurPortability
+    info:
+      path: Services/SoftwareRegisseurAgentService/Info.plist
+      properties:
+        CFBundleDisplayName: Software Regisseur Hintergrunddienst
+        CFBundleDevelopmentRegion: $(DEVELOPMENT_LANGUAGE)
+        # Gleiche Version wie die App (Release-Pipeline, Versionsprüfung UI ↔ Dienst).
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        # App-artiges Bundle ohne UI (ADR-0020, Recherche §3.3).
+        LSUIElement: true
+        LSBackgroundOnly: true
+        SRAppGroupIdentifier: $(SR_APP_GROUP_MAC)
+        # SR-SEC-05: XPC-Befehle nur von der Mac-App (Signing-Identifier = Bundle-ID).
+        SRMacAppBundleIdentifier: $(SR_MAC_BUNDLE_ID)
+        # CloudKit nur in signierten Builds mit echtem Team (sonst fehlt die iCloud-Berechtigung und
+        # CKContainer würde abstürzen). Auswertung: ServiceBundleConfiguration.
+        SRCloudKitContainerIdentifier: $(SR_CLOUDKIT_CONTAINER)
+        SRCodeSigningAllowed: $(CODE_SIGNING_ALLOWED)
+        SRDevelopmentTeam: $(SR_DEVELOPMENT_TEAM)
+        SRTemplateTeamPlaceholder: $(SR_TEMPLATE_TEAM_PLACEHOLDER)
+        # Gemeinsame Schlüsselbund-Gruppe für BYOK-Schlüssel (UI schreibt, Dienst liest; H4, I).
+        SRKeychainSharedGroup: $(SR_KEYCHAIN_SHARED_GROUP)
+    settings:
+      base:
+        PRODUCT_NAME: $(SR_AGENT_PRODUCT_NAME)
+        PRODUCT_BUNDLE_IDENTIFIER: $(SR_AGENT_BUNDLE_ID)
+        CODE_SIGN_ENTITLEMENTS: $(SR_PLACEHOLDER_ENTITLEMENTS_$(SR_DEVELOPMENT_TEAM):default=Services/SoftwareRegisseurAgentService/SoftwareRegisseurAgentService.entitlements)
+        ENABLE_HARDENED_RUNTIME: YES
+        SKIP_INSTALL: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+
+  SoftwareRegisseurAgentServiceTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Services/SoftwareRegisseurAgentService/Core
+      - path: Services/SoftwareRegisseurAgentService/Tests
+    dependencies:
+      - package: SoftwareRegisseurIPC
+      - package: SoftwareRegisseurDomain
+      - package: SoftwareRegisseurPersistence
+      - package: SoftwareRegisseurSync
+        product: SoftwareRegisseurSync
+      - package: SoftwareRegisseurSync
+        product: SoftwareRegisseurSyncTesting
+      - package: SoftwareRegisseurWorkspace
+      - package: SoftwareRegisseurJobs
+      - package: SoftwareRegisseurAgents
+      - package: SoftwareRegisseurGit
+      - package: SoftwareRegisseurProcess
+      - package: SoftwareRegisseurAI
+      - package: SoftwareRegisseurSecrets
+      - package: SoftwareRegisseurAppCore
+      - package: SoftwareRegisseurMarkdown
+      - package: SoftwareRegisseurPortability
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(SR_AGENT_BUNDLE_ID).Tests
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  SoftwareRegisseur-iOS:
+    build:
+      targets:
+        SoftwareRegisseur-iOS: all
+        SoftwareRegisseur-iOSUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        # Nie parallel: ein Simulator, Tests teilen die Fixture-Datenbank der App.
+        - name: SoftwareRegisseur-iOSUITests
+          parallelizable: false
+    archive:
+      config: Release
+
+  SoftwareRegisseur-macOS:
+    build:
+      targets:
+        SoftwareRegisseur-macOS: all
+        SoftwareRegisseurAgentServiceTests: [test]
+        SoftwareRegisseur-macOSTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - SoftwareRegisseurAgentServiceTests
+        - SoftwareRegisseur-macOSTests
+        - package: SoftwareRegisseurIPC/SoftwareRegisseurIPCTests
+    archive:
+      config: Release

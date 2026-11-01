@@ -1,0 +1,24 @@
+# Lokale Signier- und CloudKit-Werte (ADR-0013)
+Config/Local.xcconfig
+
+# macOS
+.DS_Store
+
+# Xcode / SwiftPM
+xcuserdata/
+DerivedData/
+.build/
+.swiftpm/
+*.xcresult
+
+# XcodeGen: SoftwareRegisseur.xcodeproj wird aus project.yml erzeugt
+SoftwareRegisseur.xcodeproj/
+
+# Xcode-Build-Ausgabe im Repo-Wurzelordner (xcodebuild ohne -derivedDataPath)
+/build/
+
+# LLVM-Coverage-Rohdaten aus Testläufen
+*.profraw
+
+# Signierte lokale Builds für die E2E-Abnahme
+/DerivedData-signed/

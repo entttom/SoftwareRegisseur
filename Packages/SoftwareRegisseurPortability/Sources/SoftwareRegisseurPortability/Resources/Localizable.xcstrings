@@ -1,0 +1,140 @@
+{
+  "sourceLanguage": "de",
+  "strings": {
+    "%lld API-Schlüssel im iCloud-Schlüsselbund bleiben erhalten, weil ihr Löschen auch Ihre anderen Geräte beträfe. Sie können sie unter „API-Schlüssel löschen“ entfernen.": {
+      "localizations": {
+        "de": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld API-Schlüssel im iCloud-Schlüsselbund bleibt erhalten, weil sein Löschen auch Ihre anderen Geräte beträfe. Sie können ihn unter „API-Schlüssel löschen“ entfernen."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld API-Schlüssel im iCloud-Schlüsselbund bleiben erhalten, weil ihr Löschen auch Ihre anderen Geräte beträfe. Sie können sie unter „API-Schlüssel löschen“ entfernen."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld Einträge (%@) werden auf diesem Gerät endgültig gelöscht.": {
+      "localizations": {
+        "de": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$lld Eintrag (%2$@) wird auf diesem Gerät endgültig gelöscht."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$lld Einträge (%2$@) werden auf diesem Gerät endgültig gelöscht."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld Einträge exportiert …": {
+      "localizations": {
+        "de": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld Eintrag exportiert …"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld Einträge exportiert …"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "API-Schlüssel für %@ (%@)": {},
+    "API-Schlüssel löschen": {},
+    "API-Schlüssel sind nicht enthalten. Ihre eigenen Texte werden unverändert exportiert; prüfen Sie den Export vor der Weitergabe, falls Sie Zugangsdaten in Notizen eingegeben haben.": {},
+    "API-Schlüssel und andere Zugangsdaten: Sie liegen ausschließlich im Schlüsselbund und werden nie exportiert.": {},
+    "API-Schlüssel „%@“": {},
+    "Abhängigkeiten": {},
+    "Akzeptanzkriterien": {},
+    "Alle lokalen Daten löschen": {},
+    "Alle mit iCloud synchronisierten Projekte, Aufgaben, ADRs, Aufträge und Einstellungen werden aus Ihrer privaten iCloud-Datenbank entfernt.": {},
+    "Anbieterprofile bleiben erhalten; ohne Schlüssel sind die zugehörigen KI-Funktionen nicht verfügbar.": {},
+    "App-Datei „%@“": {},
+    "Audioaufnahme „%@“": {},
+    "Audioaufnahmen löschen": {},
+    "Audioaufnahmen und API-Schlüssel bleiben erhalten.": {},
+    "Audioaufnahmen werden kopiert …": {},
+    "Bitte bestätigen Sie die Löschung ausdrücklich.": {},
+    "Das ZIP-Archiv konnte nicht erstellt werden. Der Exportordner ist vollständig vorhanden.": {},
+    "Datenbankdatei „%@“": {},
+    "Der Export wurde abgebrochen, weil er Zugangsdaten enthalten hätte. Es wurden keine Dateien gespeichert.": {},
+    "Der Exportordner kann nicht angelegt werden. Bitte wählen Sie einen anderen Speicherort.": {},
+    "Die Anbieterprofile können nicht gelesen werden.": {},
+    "Die Datenbank kann gerade nicht geschlossen werden. Bitte beenden Sie laufende Vorgänge und versuchen Sie es erneut.": {},
+    "Die Vorschau ist abgelaufen. Bitte prüfen Sie die Liste erneut und bestätigen Sie dann.": {},
+    "Diese Löschung wurde bereits ausgeführt. Bitte erstellen Sie eine neue Vorschau.": {},
+    "Dieser Ordner enthält alle Daten, die Software Regisseur auf diesem Gerät gespeichert hat.": {},
+    "Ein Pfad liegt außerhalb der App-Daten oder in einem Git-Repository und wird nicht gelöscht.": {},
+    "Eingang": {},
+    "Entscheidung": {},
+    "Entwurfsversionen": {},
+    "Erstellt am %@.": {},
+    "Erwogene Alternativen": {},
+    "Es gibt nichts zu löschen.": {},
+    "Export abgeschlossen.": {},
+    "Export wird auf Zugangsdaten geprüft …": {},
+    "Export wird vorbereitet …": {},
+    "Git-Repositories und Dateien in Ihren Projektordnern werden nie gelöscht.": {},
+    "Git-Repositories, Worktrees und Dateien in Ihren Projektordnern: Diese bleiben unverändert in Git.": {},
+    "Ihre Diktataufnahmen, sofern Sie diese beim Export ausgewählt haben.": {},
+    "Ihre anderen Geräte synchronisieren danach nicht mehr, bis Sie die Synchronisierung neu einrichten.": {},
+    "Inhalt": {},
+    "Inhaltsverzeichnis mit Anzahl, Größe und SHA-256-Prüfsumme jeder Datei.": {},
+    "Konsequenzen": {},
+    "Kontext": {},
+    "Lesbare Fassungen Ihrer Aufgaben (mit Originalnotiz, Transkript und Entwürfen) und ADRs.": {},
+    "Lokale Daten auf diesem Gerät, API-Schlüssel und Git-Repositories bleiben unverändert.": {},
+    "Lokale Datenbank und Zwischenspeicher löschen": {},
+    "Lokaler Dateiindex und Hoststatus des Mac: Zwischenspeicher, der aus Git neu aufgebaut wird.": {},
+    "Maschinenlesbare JSON-Dateien, eine pro Datentyp (Projekte, Aufgaben, ADRs, Ereignisse, Aufträge, Reviews, Freigaben, KI-Anfragen, Einstellungen, Konflikte).": {},
+    "Offene Fragen": {},
+    "Originalnotiz": {},
+    "Software Regisseur – Datenexport": {},
+    "Synchronisations-Warteschlange und CloudKit-Verwaltungsdaten.": {},
+    "Synchronisationskonflikte werden exportiert …": {},
+    "Technische Hinweise": {},
+    "Testfälle": {},
+    "Transkript": {},
+    "Transkripte und Aufgaben bleiben erhalten.": {},
+    "Unbekanntes-Projekt": {},
+    "Version %lld": {},
+    "Vorschlag %lld": {},
+    "ZIP-Archiv wird erstellt …": {},
+    "Ziel": {},
+    "Zwischenspeicher „%@“": {},
+    "iCloud-Daten bleiben erhalten. Sie können sie separat löschen.": {},
+    "iCloud-Daten löschen": {},
+    "übernommen": {},
+    "„%@“ enthält ein Git-Repository und wird nicht gelöscht.": {},
+    "„%@“ konnte nicht gelöscht werden.": {}
+  },
+  "version": "1.0"
+}

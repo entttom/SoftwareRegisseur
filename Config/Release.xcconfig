@@ -1,0 +1,4 @@
+#include "Base.xcconfig"
+
+// Stille CloudKit-Pushes für CKSyncEngine (Recherche §2) – Produktionsumgebung.
+SR_APS_ENVIRONMENT = production

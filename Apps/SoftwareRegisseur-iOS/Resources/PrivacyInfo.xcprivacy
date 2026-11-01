@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Privacy Manifest der iOS-App (ADR-0014). Kein Tracking, keine vom Entwickler erhobenen Daten:
+  Inhalte bleiben in der App-Datenbank und im eigenen iCloud-Container; Anfragen an KI-Anbieter
+  laufen mit dem eigenen Schlüssel des Benutzers direkt vom Gerät.
+  Required-Reason-APIs:
+  - UserDefaults (Onboarding-Fortschritt, Geräte-ID, Debug-Startargumente): CA92.1
+  - Datei-Attribute (attributesOfItem, Größe/Typ von Dateien im App-Container, „Daten löschen“): C617.1
+  GRDB bringt sein eigenes Privacy Manifest mit.
+-->
+<plist version="1.0">
+<dict>
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>C617.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

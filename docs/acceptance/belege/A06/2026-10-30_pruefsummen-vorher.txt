@@ -1,0 +1,4 @@
+8c4cec32088c49474a674be1a8a1b97300cd96db  AGENTS.md
+91e02a3182a78a7a46d3dce5375413eeaa49d1e3  CLAUDE.md
+8dd5b69bb5d4ef39c4f9679f248192952fd0f82b  docs/adr/0001-datenbank.md
+4368a0a976e2a50f369c453a92309c82d61dc329  docs/adr/0002-logging.md

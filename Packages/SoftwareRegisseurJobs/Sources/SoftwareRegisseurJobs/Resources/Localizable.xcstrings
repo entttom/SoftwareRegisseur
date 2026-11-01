@@ -1,0 +1,175 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "%@ – übersprungen." : {
+
+    },
+    "%lld nicht committete Datei(en) des Agenten wurden auf dem Job-Branch committet." : {
+
+    },
+    "Abgelehnte Werkzeuge: %@" : {
+
+    },
+    "Abschluss konnte nicht erfasst werden: %@" : {
+
+    },
+    "Agent %@ ist auf diesem Mac nicht registriert." : {
+
+    },
+    "Agent konnte nicht gestartet werden: %@" : {
+
+    },
+    "Agent nicht einsatzbereit: %@" : {
+
+    },
+    "Agentensitzung wurde ohne Anforderung beendet." : {
+
+    },
+    "Aufgabe ist durch einen anderen Lauf gesperrt." : {
+
+    },
+    "Aufgabe nicht gefunden." : {
+
+    },
+    "Default-Branch des Repositorys unbekannt." : {
+
+    },
+    "Der Agent bittet um zusätzliche Berechtigungen." : {
+
+    },
+    "Der Agent möchte %lld Datei(en) ändern." : {
+
+    },
+    "Der Agent möchte das Werkzeug „%@“ verwenden." : {
+
+    },
+    "Der Agent möchte Dateien ändern." : {
+
+    },
+    "Der Agent möchte einen Befehl ausführen." : {
+
+    },
+    "Der geprüfte Stand (%@) passt nicht zum Stand dieses Macs (%@); nichts wurde übernommen." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Der geprüfte Stand (%1$@) passt nicht zum Stand dieses Macs (%2$@); nichts wurde übernommen."
+          }
+        }
+      }
+    },
+    "Der Job-Branch hat sich seit dem Review verändert (%@ → %@); nichts wurde übernommen. Bitte den neuen Stand erneut prüfen." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Der Job-Branch hat sich seit dem Review verändert (%1$@ → %2$@); nichts wurde übernommen. Bitte den neuen Stand erneut prüfen."
+          }
+        }
+      }
+    },
+    "Dienst neu gestartet: Agentenprozess%@ läuft ohne Verbindung weiter. Kein zweiter Start; Sperre bleibt bis zum Prozessende." : {
+
+    },
+    "Dienst neu gestartet: Prozesszustand unbekannt – bitte prüfen." : {
+
+    },
+    "Dienst wurde während des Laufs beendet; Agentenprozess nicht mehr aktiv. Ergebnis nicht erfasst – Worktree bleibt erhalten." : {
+
+    },
+    "Dieser Mac ist nicht der Ausführungshost des Projekts." : {
+
+    },
+    "Ereignisstrom ohne Abschluss beendet" : {
+
+    },
+    "Freigabe nicht innerhalb von %lld Minuten beantwortet – Lauf pausiert, keine automatische Freigabe." : {
+
+    },
+    "Freigabe nicht rechtzeitig beantwortet – Lauf beendet, keine automatische Freigabe." : {
+
+    },
+    "Geplanter Start verpasst – Entscheidung erforderlich." : {
+
+    },
+    "Integration abgelehnt: %@" : {
+
+    },
+    "Integrationskonflikt in %lld Datei(en); nichts wurde übernommen." : {
+
+    },
+    "Kontingent erreicht%@ – %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Kontingent erreicht%1$@ – %2$@"
+          }
+        }
+      }
+    },
+    "Kontingent nach %lld Versuchen weiterhin erschöpft – keine weiteren automatischen Versuche." : {
+
+    },
+    "Maximal %lld parallele Läufe erreicht." : {
+
+    },
+    "Maximal %lld parallele Läufe für %@ erreicht." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Maximal %1$lld parallele Läufe für %2$@ erreicht."
+          }
+        }
+      }
+    },
+    "Maximal %lld parallele Läufe in diesem Projekt erreicht." : {
+
+    },
+    "Nicht committet, weil sie wie Geheimnisse aussehen: %@. Die Dateien liegen weiter im Worktree; die Übernahme ist blockiert, bis sie entfernt oder bewusst selbst committet wurden." : {
+
+    },
+    "Nicht committete Agentenänderungen konnten nicht gesichert werden: %@" : {
+
+    },
+    "Projektweite Sperre: im Repository läuft bereits ein Agent." : {
+
+    },
+    "Repository auf diesem Mac nicht gefunden." : {
+
+    },
+    "Stamm-Working-Tree hat ungelöste Konflikte (%lld Datei(en))." : {
+
+    },
+    "Start fehlgeschlagen: %@" : {
+
+    },
+    "Übernahme abgebrochen: %lld nicht committete Request-/ADR-Datei(en) im Haupt-Working-Tree würden überschrieben. Bitte zuerst committen oder sichern; nichts wurde übernommen." : {
+
+    },
+    "Verpasster Termin vom Benutzer übersprungen." : {
+
+    },
+    "Vom Agenten geänderte Request-/ADR-Dateien wurden nicht committet (ADR-0024): %@. Sie liegen weiter im Worktree; die Übernahme ist blockiert, bis sie entfernt oder bewusst selbst committet wurden." : {
+
+    },
+    "Vom Benutzer pausiert – Agent gestoppt; Fortsetzen startet eine neue Sitzung im selben Worktree." : {
+
+    },
+    "Vom Benutzer pausiert." : {
+
+    },
+    "Wartet auf %lld noch nicht erledigte Abhängigkeit(en)." : {
+
+    },
+    "wartet: %@" : {
+
+    },
+    "Worktree konnte nicht angelegt werden: %@" : {
+
+    }
+  },
+  "version" : "1.0"
+}

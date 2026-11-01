@@ -1,0 +1,282 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "„git init“ wurde ohne ausdrückliche Zustimmung angefordert." : {
+
+    },
+    "%@ – Termin verpasst, Nachholregel: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ – Termin verpasst, Nachholregel: %2$@"
+          }
+        }
+      }
+    },
+    "Abgebrochen" : {
+
+    },
+    "Anbieterstandard" : {
+
+    },
+    "Anbieterstandard – nicht einstellbar" : {
+
+    },
+    "Angefordert" : {
+
+    },
+    "Archiviert" : {
+
+    },
+    "Automatisch" : {
+
+    },
+    "Beendet" : {
+
+    },
+    "begrenzter Backoff, Versuch %lld" : {
+
+    },
+    "Benötigt Aufmerksamkeit" : {
+
+    },
+    "Bereit" : {
+
+    },
+    "Blockiert" : {
+
+    },
+    "Bug Report" : {
+
+    },
+    "Der Agent erlaubt keine Modellwahl; „%@“ kann nicht gesetzt werden." : {
+
+    },
+    "Der Ordnername „%@“ ist nicht zulässig." : {
+
+    },
+    "Der Ordnerpfad ist ungültig." : {
+
+    },
+    "Der Projektname darf nicht leer sein." : {
+
+    },
+    "Der übergeordnete Ordner ist ungültig." : {
+
+    },
+    "Ein Entwurf ohne Ordner kann kein Git-Repository erhalten." : {
+
+    },
+    "Einrichtung am Mac ausstehend" : {
+
+    },
+    "Einstellung gehört zu Agent „%@“, erwartet „%@“." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Einstellung gehört zu Agent „%1$@“, erwartet „%2$@“."
+          }
+        }
+      }
+    },
+    "Erledigt" : {
+
+    },
+    "erwarteter Reset laut Benutzer" : {
+
+    },
+    "Extra hoch" : {
+
+    },
+    "Feature Request" : {
+
+    },
+    "Fehlgeschlagen" : {
+
+    },
+    "für %@ geplant" : {
+
+    },
+    "für %@ geplant, Mac zuletzt online %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "für %1$@ geplant, Mac zuletzt online %2$@"
+          }
+        }
+      }
+    },
+    "Geplant" : {
+
+    },
+    "Hoch" : {
+
+    },
+    "In Arbeit" : {
+
+    },
+    "In Warteschlange" : {
+
+    },
+    "Inbox" : {
+
+    },
+    "Integriert" : {
+
+    },
+    "Konfiguration erforderlich" : {
+
+    },
+    "Läuft" : {
+
+    },
+    "Maximum" : {
+
+    },
+    "Mittel" : {
+
+    },
+    "Modell „%@“ ist derzeit nicht nutzbar (%@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Modell „%1$@“ ist derzeit nicht nutzbar (%2$@)."
+          }
+        }
+      }
+    },
+    "Modell „%@“ ist in der installierten Agentenversion nicht verfügbar." : {
+
+    },
+    "Modell „%@“ unterstützt die Stufe „%@“ nicht." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Modell „%1$@“ unterstützt die Stufe „%2$@“ nicht."
+          }
+        }
+      }
+    },
+    "nachfragen" : {
+
+    },
+    "nicht bestätigt" : {
+
+    },
+    "Nicht erreichbar" : {
+
+    },
+    "Niedrig" : {
+
+    },
+    "Notiz" : {
+
+    },
+    "Offen" : {
+
+    },
+    "Pausiert" : {
+
+    },
+    "Review" : {
+
+    },
+    "sofort nachholen" : {
+
+    },
+    "Start bei verfügbarem Kontingent, frühestens %@ (%@)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Start bei verfügbarem Kontingent, frühestens %1$@ (%2$@)"
+          }
+        }
+      }
+    },
+    "Startet" : {
+
+    },
+    "Stufe „%@“ erfordert ein ausdrücklich gewähltes Modell." : {
+
+    },
+    "Stufe „%@“ nicht einstellbar: %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Stufe „%1$@“ nicht einstellbar: %2$@."
+          }
+        }
+      }
+    },
+    "Todo" : {
+
+    },
+    "Umsetzung beendet" : {
+
+    },
+    "Verbesserung" : {
+
+    },
+    "Verknüpfen ist nur mit bestehenden Ordnern möglich." : {
+
+    },
+    "verpassten Termin überspringen" : {
+
+    },
+    "vom Anbieter gemeldet" : {
+
+    },
+    "Voreinstellung hat nicht den erwarteten Geltungsbereich (%@)." : {
+
+    },
+    "Vorschau gekürzt: %lld von %lld Zeichen sichtbar. Erlauben ist nur am Mac möglich, nachdem der vollständige Text dort angezeigt und bestätigt wurde; hier kann nur abgelehnt werden." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Vorschau gekürzt: %1$lld von %2$lld Zeichen sichtbar. Erlauben ist nur am Mac möglich, nachdem der vollständige Text dort angezeigt und bestätigt wurde; hier kann nur abgelehnt werden."
+          }
+        }
+      }
+    },
+    "wartet auf den Mac" : {
+
+    },
+    "wartet auf den Mac, zuletzt online %@" : {
+
+    },
+    "Wartet auf Freigabe" : {
+
+    },
+    "Wartet auf Kontingent" : {
+
+    },
+    "wartet auf Kontingent – nächster Versuch %@ (%@)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "wartet auf Kontingent – nächster Versuch %1$@ (%2$@)"
+          }
+        }
+      }
+    },
+    "Wartet auf Mac" : {
+
+    },
+    "Zugelassen" : {
+
+    },
+    "Zum Verknüpfen muss ein Ordner gewählt werden." : {
+
+    }
+  },
+  "version" : "1.0"
+}

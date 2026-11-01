@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- macOS-UI. Keine App Sandbox bis zum Sandbox-Spike (ADR-0020); Hardened Runtime über ENABLE_HARDENED_RUNTIME. Kein CloudKit: CKSyncEngine gehört dem Agent Service (ADR-0019). App Group mit Team-ID-Präfix für XPC-Mach-Service und Datenbank. -->
+<plist version="1.0">
+<dict>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>$(SR_APP_GROUP_MAC)</string>
+	</array>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>$(SR_DEVELOPMENT_TEAM).$(SR_MAC_BUNDLE_ID)</string>
+		<string>$(SR_KEYCHAIN_SHARED_GROUP)</string>
+	</array>
+</dict>
+</plist>

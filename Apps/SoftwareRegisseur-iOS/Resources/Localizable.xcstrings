@@ -1,0 +1,2637 @@
+{
+  "sourceLanguage" : "de-AT",
+  "strings" : {
+    "" : {
+      "shouldTranslate" : false
+    },
+    " (Kopie)" : {
+
+    },
+    "%@" : {
+      "shouldTranslate" : false
+    },
+    "%@ nicht freigegeben" : {
+
+    },
+    "%@ ändern" : {
+
+    },
+    "%@ – %@" : {
+      "shouldTranslate" : false
+    },
+    "%lld / %lld" : {
+      "shouldTranslate" : false
+    },
+    "%lld Aufgaben angelegt." : {
+
+    },
+    "%lld Dateien, +%lld / −%lld" : {
+
+    },
+    "%lld Datensätze aus iCloud konnten nicht gelesen werden." : {
+
+    },
+    "%lld Einträge gelöscht." : {
+
+    },
+    "%lld Einträge waren bereits entfernt." : {
+
+    },
+    "%lld Macs verbunden" : {
+
+    },
+    "%lld Synchronisierungskonflikt(e) warten auf Ihre Entscheidung." : {
+
+    },
+    "%lld Tage" : {
+      "localizations" : {
+        "de-AT" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld Zeichen" : {
+      "localizations" : {
+        "de-AT" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Zeichen"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Zeichen"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld bestanden, %lld fehlgeschlagen, %lld nicht ausgeführt" : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld bestanden, %2$lld fehlgeschlagen, %3$lld nicht ausgeführt"
+          }
+        }
+      }
+    },
+    "%lld hinterlegt" : {
+
+    },
+    "%lld mögliche Geheimnisse geschwärzt" : {
+
+    },
+    "%lld neue Aufgaben anlegen" : {
+
+    },
+    "%lld Änderung(en) enthalten vermutlich Zugangsdaten und werden nicht synchronisiert." : {
+
+    },
+    "%lld Änderungen wurden noch nicht mit iCloud abgeglichen und gehen verloren. Die App startet danach mit einer leeren Datenbank und lädt synchronisierte Daten erneut aus iCloud." : {
+
+    },
+    "ADR" : {
+
+    },
+    "ADR-Index" : {
+
+    },
+    "ADR-Vorschlag" : {
+
+    },
+    "ADR-Vorschläge werden am Mac als ADR angelegt (Nummern vergibt der Mac)." : {
+
+    },
+    "ADRs" : {
+
+    },
+    "AGENTS.md vorhanden" : {
+
+    },
+    "API-Schlüssel" : {
+
+    },
+    "API-Schlüssel im iCloud-Schlüsselbund werden nicht gelöscht. Sie entfernen sie bei Bedarf unter „API-Schlüssel löschen“." : {
+
+    },
+    "API-Schlüssel löschen" : {
+
+    },
+    "API-Schlüssel und Audioaufnahmen werden nie über iCloud-Datensätze übertragen." : {
+
+    },
+    "API-Schlüssel werden nie exportiert." : {
+
+    },
+    "Abbrechen" : {
+
+    },
+    "Abgebrochen" : {
+
+    },
+    "Abgeglichen wird beim Öffnen und Aktivieren der App, durch Herunterziehen und auf Ihren Wunsch." : {
+
+    },
+    "Abgekündigt" : {
+
+    },
+    "Abgelaufen – eine Entscheidung hat keine Wirkung mehr." : {
+
+    },
+    "Abgelehnt" : {
+
+    },
+    "Abgelehnt – der Mac übermittelt die Entscheidung, sobald er erreichbar ist." : {
+
+    },
+    "Abgleich fehlgeschlagen" : {
+
+    },
+    "Abgleich mit Ihren Geräten" : {
+
+    },
+    "Abhängig von" : {
+
+    },
+    "Abhängigkeiten" : {
+
+    },
+    "Ablehnen" : {
+
+    },
+    "Abschnitt %lld von %lld" : {
+
+    },
+    "Agent" : {
+
+    },
+    "Agent arbeitet" : {
+
+    },
+    "Agent „%@“ ist am Mac nicht startbereit (Installation oder Anmeldung prüfen)." : {
+
+    },
+    "Agent „%@“ wurde vom Mac nicht gemeldet." : {
+
+    },
+    "Agenten" : {
+
+    },
+    "Agenten-Standards dieses Projekts" : {
+
+    },
+    "Agenten-Voreinstellung" : {
+
+    },
+    "Agentenlauf" : {
+
+    },
+    "Agentenlauf angefordert" : {
+
+    },
+    "Agentenlauf geändert" : {
+
+    },
+    "Agentenlauf wiederholt" : {
+
+    },
+    "Agentenläufe" : {
+
+    },
+    "Agentenversion" : {
+
+    },
+    "Aktionen" : {
+
+    },
+    "Aktiv" : {
+
+    },
+    "Aktiv, noch nicht abgeglichen" : {
+
+    },
+    "Aktive Agenten" : {
+
+    },
+    "Aktive Agentenläufe" : {
+
+    },
+    "Aktuell: %@" : {
+
+    },
+    "Aktueller Entwurf" : {
+
+    },
+    "Aktueller Schritt" : {
+
+    },
+    "Akzeptanzkriterien" : {
+
+    },
+    "Akzeptanzkriterien ergänzen" : {
+
+    },
+    "Alle" : {
+
+    },
+    "Alle API-Schlüssel dieser App im Schlüsselbund – auch Schlüssel im iCloud-Schlüsselbund, die damit auf Ihren anderen Geräten fehlen." : {
+
+    },
+    "Alle Agenten" : {
+
+    },
+    "Alle Aufgaben" : {
+
+    },
+    "Alle Labels" : {
+
+    },
+    "Alle Projekte" : {
+
+    },
+    "Alle lokalen Daten löschen" : {
+
+    },
+    "Alles auf einen Blick" : {
+
+    },
+    "Alles bereit" : {
+
+    },
+    "Als erledigt bestätigen" : {
+
+    },
+    "Als neue Aufgabe anlegen" : {
+
+    },
+    "Als neue Entwurfsversion übernehmen" : {
+
+    },
+    "Am Mac eingerichtet" : {
+
+    },
+    "Am Mac mit Repo-Kontext ausarbeiten" : {
+
+    },
+    "Am Mac und auf diesem iPad mit demselben Apple-Account bei iCloud angemeldet sein." : {
+
+    },
+    "Am Mac und auf diesem iPhone mit demselben Apple-Account bei iCloud angemeldet sein." : {
+
+    },
+    "Anbieter" : {
+
+    },
+    "Anbieter für KI-Ausarbeitung" : {
+
+    },
+    "Anbieter und Modelle" : {
+
+    },
+    "Anbieterprofil" : {
+
+    },
+    "Anbieterstandard" : {
+
+    },
+    "Anbieterstandard verwenden" : {
+
+    },
+    "Anbieterstandard – nicht einstellbar" : {
+
+    },
+    "Anderes Gerät" : {
+
+    },
+    "Angefordert" : {
+
+    },
+    "Angelegt" : {
+
+    },
+    "Anhören" : {
+
+    },
+    "Anlegen" : {
+
+    },
+    "Anthropic" : {
+
+    },
+    "Antwort wird erstellt …" : {
+
+    },
+    "Apple-Spracherkennung" : {
+
+    },
+    "Arbeitsbereich" : {
+
+    },
+    "Archivieren" : {
+
+    },
+    "Archiviert" : {
+
+    },
+    "Archivierte Projekte anzeigen" : {
+
+    },
+    "Archivierte Projekte bleiben erhalten und können wiederhergestellt werden." : {
+
+    },
+    "Archivierung aufheben" : {
+
+    },
+    "Art" : {
+
+    },
+    "Audio %@/min" : {
+
+    },
+    "Audio an %@ übertragen?" : {
+
+    },
+    "Audio je Minute" : {
+
+    },
+    "Audio wird nie synchronisiert." : {
+
+    },
+    "Audio-Export nicht verfügbar" : {
+
+    },
+    "Audio: %lld Sekunden" : {
+
+    },
+    "Audioaufnahmen löschen" : {
+
+    },
+    "Auf dem anderen Gerät wurde der Eintrag gelöscht." : {
+
+    },
+    "Auf diesem Gerät verfügbar, auch offline (%@)." : {
+
+    },
+    "Auf diesem iPad" : {
+
+    },
+    "Auf diesem iPad behalten" : {
+
+    },
+    "Auf diesem iPhone" : {
+
+    },
+    "Auf diesem iPhone behalten" : {
+
+    },
+    "Aufbewahrung" : {
+
+    },
+    "Aufgabe" : {
+
+    },
+    "Aufgabe löschen?" : {
+
+    },
+    "Aufgabe nicht gefunden" : {
+
+    },
+    "Aufgabe öffnen" : {
+
+    },
+    "Aufgaben" : {
+
+    },
+    "Aufgaben mit vergebener Nummer bleiben im Projekt (Nummern sind pro Repository eindeutig)." : {
+
+    },
+    "Aufgaben und Agentenstatus" : {
+
+    },
+    "Aufgaben und Ideen per Text oder Diktat – auch ohne Verbindung." : {
+
+    },
+    "Aufgaben, Projekte und Agentenaufträge gleichen sich über Ihren iCloud-Account mit Ihrem Mac und Ihren anderen Geräten ab." : {
+
+    },
+    "Aufgabenstatus" : {
+
+    },
+    "Aufgelöst" : {
+
+    },
+    "Aufmerksamkeit nötig" : {
+
+    },
+    "Aufnahme" : {
+
+    },
+    "Aufnahme starten" : {
+
+    },
+    "Aufnahmedauer" : {
+
+    },
+    "Aufnahmen" : {
+
+    },
+    "Aufnahmen werden nie synchronisiert und liegen nur auf diesem iPad. Der Export wird als ZIP-Archiv erstellt, das Sie teilen oder in „Dateien“ sichern." : {
+
+    },
+    "Aufnahmen werden nie synchronisiert und liegen nur auf diesem iPhone. Der Export wird als ZIP-Archiv erstellt, das Sie teilen oder in „Dateien“ sichern." : {
+
+    },
+    "Auftrag abbrechen" : {
+
+    },
+    "Auftrag abbrechen?" : {
+
+    },
+    "Auftrag angelegt" : {
+
+    },
+    "Auftrag speichern" : {
+
+    },
+    "Auftrag und Konfiguration werden gespeichert; der Mac startet erst nach Ihrer Freigabe." : {
+
+    },
+    "Auftrag war bereits angelegt" : {
+
+    },
+    "Aus dem Archiv geholt" : {
+
+    },
+    "Aus dem Archiv holen" : {
+
+    },
+    "Ausführlich" : {
+
+    },
+    "Ausführung am Mac" : {
+
+    },
+    "Ausgabe %@/1M" : {
+
+    },
+    "Ausgabe je 1 Mio. Tokens" : {
+
+    },
+    "Ausgeschlossen: Kontextbudget überschritten" : {
+
+    },
+    "Ausgeschlossen: leer" : {
+
+    },
+    "Ausgeschlossen: mögliche Geheimnisse (Muster „%@“)" : {
+
+    },
+    "Ausgewogen zwischen Laufzeit und Gründlichkeit." : {
+
+    },
+    "Automatisch (Anbieterstandard)" : {
+
+    },
+    "Beantworten Sie die Fragen im Gespräch („Mit KI besprechen“) oder ergänzen Sie die Notiz und arbeiten Sie erneut aus." : {
+
+    },
+    "Bearbeiten" : {
+
+    },
+    "Bearbeitet" : {
+
+    },
+    "Beauftragen" : {
+
+    },
+    "Beenden" : {
+
+    },
+    "Beendet" : {
+
+    },
+    "Begriffe übernehmen" : {
+
+    },
+    "Begriffe, durch Komma getrennt" : {
+
+    },
+    "Bei Kontingent starten" : {
+
+    },
+    "Bei Kontingent verfügbar erneut versuchen" : {
+
+    },
+    "Bei verfügbarem Kontingent, frühestens %@" : {
+
+    },
+    "Benötigt Aufmerksamkeit" : {
+
+    },
+    "Bereit" : {
+
+    },
+    "Beschreibung" : {
+
+    },
+    "Beschreibung (Markdown)" : {
+
+    },
+    "Bestanden" : {
+
+    },
+    "Bestehende Requests" : {
+
+    },
+    "Bestehender Request" : {
+
+    },
+    "Bestehendes Git-Repository" : {
+
+    },
+    "Bitte einen Agenten wählen." : {
+
+    },
+    "Bitte einen Ordner wählen." : {
+
+    },
+    "Bitte einen Projektnamen eingeben." : {
+
+    },
+    "Bitte einen freigegebenen Stammordner wählen." : {
+
+    },
+    "Bitte jeden Entwurf einzeln übernehmen oder verwerfen." : {
+
+    },
+    "Bitte wählen" : {
+
+    },
+    "Bitte wählen, ob das ganze Repository oder nur der Unterordner gemeint ist." : {
+
+    },
+    "Bleibt erhalten" : {
+
+    },
+    "Blockiert" : {
+
+    },
+    "Branch" : {
+
+    },
+    "Branch und Commit meldet der Mac nach dem Lauf bzw. nach der Übernahme." : {
+
+    },
+    "Branch-Stand" : {
+
+    },
+    "Bug Report" : {
+
+    },
+    "CLAUDE.md vorhanden" : {
+
+    },
+    "Capability-Revision" : {
+
+    },
+    "Cherry-pick" : {
+
+    },
+    "Codex oder Claude Code setzen Aufgaben auf Ihrem Mac um, mit dem Modell und der Denkstufe Ihrer Wahl." : {
+
+    },
+    "Coding-Agenten" : {
+
+    },
+    "Coding-Agenten werden vom Mac erkannt und per iCloud gemeldet. Sobald die Mac-App läuft und synchronisiert hat, erscheinen Codex und Claude Code hier." : {
+
+    },
+    "Commit" : {
+
+    },
+    "Commits (%lld)" : {
+
+    },
+    "Das Löschen der iCloud-Daten ist noch nicht abgeschlossen. Die Synchronisierung bleibt pausiert, bis iCloud das Löschen bestätigt." : {
+
+    },
+    "Das Löschen ist fehlgeschlagen: %@" : {
+
+    },
+    "Das Modell wählen Sie danach unter Einstellungen › KI-Ausarbeitung." : {
+
+    },
+    "Das Sprachmodell konnte nicht geladen werden: %@" : {
+
+    },
+    "Datei" : {
+
+    },
+    "Dateikonflikt" : {
+
+    },
+    "Daten exportieren" : {
+
+    },
+    "Daten konnten nicht geladen werden" : {
+
+    },
+    "Daten löschen" : {
+
+    },
+    "Daten werden geladen …" : {
+
+    },
+    "Datenbank konnte nicht geöffnet werden" : {
+
+    },
+    "Datenbank und Zwischenspeicher. Synchronisierte Daten werden danach erneut aus iCloud geladen; nicht übertragene Änderungen gehen verloren." : {
+
+    },
+    "Datenbank, Aufnahmen, Einstellungen, Zwischenspeicher und nur auf diesem iPad gespeicherte Schlüssel. Schlüssel im iCloud-Schlüsselbund und iCloud-Daten bleiben erhalten." : {
+
+    },
+    "Datenbank, Aufnahmen, Einstellungen, Zwischenspeicher und nur auf diesem iPhone gespeicherte Schlüssel. Schlüssel im iCloud-Schlüsselbund und iCloud-Daten bleiben erhalten." : {
+
+    },
+    "Datensatz" : {
+
+    },
+    "Datenschutz" : {
+
+    },
+    "Den OpenAI-Schlüssel für die Transkription hinterlegen Sie im nächsten Schritt." : {
+
+    },
+    "Den vollständigen Diff prüfen Sie am Mac." : {
+
+    },
+    "Denk-/Effort-Stufe" : {
+
+    },
+    "Denkstufe" : {
+
+    },
+    "Der Agent erlaubt keine Modellwahl; „%@“ kann nicht gesetzt werden." : {
+
+    },
+    "Der Agent wartet am Mac. Ihre Entscheidung wird synchronisiert und vom Mac an den Agenten weitergegeben – nie automatisch." : {
+
+    },
+    "Der Agent wählt die Stufe selbst; es wird kein Wert übergeben." : {
+
+    },
+    "Der Anbieter hat den Schlüssel abgelehnt." : {
+
+    },
+    "Der Anbieter hat keine Modelle gemeldet." : {
+
+    },
+    "Der Auftrag wird lokal gespeichert und beim nächsten Abgleich vom Mac übernommen. Eine KI-Ausarbeitung startet nie einen Agenten." : {
+
+    },
+    "Der Default-Branch wurde nicht verändert. Konflikte lösen Sie am Mac." : {
+
+    },
+    "Der Entwurf wird sofort angelegt; Aufgaben können ihm schon zugeordnet werden. Einen Ordner verknüpfen Sie später." : {
+
+    },
+    "Der Entwurf wird vorbereitet; Sie sehen den Kontext vor dem Senden und geben ihn selbst frei. Ein Entwurf ist nie eine Zustimmung zum Agentenstart." : {
+
+    },
+    "Der Export enthält alle Daten dieses iPads: Projekte, Aufgaben mit Originalnotizen, Transkripten und Entwürfen, ADRs, Ereignisse, Aufträge, Reviews, Freigaben, KI-Anfragen, Einstellungen und Synchronisierungskonflikte – maschinenlesbar (JSON) und lesbar (Markdown)." : {
+
+    },
+    "Der Export enthält alle Daten dieses iPhones: Projekte, Aufgaben mit Originalnotizen, Transkripten und Entwürfen, ADRs, Ereignisse, Aufträge, Reviews, Freigaben, KI-Anfragen, Einstellungen und Synchronisierungskonflikte – maschinenlesbar (JSON) und lesbar (Markdown)." : {
+
+    },
+    "Der Export ist fehlgeschlagen: %@" : {
+
+    },
+    "Der Mac ergänzt Repository-Struktur, akzeptierte ADRs und ausgewählte Quelldateien (ohne Secrets) und legt das Ergebnis als prüfbaren Entwurf ab. Ist der Mac nicht erreichbar, wartet der Auftrag." : {
+
+    },
+    "Der Mac erscheint hier, sobald beide Geräte abgeglichen haben. Das kann nach dem ersten Start einige Minuten dauern." : {
+
+    },
+    "Der Mac führt die Einrichtung aus, sobald er erreichbar ist. Bis dahin hat das Projekt den Status „Einrichtung am Mac ausstehend“." : {
+
+    },
+    "Der Mac hat für diesen Lauf noch keine Zusammenfassung (Diff, Tests) gemeldet." : {
+
+    },
+    "Der Mac hat keinen Modellkatalog gemeldet; nur der Anbieterstandard ist wählbar." : {
+
+    },
+    "Der Mac hat noch keine Coding-Agenten gemeldet." : {
+
+    },
+    "Der Mac hat noch keine Stammordner freigegeben." : {
+
+    },
+    "Der Mac hat noch keine passenden Ordner gemeldet. Die Liste stammt aus dem Ordnerindex des Mac und ist auch offline verfügbar." : {
+
+    },
+    "Der Ordner ist kein Git-Repository." : {
+
+    },
+    "Der Ordner liegt in einem bestehenden Git-Repository. Ist das gesamte Repository oder nur dieser Teilbereich gemeint?" : {
+
+    },
+    "Der Ordnername ist nicht zulässig." : {
+
+    },
+    "Der Rücksetzzeitpunkt ist Ihre Angabe; er wird nicht vom Anbieter ausgelesen. Weitere Kontingentfehler wiederholt der Mac mit begrenztem Backoff." : {
+
+    },
+    "Der Status wird vom Mac aus dem aktiven Agentenlauf abgeleitet und kann gerade nicht manuell geändert werden." : {
+
+    },
+    "Der Status wird während des Agentenlaufs vom Mac abgeleitet." : {
+
+    },
+    "Der Typ kann nicht mehr geändert werden, weil der Mac bereits eine Nummer vergeben hat." : {
+
+    },
+    "Der Typ kann während eines Agentenlaufs nicht geändert werden." : {
+
+    },
+    "Der gewählte Zeitpunkt ist ungültig." : {
+
+    },
+    "Der gewählte Zeitpunkt liegt in der Vergangenheit." : {
+
+    },
+    "Der iCloud-Account wurde gewechselt. Die Synchronisierung ist pausiert, bis Sie bestätigen, mit dem neuen Account fortzufahren. Lokale Daten bleiben erhalten." : {
+
+    },
+    "Der iCloud-Speicher ist voll. Neue Änderungen bleiben lokal, bis wieder Speicher frei ist." : {
+
+    },
+    "Derzeit arbeitet kein Agent." : {
+
+    },
+    "Derzeit ist keine Entscheidung möglich." : {
+
+    },
+    "Die App startet danach mit einer leeren Datenbank und lädt synchronisierte Daten erneut aus iCloud." : {
+
+    },
+    "Die App wurde mit einer leeren Datenbank neu gestartet. Synchronisierte Daten werden beim nächsten Abgleich wieder aus iCloud geladen." : {
+
+    },
+    "Die Apple-Spracherkennung ist auf diesem Gerät nicht verfügbar. Bitte OpenAI-Transkription wählen." : {
+
+    },
+    "Die Apple-Spracherkennung unterstützt die eingestellte Sprache auf diesem Gerät nicht. Bitte OpenAI-Transkription wählen." : {
+
+    },
+    "Die Aufgabe ist keinem Projekt zugeordnet. Bitte zuerst ein Projekt zuweisen." : {
+
+    },
+    "Die Aufgabe wird auf allen Geräten entfernt. Eine Request-Datei im Repository ändert nur der Mac." : {
+
+    },
+    "Die Aufgabe wurde inzwischen geändert (z. B. durch eine Synchronisierung). Bitte neu laden und erneut versuchen." : {
+
+    },
+    "Die Aufnahme (%@) wird zur Transkription an %@ gesendet und dort mit Ihrem eigenen API-Schlüssel verarbeitet. Es gelten die Datenschutzbedingungen von %@." : {
+
+    },
+    "Die Aufnahme kann nicht abgespielt werden: %@" : {
+
+    },
+    "Die Aufnahme konnte nicht gestartet werden." : {
+
+    },
+    "Die Aufnahme konnte nicht gestartet werden: %@" : {
+
+    },
+    "Die Coding-Agenten laufen auf Ihrem Mac. Dieses iPad plant Aufträge, der Mac führt sie aus und meldet die Ergebnisse zurück." : {
+
+    },
+    "Die Coding-Agenten laufen auf Ihrem Mac. Dieses iPhone plant Aufträge, der Mac führt sie aus und meldet die Ergebnisse zurück." : {
+
+    },
+    "Die Datenbank ist noch nicht geöffnet." : {
+
+    },
+    "Die Denkstufe ist bei diesem Agenten nicht einstellbar (Anbieterstandard – nicht einstellbar)." : {
+
+    },
+    "Die Einrichtung dauert etwa eine Minute. Alles lässt sich später in den Einstellungen ändern." : {
+
+    },
+    "Die Einstellung gehört zu Agent „%@“, erwartet wird „%@“." : {
+
+    },
+    "Die Exportdateien liegen bis zum Entfernen im Zwischenspeicher der App." : {
+
+    },
+    "Die Freigabe wird synchronisiert; Übernahme in den Default-Branch, Konfliktbehebung und das Verschieben nach „done“ führt der Mac aus. Es wird nie gepusht." : {
+
+    },
+    "Die Nummer (z. B. FR-0001) vergibt der Mac beim Anlegen der Request-Datei." : {
+
+    },
+    "Die Ordnerstandards müssen relative Pfade ohne „..“ sein." : {
+
+    },
+    "Die Stufe ist eine Ausführungsressource, keine Einschätzung der Aufgabenschwierigkeit." : {
+
+    },
+    "Die Stufe „%@“ erfordert ein ausdrücklich gewähltes Modell." : {
+
+    },
+    "Die Synchronisierung bleibt danach pausiert. Nichts wird automatisch erneut hochgeladen – erst wenn Sie „Wieder mit iCloud synchronisieren“ wählen." : {
+
+    },
+    "Die Synchronisierung ist pausiert. Unter „Einstellungen → Synchronisierung“ können Sie jederzeit „Wieder mit iCloud synchronisieren“ wählen; dann werden Ihre lokalen Daten erneut hochgeladen." : {
+
+    },
+    "Die Vorschau ist abgelaufen. Bitte schließen und neu öffnen." : {
+
+    },
+    "Die iCloud-Daten von Software Regisseur wurden gelöscht oder zurückgesetzt. Lokale Daten bleiben erhalten; Sie entscheiden, ob sie erneut hochgeladen werden." : {
+
+    },
+    "Die iCloud-Daten wurden gelöscht." : {
+
+    },
+    "Die iCloud-Synchronisierung ist auf diesem iPad nicht aktiv; es gibt hier keine iCloud-Daten zu löschen." : {
+
+    },
+    "Die iCloud-Synchronisierung ist auf diesem iPhone nicht aktiv; es gibt hier keine iCloud-Daten zu löschen." : {
+
+    },
+    "Die Übernahme ist noch nicht im Default-Branch bestätigt." : {
+
+    },
+    "Diese Entscheidung bietet der Agent für diese Anfrage nicht an." : {
+
+    },
+    "Diese Freigabe ist nicht mehr offen; eine Entscheidung hat keine Wirkung mehr." : {
+
+    },
+    "Diese Kombination aus Modell und Denkstufe ist nicht zulässig." : {
+
+    },
+    "Diese Vorschau gilt bis %@. Es wird genau das Gelistete gelöscht, nichts später Hinzugekommenes. Nicht rückgängig zu machen." : {
+
+    },
+    "Dieser Agent erlaubt keine Modellwahl; er verwendet sein Standardmodell." : {
+
+    },
+    "Dieser Build ist nicht signiert und hat daher keine iCloud-Berechtigung. Alle Daten bleiben lokal auf diesem iPad; Änderungen werden gesammelt und mit einem signierten Build synchronisiert." : {
+
+    },
+    "Dieser Build ist nicht signiert und hat daher keine iCloud-Berechtigung. Alle Daten bleiben lokal auf diesem iPhone; Änderungen werden gesammelt und mit einem signierten Build synchronisiert." : {
+
+    },
+    "Dieser Eintrag wurde auf zwei Geräten gleichzeitig geändert. Beide Fassungen sind erhalten; wählen Sie, welche gilt." : {
+
+    },
+    "Dieser Mac hat keine Coding-Agenten gemeldet." : {
+
+    },
+    "Dieser Mac hat noch keine Coding-Agenten gemeldet." : {
+
+    },
+    "Dieser Ordner ist bereits mit einem Projekt verknüpft." : {
+
+    },
+    "Dieser Statuswechsel ist nicht erlaubt." : {
+
+    },
+    "Dieses iPad" : {
+
+    },
+    "Dieses iPhone" : {
+
+    },
+    "Diktat" : {
+
+    },
+    "Diktataufnahmen auf diesem iPad. Transkripte und Aufgaben bleiben erhalten." : {
+
+    },
+    "Diktataufnahmen auf diesem iPhone. Transkripte und Aufgaben bleiben erhalten." : {
+
+    },
+    "Diktataufnahmen einschließen" : {
+
+    },
+    "Diktieren" : {
+
+    },
+    "Dringend" : {
+
+    },
+    "Duplizieren" : {
+
+    },
+    "Effektiv" : {
+
+    },
+    "Eigene API-Schlüssel" : {
+
+    },
+    "Eigene KI-Schlüssel" : {
+
+    },
+    "Eigene Schlüssel (BYOK) bleiben im Schlüsselbund dieses Geräts." : {
+
+    },
+    "Eigener Schritt mit eigener Bestätigung. Danach bleibt die Synchronisierung pausiert, bis Sie „Wieder mit iCloud synchronisieren“ wählen; nichts wird automatisch erneut hochgeladen." : {
+
+    },
+    "Ein Entwurf kann nicht verknüpft werden." : {
+
+    },
+    "Ein Schlüssel ist hinterlegt. Der Wert wird nicht angezeigt." : {
+
+    },
+    "Ein Wechsel der Methode verwirft keine Aufnahme und kein Transkript." : {
+
+    },
+    "Ein anderes Gerät nutzt eine neuere Version von Software Regisseur. Bitte aktualisieren Sie diese App." : {
+
+    },
+    "Eine Aufgabe mit vergebener Nummer kann nicht in ein anderes Projekt verschoben werden." : {
+
+    },
+    "Eine Voreinstellung hat einen falschen Geltungsbereich." : {
+
+    },
+    "Eingabe %@/1M" : {
+
+    },
+    "Eingabe je 1 Mio. Tokens" : {
+
+    },
+    "Einplanen" : {
+
+    },
+    "Einrichtung" : {
+
+    },
+    "Einrichtung am Mac ausstehend" : {
+
+    },
+    "Einrichtung erneut ansehen" : {
+
+    },
+    "Einrichtung fehlgeschlagen" : {
+
+    },
+    "Einrichtung wartet auf den Mac" : {
+
+    },
+    "Einstellungen" : {
+
+    },
+    "Einstellungen öffnen" : {
+
+    },
+    "Endgültig löschen" : {
+
+    },
+    "Entfernt alle synchronisierten Daten aus Ihrer privaten iCloud-Datenbank. Lokale Daten und API-Schlüssel – auch im iCloud-Schlüsselbund – bleiben erhalten." : {
+
+    },
+    "Entscheidung" : {
+
+    },
+    "Entwurf" : {
+
+    },
+    "Entwurf automatisch vorbereiten" : {
+
+    },
+    "Entwurf ohne Repository" : {
+
+    },
+    "Entwurf wird erstellt …" : {
+
+    },
+    "Entwurf übernommen." : {
+
+    },
+    "Entwurf – übernommen" : {
+
+    },
+    "Entwurfsversion" : {
+
+    },
+    "Erfassen" : {
+
+    },
+    "Erfassen Sie eine Idee über „+“, die Inbox oder das Diktat." : {
+
+    },
+    "Ergebnis" : {
+
+    },
+    "Ergebnis wird vom Mac noch erfasst" : {
+
+    },
+    "Erkennung auf dem Gerät – ohne Upload und ohne Kosten." : {
+
+    },
+    "Erlauben" : {
+
+    },
+    "Erlaubt" : {
+
+    },
+    "Erlaubt – der Mac übermittelt die Entscheidung, sobald er erreichbar ist." : {
+
+    },
+    "Erledigt" : {
+
+    },
+    "Erneut ausarbeiten" : {
+
+    },
+    "Erneut prüfen" : {
+
+    },
+    "Erneut versuchen" : {
+
+    },
+    "Erreichbar" : {
+
+    },
+    "Erstellt" : {
+
+    },
+    "Erwartete Kontingent-Rücksetzung" : {
+
+    },
+    "Es wurde keine Sprache erkannt. Bitte erneut aufnehmen." : {
+
+    },
+    "Export abgebrochen. Es wurden keine Dateien behalten." : {
+
+    },
+    "Export aller Projekte, Aufgaben, ADRs, Ereignisse und Einstellungen als JSON und Markdown. Löschen immer mit Vorschau und ausdrücklicher Bestätigung." : {
+
+    },
+    "Export erstellen" : {
+
+    },
+    "Export fertig" : {
+
+    },
+    "Export in „Dateien“ gesichert." : {
+
+    },
+    "Export läuft" : {
+
+    },
+    "Exportdateien von diesem iPad entfernen" : {
+
+    },
+    "Exportdateien von diesem iPhone entfernen" : {
+
+    },
+    "Exportierte Einträge" : {
+
+    },
+    "Externe Änderung erkannt" : {
+
+    },
+    "Extra hoch" : {
+
+    },
+    "Fassung des anderen Geräts übernehmen" : {
+
+    },
+    "Fassung dieses iPads behalten" : {
+
+    },
+    "Fassung dieses iPhones behalten" : {
+
+    },
+    "Fast geschafft" : {
+
+    },
+    "Feature Request" : {
+
+    },
+    "Fehlgeschlagen" : {
+
+    },
+    "Fertig" : {
+
+    },
+    "Filter" : {
+
+    },
+    "Filter zurücksetzen" : {
+
+    },
+    "Folgen" : {
+
+    },
+    "Fortsetzen" : {
+
+    },
+    "Freigabe" : {
+
+    },
+    "Freigabe abgelaufen" : {
+
+    },
+    "Freigabe angefragt" : {
+
+    },
+    "Freigabe beantwortet" : {
+
+    },
+    "Freigabe-Entscheidung" : {
+
+    },
+    "Freigaben" : {
+
+    },
+    "Freigaben erteilen und Ergebnisse ansehen, bevor etwas in Ihr Repository kommt." : {
+
+    },
+    "Frühestens %@" : {
+
+    },
+    "Funktioniert auch ohne Internet; die Notiz wird beim nächsten Abgleich übertragen." : {
+
+    },
+    "Für %@ ist kein API-Schlüssel für die KI-Ausarbeitung hinterlegt." : {
+
+    },
+    "Für die Apple-Spracherkennung wandelt das iPad Ihre Aufnahme in Text um. Mit installiertem Sprachmodell geschieht das auf dem Gerät." : {
+
+    },
+    "Für die Apple-Spracherkennung wandelt das iPhone Ihre Aufnahme in Text um. Mit installiertem Sprachmodell geschieht das auf dem Gerät." : {
+
+    },
+    "Für die KI-Ausarbeitung ist noch kein Anbieter und Modell gewählt." : {
+
+    },
+    "Für diese Aufgabe gibt es bereits einen aktiven Agentenlauf." : {
+
+    },
+    "Für diese Aufgabe läuft bereits ein Agentenauftrag." : {
+
+    },
+    "Für dieses Konto nicht freigeschaltet" : {
+
+    },
+    "Für einige Tage behalten" : {
+
+    },
+    "Für später einplanen" : {
+
+    },
+    "Ganzes Repository" : {
+
+    },
+    "Gehe zu" : {
+
+    },
+    "Geheimnisse bleiben lokal" : {
+
+    },
+    "Gekürzt (Kontextbudget)" : {
+
+    },
+    "Geplant" : {
+
+    },
+    "Geplant und wartend" : {
+
+    },
+    "Geplanter Start verpasst" : {
+
+    },
+    "Gespeichert werden Ihre korrigierte Fassung als Originalnotiz und das unveränderte Transkript. Ein KI-Entwurf startet nie einen Agenten." : {
+
+    },
+    "Gespeichert: %@" : {
+
+    },
+    "Gespräch" : {
+
+    },
+    "Gesprächspartner zur Ausarbeitung – kein Coding-Agent. Vorschläge werden erst nach Ihrer Freigabe übernommen." : {
+
+    },
+    "Gewählt" : {
+
+    },
+    "Geändert" : {
+
+    },
+    "Gilt für neu angelegte Projekte. „git init“ wird auch mit dieser Voreinstellung nur nach Ihrer ausdrücklichen Zustimmung im jeweiligen Projekt ausgeführt." : {
+
+    },
+    "Gilt für neue Aufträge. Bereits geplante Aufträge behalten ihre gespeicherte Konfiguration." : {
+
+    },
+    "Git" : {
+
+    },
+    "Git-Repository anlegen („git init“)" : {
+
+    },
+    "Git-Repository verknüpfen" : {
+
+    },
+    "GitHub-Issue-Verknüpfung" : {
+
+    },
+    "Globale Einstellungen" : {
+
+    },
+    "Globalen Standard übernehmen" : {
+
+    },
+    "Globaler Standard" : {
+
+    },
+    "Google Gemini" : {
+
+    },
+    "Groß" : {
+
+    },
+    "Gründlicher, längere Laufzeit und höherer Kontingentverbrauch." : {
+
+    },
+    "Hat der Mac den Auftrag bereits übernommen, entscheidet der Mac (er ist für Laufzustände maßgeblich)." : {
+
+    },
+    "Hier kann kein Git-Repository angelegt werden." : {
+
+    },
+    "Hilft beim Erkennen von Fachbegriffen und Akronymen; sie werden nicht als gesprochener Text eingefügt." : {
+
+    },
+    "Hinterlegt (iCloud-Schlüsselbund-Synchronisierung angefordert)" : {
+
+    },
+    "Hinterlegt (nur dieses Gerät)" : {
+
+    },
+    "Hinweis schließen" : {
+
+    },
+    "Hoch" : {
+
+    },
+    "Ich habe die Liste geprüft und möchte diese Daten endgültig löschen." : {
+
+    },
+    "Idee, Aufgabe oder Fehler beschreiben …" : {
+
+    },
+    "Ideen sprechen statt tippen" : {
+
+    },
+    "Ideen unterwegs erfassen, Coding-Agenten auf Ihrem Mac beauftragen und Ergebnisse prüfen – direkt von diesem iPad aus." : {
+
+    },
+    "Ideen unterwegs erfassen, Coding-Agenten auf Ihrem Mac beauftragen und Ergebnisse prüfen – direkt von diesem iPhone aus." : {
+
+    },
+    "Ihr Mac ist verbunden. Erfassen Sie die erste Idee und lassen Sie sie von einem Coding-Agenten umsetzen." : {
+
+    },
+    "Ihr Mac und andere Geräte erkennen das Löschen beim nächsten Abgleich und pausieren ebenfalls, bis Sie dort entscheiden." : {
+
+    },
+    "Ihre iCloud-Daten von Software Regisseur werden endgültig gelöscht." : {
+
+    },
+    "Ihre iCloud-Daten wurden auf Ihren Wunsch gelöscht. Die Synchronisierung ist pausiert; lokale Daten bleiben auf diesem iPad. Erst mit „Wieder mit iCloud synchronisieren“ werden sie erneut hochgeladen." : {
+
+    },
+    "Ihre iCloud-Daten wurden auf Ihren Wunsch gelöscht. Die Synchronisierung ist pausiert; lokale Daten bleiben auf diesem iPhone. Erst mit „Wieder mit iCloud synchronisieren“ werden sie erneut hochgeladen." : {
+
+    },
+    "In %lld Textstellen Ihrer Notizen stehen Zeichenfolgen, die wie Zugangsdaten aussehen. Sie wurden unverändert exportiert – bitte prüfen Sie den Export vor der Weitergabe." : {
+
+    },
+    "In Arbeit" : {
+
+    },
+    "In Aufgaben aufteilen" : {
+
+    },
+    "In Config/Local.xcconfig ist noch kein Apple-Team eingetragen; ohne Signierung gibt es keine iCloud-Berechtigung. Die App arbeitet lokal." : {
+
+    },
+    "In Dateien sichern" : {
+
+    },
+    "In Inbox ablegen" : {
+
+    },
+    "In Warteschlange" : {
+
+    },
+    "In der Warteschlange für den Mac." : {
+
+    },
+    "In diese Aufgabe übernehmen" : {
+
+    },
+    "In diesem Aufgabenstatus kann kein Agentenlauf angelegt werden." : {
+
+    },
+    "Inbox" : {
+
+    },
+    "Inbox ist leer" : {
+
+    },
+    "Inhalt" : {
+
+    },
+    "Integration" : {
+
+    },
+    "Integrationskonflikt" : {
+
+    },
+    "Integriert" : {
+
+    },
+    "Ja" : {
+
+    },
+    "Jetzt abgleichen" : {
+
+    },
+    "Jetzt starten" : {
+
+    },
+    "Jetzt synchronisieren" : {
+
+    },
+    "Jetzt zum Start freigeben" : {
+
+    },
+    "KI" : {
+
+    },
+    "KI-Anfrage" : {
+
+    },
+    "KI-Ausarbeitung" : {
+
+    },
+    "KI-Entwurf" : {
+
+    },
+    "KI-Entwürfe" : {
+
+    },
+    "KI-Gespräch" : {
+
+    },
+    "KI-Schlüssel" : {
+
+    },
+    "Kein Anbieter liefert Preise per API; tragen Sie die Werte aus der Preisliste des Anbieters ein. Alle Kostenangaben sind geschätzt." : {
+
+    },
+    "Kein Entwurf zum Übernehmen ausgewählt." : {
+
+    },
+    "Kein Ergebnis ausgewählt" : {
+
+    },
+    "Kein Mac verbunden" : {
+
+    },
+    "Kein Mac-Host zugeordnet" : {
+
+    },
+    "Kein Mac-Host zugeordnet. Repo-Schreibvorgänge und Agentenstarts warten, bis ein Mac das Projekt übernimmt." : {
+
+    },
+    "Kein OpenAI-Schlüssel für Transkription hinterlegt." : {
+
+    },
+    "Kein Projekt (Inbox)" : {
+
+    },
+    "Kein Projekt ausgewählt" : {
+
+    },
+    "Kein Projekt passt zur Suche." : {
+
+    },
+    "Kein Projektstandard" : {
+
+    },
+    "Kein Schlüssel" : {
+
+    },
+    "Kein gültiger CloudKit-Container konfiguriert (SR_CLOUDKIT_CONTAINER). Die App arbeitet lokal." : {
+
+    },
+    "Kein iCloud-Account angemeldet. Die Synchronisierung ist pausiert; lokale Daten bleiben erhalten." : {
+
+    },
+    "Kein startbereiter Coding-Agent gemeldet. Bitte am Mac Codex oder Claude Code installieren und anmelden." : {
+
+    },
+    "Keine ADRs synchronisiert." : {
+
+    },
+    "Keine Abhängigkeiten." : {
+
+    },
+    "Keine Aufgabe ausgewählt" : {
+
+    },
+    "Keine Aufgabe passt zu Suche und Filter." : {
+
+    },
+    "Keine Aufgaben" : {
+
+    },
+    "Keine Ergebnisse warten auf Ihr Review." : {
+
+    },
+    "Keine Notiz ausgewählt" : {
+
+    },
+    "Keine Originalnotiz." : {
+
+    },
+    "Keine Projekte" : {
+
+    },
+    "Keine Push-Benachrichtigungen: Abgleich beim Öffnen, beim Aktivieren der App, durch Herunterziehen und manuell. Der Mac übernimmt Aufträge, sobald er erreichbar ist." : {
+
+    },
+    "Keine Push-Benachrichtigungen: Die App fragt nie nach der Mitteilungs-Berechtigung." : {
+
+    },
+    "Keine Testergebnisse gemeldet." : {
+
+    },
+    "Keine Treffer" : {
+
+    },
+    "Keine anderen Aufgaben im selben Projekt." : {
+
+    },
+    "Keine geplanten oder wartenden Agentenaufträge." : {
+
+    },
+    "Keine offenen Agentenaufträge." : {
+
+    },
+    "Keine offenen Freigaben." : {
+
+    },
+    "Keine offenen Konflikte" : {
+
+    },
+    "Keine offenen Reviews" : {
+
+    },
+    "Keine – optional" : {
+
+    },
+    "Keiner" : {
+
+    },
+    "Klein" : {
+
+    },
+    "Kommentar" : {
+
+    },
+    "Komplexität" : {
+
+    },
+    "Komplexität (Planung)" : {
+
+    },
+    "Konfiguration erforderlich" : {
+
+    },
+    "Konfiguration ersetzt" : {
+
+    },
+    "Konflikt erkannt" : {
+
+    },
+    "Konflikt lösen" : {
+
+    },
+    "Konflikte" : {
+
+    },
+    "Konflikte anzeigen" : {
+
+    },
+    "Kontext" : {
+
+    },
+    "Kontext prüfen" : {
+
+    },
+    "Kontext prüfen und senden …" : {
+
+    },
+    "Kosten" : {
+
+    },
+    "Kosten unbekannt – für dieses Modell ist kein Preis hinterlegt (Einstellungen › Kosten)." : {
+
+    },
+    "Kosten: %@ (geschätzt)" : {
+
+    },
+    "Kurz ausarbeiten" : {
+
+    },
+    "Label" : {
+
+    },
+    "Labels" : {
+
+    },
+    "Labels, durch Komma getrennt" : {
+
+    },
+    "Lange Aufnahmen werden in Abschnitte geteilt. Die Kosten trägt Ihr Anbieterkonto; die Anzeige in der App ist geschätzt." : {
+
+    },
+    "Legen Sie unter „Projekte“ einen Entwurf an oder warten Sie auf die Synchronisierung vom Mac." : {
+
+    },
+    "Lokale Daten erneut hochladen" : {
+
+    },
+    "Lokale Datenbank und Zwischenspeicher löschen" : {
+
+    },
+    "Los geht’s" : {
+
+    },
+    "Löschen" : {
+
+    },
+    "Löschen abbrechen und wieder synchronisieren" : {
+
+    },
+    "Löschen erneut versuchen" : {
+
+    },
+    "Mac" : {
+
+    },
+    "Mac derzeit offline" : {
+
+    },
+    "Mac verbinden" : {
+
+    },
+    "Mac-Host" : {
+
+    },
+    "Maximale Denkzeit; deutlich längere Laufzeit und höherer Verbrauch." : {
+
+    },
+    "Maximum" : {
+
+    },
+    "Mehr" : {
+
+    },
+    "Melden Sie sich in den Systemeinstellungen bei iCloud an, falls noch nicht geschehen." : {
+
+    },
+    "Merge-Commit" : {
+
+    },
+    "Methode (dieses iPad)" : {
+
+    },
+    "Methode (dieses iPhone)" : {
+
+    },
+    "Mikrofon" : {
+
+    },
+    "Mit Agent umsetzen" : {
+
+    },
+    "Mit Ihrem eigenen OpenAI-Schlüssel. Die Aufnahme wird zu OpenAI übertragen; vor jeder Übertragung fragt die App nach." : {
+
+    },
+    "Mit KI ausarbeiten" : {
+
+    },
+    "Mit KI besprechen" : {
+
+    },
+    "Mit neuem Account fortfahren" : {
+
+    },
+    "Mittel" : {
+
+    },
+    "Modell" : {
+
+    },
+    "Modell „%@“ ist derzeit nicht nutzbar." : {
+
+    },
+    "Modell „%@“ ist in der installierten Agentenversion nicht verfügbar." : {
+
+    },
+    "Modell „%@“ unterstützt die Stufe „%@“ nicht." : {
+
+    },
+    "Modell- und Denkstufen-Standards" : {
+
+    },
+    "Modell-ID" : {
+
+    },
+    "Modell-ID manuell" : {
+
+    },
+    "Modell: %@ · Stufe: %@" : {
+
+    },
+    "Modelle und Denkstufen" : {
+
+    },
+    "Modelle vom Anbieter laden" : {
+
+    },
+    "Modellwahl" : {
+
+    },
+    "Modus" : {
+
+    },
+    "Nach Freigabe" : {
+
+    },
+    "Nach dem Diktat automatisch einen Entwurf vorbereiten" : {
+
+    },
+    "Nach dem Diktat wird ein strukturierter Entwurf vorbereitet. Sie prüfen ihn, bevor etwas gesendet wird." : {
+
+    },
+    "Nach erfolgreicher Verarbeitung löschen" : {
+
+    },
+    "Nachricht" : {
+
+    },
+    "Name des neuen Ordners" : {
+
+    },
+    "Nein" : {
+
+    },
+    "Neue Aufgabe" : {
+
+    },
+    "Neue Aufnahme" : {
+
+    },
+    "Neue Notiz" : {
+
+    },
+    "Neue Notiz …" : {
+
+    },
+    "Neuer Unterordner" : {
+
+    },
+    "Neues Fenster" : {
+
+    },
+    "Neues Projekt" : {
+
+    },
+    "Nicht angegeben" : {
+
+    },
+    "Nicht angemeldet" : {
+
+    },
+    "Nicht ausgeführt" : {
+
+    },
+    "Nicht erreichbar" : {
+
+    },
+    "Nicht installiert" : {
+
+    },
+    "Nicht mehr offen – die Agentensitzung wurde beendet." : {
+
+    },
+    "Nicht startbereit" : {
+
+    },
+    "Nicht verfügbar" : {
+
+    },
+    "Nicht verfügbar – nur lokal" : {
+
+    },
+    "Nicht übertragen" : {
+
+    },
+    "Niedrig" : {
+
+    },
+    "Noch kein Agentenlauf." : {
+
+    },
+    "Noch kein Mac gefunden" : {
+
+    },
+    "Noch kein Mac gemeldet. Der Auftrag kann erst angelegt werden, wenn ein Mac seine Agenten synchronisiert hat." : {
+
+    },
+    "Noch kein Mac verbunden" : {
+
+    },
+    "Noch kein Repository" : {
+
+    },
+    "Noch kein Schlüssel hinterlegt." : {
+
+    },
+    "Noch keine Einträge." : {
+
+    },
+    "Noch keine KI-Entwürfe." : {
+
+    },
+    "Noch keine Nummer" : {
+
+    },
+    "Noch keine Preise hinterlegt." : {
+
+    },
+    "Noch keine Projekte. Projekte erscheinen, sobald der Mac sie erkannt und synchronisiert hat, oder Sie legen einen Projektentwurf an." : {
+
+    },
+    "Noch keine abgeschlossenen Arbeiten." : {
+
+    },
+    "Noch keine ausgearbeitete Beschreibung." : {
+
+    },
+    "Noch nicht abgeglichen" : {
+
+    },
+    "Noch nicht übertragen" : {
+
+    },
+    "Noch nie" : {
+
+    },
+    "Noch offen" : {
+
+    },
+    "Notiz" : {
+
+    },
+    "Notizen ohne Projekt landen hier und können später zugewiesen werden." : {
+
+    },
+    "Notizinhalte werden als Daten gekennzeichnet, nicht als Anweisungen. Die KI startet nie einen Coding-Agenten." : {
+
+    },
+    "Nummer" : {
+
+    },
+    "Nummer vergeben" : {
+
+    },
+    "Nur dieser Unterordner" : {
+
+    },
+    "Nur innerhalb der am Mac freigegebenen Stammordner. Keine „/“, „:“ oder führenden Punkte." : {
+
+    },
+    "Nur mit Ihrer Zustimmung legt der Mac in diesem Ordner ein neues Git-Repository an. Ohne Zustimmung bleibt der Ordner unverändert." : {
+
+    },
+    "Nur speichern" : {
+
+    },
+    "Nutzung" : {
+
+    },
+    "Nächster Versuch %@" : {
+
+    },
+    "OK" : {
+
+    },
+    "Offen" : {
+
+    },
+    "Offene Aufgaben" : {
+
+    },
+    "Offene Fragen" : {
+
+    },
+    "Offene Fragen der KI" : {
+
+    },
+    "Offene Reviews" : {
+
+    },
+    "Offizielle mobile Fortsetzung" : {
+
+    },
+    "Offline" : {
+
+    },
+    "Ohne Mikrofonzugriff sind Sprachaufnahmen nicht möglich. Texterfassung, Aufgaben und KI-Ausarbeitung funktionieren weiterhin." : {
+
+    },
+    "Ohne Preis: %@" : {
+
+    },
+    "Ohne Projekt" : {
+
+    },
+    "Ohne Projekt (Inbox)" : {
+
+    },
+    "Ohne Push-Benachrichtigungen" : {
+
+    },
+    "Ohne Schlüssel sind KI-Ausarbeitung und OpenAI-Transkription nicht verfügbar, bis Sie neue Schlüssel hinterlegen." : {
+
+    },
+    "Ohne Spracherkennung kann die Apple-Transkription nicht genutzt werden. Sie können stattdessen in den Einstellungen die OpenAI-Transkription wählen oder Text eintippen." : {
+
+    },
+    "Ohne Titel" : {
+
+    },
+    "Ohne iCloud-Synchronisierung kann sich der Mac nicht melden. Aufgaben erfassen und Diktate funktionieren trotzdem." : {
+
+    },
+    "OpenAI" : {
+
+    },
+    "OpenAI Speech-to-Text" : {
+
+    },
+    "OpenAI-Schlüssel für Transkription hinterlegt. Audio wird erst nach Ihrer Bestätigung übertragen." : {
+
+    },
+    "Optional, für KI-Funktionen" : {
+
+    },
+    "Optional: Für KI-Ausarbeitung und OpenAI-Transkription verwenden Sie Ihre eigenen API-Schlüssel. Erfassen, Apple-Diktat und Agentenaufträge funktionieren auch ohne." : {
+
+    },
+    "Ordner" : {
+
+    },
+    "Ordner (relativ zum Repository)" : {
+
+    },
+    "Ordner am Mac" : {
+
+    },
+    "Ordnerstandards" : {
+
+    },
+    "Ordnerstandards bearbeiten" : {
+
+    },
+    "Ordnerzuordnung" : {
+
+    },
+    "Originalaufnahme" : {
+
+    },
+    "Originalnotiz" : {
+
+    },
+    "Originalnotiz (unveränderlich)" : {
+
+    },
+    "Originalnotiz, Transkript und KI-Entwürfe werden getrennt versioniert und mit allen Geräten synchronisiert. Ein Entwurf wird erst nach Ihrer Freigabe übernommen." : {
+
+    },
+    "Parallele Läufe erlauben" : {
+
+    },
+    "Pausieren" : {
+
+    },
+    "Pausiert" : {
+
+    },
+    "Pegel" : {
+
+    },
+    "Pfade müssen relativ sein und dürfen kein „..“ enthalten." : {
+
+    },
+    "Pfade relativ zum Repository; geändert werden sie am Mac." : {
+
+    },
+    "Preis hinzufügen oder ändern" : {
+
+    },
+    "Preis sichern" : {
+
+    },
+    "Preise" : {
+
+    },
+    "Preise geprüft am" : {
+
+    },
+    "Priorität" : {
+
+    },
+    "Projekt" : {
+
+    },
+    "Projekt archivieren" : {
+
+    },
+    "Projekt archivieren?" : {
+
+    },
+    "Projekt nicht gefunden" : {
+
+    },
+    "Projekt zuweisen" : {
+
+    },
+    "Projektbegriffe als Hinweise" : {
+
+    },
+    "Projektdaten im Kontext" : {
+
+    },
+    "Projektdaten mitsenden (bestehende Requests, ADR-Index)" : {
+
+    },
+    "Projekte" : {
+
+    },
+    "Projekte erscheinen hier, sobald der Mac Ihre Stammordner indiziert und per iCloud synchronisiert hat. Unterwegs können Sie einen Projektentwurf ohne Repository anlegen." : {
+
+    },
+    "Projekte suchen" : {
+
+    },
+    "Projekteinrichtung" : {
+
+    },
+    "Projekteinstellungen" : {
+
+    },
+    "Projektname" : {
+
+    },
+    "Projektstandard" : {
+
+    },
+    "Projektweite Sperre" : {
+
+    },
+    "Prüfen" : {
+
+    },
+    "Quellcodedatei" : {
+
+    },
+    "Quelle" : {
+
+    },
+    "Quelle: %@" : {
+
+    },
+    "Reihenfolge: Auftrag > Projekt > global > Anbieterstandard." : {
+
+    },
+    "Remote" : {
+
+    },
+    "Repository-Struktur" : {
+
+    },
+    "Requests" : {
+
+    },
+    "Review" : {
+
+    },
+    "Review entschieden" : {
+
+    },
+    "Review-Status" : {
+
+    },
+    "Reviews" : {
+
+    },
+    "Rückgängig" : {
+
+    },
+    "Schließen" : {
+
+    },
+    "Schlüssel" : {
+
+    },
+    "Schlüssel gelöscht." : {
+
+    },
+    "Schlüssel gespeichert." : {
+
+    },
+    "Schlüssel gültig." : {
+
+    },
+    "Schlüssel hinterlegen" : {
+
+    },
+    "Schlüssel liegen nur im Schlüsselbund, nie in iCloud-Datensätzen, Git oder Logs. Ein OpenAI-Schlüssel ist keine Codex-Anmeldung, ein Anthropic-Schlüssel kein Claude-Code-Abonnement." : {
+
+    },
+    "Schlüssel löschen" : {
+
+    },
+    "Schlüssel löschen?" : {
+
+    },
+    "Schlüssel prüfen" : {
+
+    },
+    "Schlüssel verwalten" : {
+
+    },
+    "Schnell erfassen" : {
+
+    },
+    "Schnell und sparsam, für klar umrissene Aufgaben." : {
+
+    },
+    "Schritt %lld von %lld" : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Schritt %1$lld von %2$lld"
+          }
+        }
+      }
+    },
+    "Schritt %lld von %lld: %@" : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Schritt %1$lld von %2$lld: %3$@"
+          }
+        }
+      }
+    },
+    "Senden" : {
+
+    },
+    "Sichern" : {
+
+    },
+    "Sie" : {
+
+    },
+    "Sie können den Zugriff jederzeit in den Einstellungen erlauben." : {
+
+    },
+    "Sie können sofort Ideen erfassen. Was noch fehlt, holen Sie jederzeit in den Einstellungen nach." : {
+
+    },
+    "Sie sehen vor dem Löschen genau, welche Dateien und Schlüssel entfernt werden. Git-Repositories auf dem Mac werden nie gelöscht." : {
+
+    },
+    "Sitzung" : {
+
+    },
+    "Sobald ein Agent eine Aufgabe umgesetzt hat und der Mac Diff und Tests erfasst hat, erscheint das Ergebnis hier." : {
+
+    },
+    "Sofort" : {
+
+    },
+    "Software Regisseur auf dem Mac installieren und dort die Einrichtung abschließen." : {
+
+    },
+    "Software Regisseur nimmt gesprochene Ideen auf, damit Sie Aufgaben diktieren können. Die Aufnahme bleibt auf diesem iPad, solange Sie keine Übertragung an einen Transkriptionsanbieter bestätigen." : {
+
+    },
+    "Software Regisseur nimmt gesprochene Ideen auf, damit Sie Aufgaben unterwegs diktieren können. Die Aufnahme bleibt auf diesem iPhone, solange Sie keine Übertragung an einen Transkriptionsanbieter bestätigen." : {
+
+    },
+    "Sonstiger Kontext" : {
+
+    },
+    "Speichern" : {
+
+    },
+    "Speichern fehlgeschlagen: %@" : {
+
+    },
+    "Speichern und mit KI ausarbeiten" : {
+
+    },
+    "Sperre freigegeben" : {
+
+    },
+    "Sperre gesetzt" : {
+
+    },
+    "Sprache (z. B. de-AT)" : {
+
+    },
+    "Spracherkennung" : {
+
+    },
+    "Sprachmodell für %@ muss einmalig geladen werden (Internet nötig)." : {
+
+    },
+    "Sprachmodell laden" : {
+
+    },
+    "Sprechen Sie Ideen einfach ein. Wählen Sie, wie Ihre Aufnahmen in Text umgewandelt werden." : {
+
+    },
+    "Squash-Merge" : {
+
+    },
+    "Standard" : {
+
+    },
+    "Standard übernehmen" : {
+
+    },
+    "Standard: gpt-transcribe. „Schlüssel prüfen“ warnt, wenn das Modell für Ihren Schlüssel nicht gelistet ist." : {
+
+    },
+    "Standard: nur auf diesem Gerät. Mit iCloud-Schlüsselbund wird die Synchronisierung angefordert; ob sie aktiv ist, kann die App nicht prüfen. Niemals Klartext in iCloud-Datensätzen." : {
+
+    },
+    "Standardagent" : {
+
+    },
+    "Standardstruktur neuer Projekte (synchronisiert); projektweise Abweichungen konfiguriert der Mac." : {
+
+    },
+    "Start" : {
+
+    },
+    "Startet" : {
+
+    },
+    "Status" : {
+
+    },
+    "Status geändert" : {
+
+    },
+    "Status geändert." : {
+
+    },
+    "Status ändern" : {
+
+    },
+    "Status: %@. Der Mac prüft Modell und Denkstufe vor dem Start erneut und hält den Auftrag an, falls die Kombination nicht mehr verfügbar ist." : {
+
+    },
+    "Statusordner" : {
+
+    },
+    "Stellen Sie eine Frage oder bitten Sie um eine Änderung des Entwurfs." : {
+
+    },
+    "Stopp" : {
+
+    },
+    "Suchen" : {
+
+    },
+    "Synchronisierung" : {
+
+    },
+    "Synchronisierungskonflikt – beide Versionen wurden behalten. Bitte entscheiden." : {
+
+    },
+    "Technische Details" : {
+
+    },
+    "Technische Hinweise" : {
+
+    },
+    "Teilen …" : {
+
+    },
+    "Testfälle" : {
+
+    },
+    "Tests" : {
+
+    },
+    "Text" : {
+
+    },
+    "Titel" : {
+
+    },
+    "Titel, Notiz, Transkript" : {
+
+    },
+    "Todo" : {
+
+    },
+    "Tokens (Eingabe/Ausgabe)" : {
+
+    },
+    "Tokens: %lld Eingabe, %lld Ausgabe" : {
+
+    },
+    "Transkribieren" : {
+
+    },
+    "Transkript" : {
+
+    },
+    "Transkript korrigieren" : {
+
+    },
+    "Transkription" : {
+
+    },
+    "Typ" : {
+
+    },
+    "Typ geändert" : {
+
+    },
+    "Typ ändern" : {
+
+    },
+    "Umfang" : {
+
+    },
+    "Umsetzung beendet" : {
+
+    },
+    "Unabhängig von der Transkription und von den Coding-Agenten." : {
+
+    },
+    "Unbekannte Aufgabe" : {
+
+    },
+    "Unterordner eines Repositories" : {
+
+    },
+    "Ursprungsnotiz danach als erledigt markieren" : {
+
+    },
+    "Verbesserung" : {
+
+    },
+    "Verbunden" : {
+
+    },
+    "Verfügbar" : {
+
+    },
+    "Verfügbarkeit wird geprüft …" : {
+
+    },
+    "Verlauf" : {
+
+    },
+    "Version" : {
+
+    },
+    "Version %lld" : {
+
+    },
+    "Version %lld – %@" : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Version %1$lld – %2$@"
+          }
+        }
+      }
+    },
+    "Versionen lokal/entfernt" : {
+
+    },
+    "Vertiefte Ausarbeitung" : {
+
+    },
+    "Vertiefte Ausarbeitung mit Repo-Kontext wartet auf den Mac." : {
+
+    },
+    "Verwerfen" : {
+
+    },
+    "Vollständige Anfrage nur am Mac prüfbar" : {
+
+    },
+    "Vollständige Anfrage nur am Mac prüfbar – hier ist nur „Ablehnen“ möglich." : {
+
+    },
+    "Vor dem Senden sehen Sie genau, welche Inhalte an den Anbieter gehen." : {
+
+    },
+    "Vorgeschlagene Entwurfsversion" : {
+
+    },
+    "Vorhandener Ordner" : {
+
+    },
+    "Vorschau wird erstellt …" : {
+
+    },
+    "Vorschlag verwerfen" : {
+
+    },
+    "Warteschlange" : {
+
+    },
+    "Wartet auf Bestätigung" : {
+
+    },
+    "Wartet auf Freigabe" : {
+
+    },
+    "Wartet auf Ihre Entscheidung" : {
+
+    },
+    "Wartet auf Ihre Entscheidung – gültig bis %@" : {
+
+    },
+    "Wartet auf Kontingent" : {
+
+    },
+    "Wartet auf Mac" : {
+
+    },
+    "Was die App für Sie erledigt" : {
+
+    },
+    "Weiter" : {
+
+    },
+    "Weitere %lld Dateien – große Diffs bitte am Mac prüfen." : {
+
+    },
+    "Wieder mit iCloud synchronisieren" : {
+
+    },
+    "Wiederholung eines früheren Laufs" : {
+
+    },
+    "Willkommen" : {
+
+    },
+    "Willkommen bei Software Regisseur" : {
+
+    },
+    "Wird abgeglichen …" : {
+
+    },
+    "Wird bei neuen Aufträgen vorausgewählt. Modell und Denkstufe je Agent stellen Sie unter „Agenten“ ein." : {
+
+    },
+    "Wird endgültig gelöscht" : {
+
+    },
+    "Wird so beauftragt" : {
+
+    },
+    "Wird transkribiert …" : {
+
+    },
+    "Wird vorausgewählt, wenn das Projekt keinen Standardagenten hat. Der Standardagent und die globalen Modell-/Stufenstandards werden mit allen Geräten synchronisiert." : {
+
+    },
+    "Wird übertragen" : {
+
+    },
+    "Wo die Coding-Agenten laufen" : {
+
+    },
+    "Wählen Sie ein Ergebnis aus der Liste." : {
+
+    },
+    "Wählen Sie ein Projekt aus der Liste." : {
+
+    },
+    "Wählen Sie eine Aufgabe aus der Liste." : {
+
+    },
+    "Wählen Sie eine Notiz aus der Inbox." : {
+
+    },
+    "Währung (ISO, z. B. USD)" : {
+
+    },
+    "Zeitpunkt" : {
+
+    },
+    "Zeitzone" : {
+
+    },
+    "Ziel" : {
+
+    },
+    "Zu den KI-Einstellungen" : {
+
+    },
+    "Zugelassen" : {
+
+    },
+    "Zuletzt abgeglichen" : {
+
+    },
+    "Zuletzt abgeglichen %@." : {
+
+    },
+    "Zuletzt abgeschlossen" : {
+
+    },
+    "Zuletzt erkannt – Mac derzeit offline" : {
+
+    },
+    "Zuletzt erkannt – Mac derzeit offline. Aufträge werden gespeichert und starten, sobald der Mac wieder erreichbar ist." : {
+
+    },
+    "Zuletzt erkannt – Mac derzeit offline. Der Auftrag wartet („Wartet auf Mac“), bis der Mac erreichbar ist." : {
+
+    },
+    "Zuletzt geprüft" : {
+
+    },
+    "Zur Übernahme freigegeben" : {
+
+    },
+    "Zurück" : {
+
+    },
+    "Zurücksetzen" : {
+
+    },
+    "Zusammenfassung des Agenten" : {
+
+    },
+    "Zuweisen" : {
+
+    },
+    "auch auf Ihren anderen Geräten" : {
+
+    },
+    "binär" : {
+
+    },
+    "ca. %lld Tokens (geschätzt)" : {
+
+    },
+    "dieser Auftrag" : {
+
+    },
+    "gelöscht" : {
+
+    },
+    "globaler Standard" : {
+
+    },
+    "iCloud" : {
+
+    },
+    "iCloud-Daten endgültig löschen" : {
+
+    },
+    "iCloud-Daten löschen" : {
+
+    },
+    "iCloud-Synchronisierung" : {
+
+    },
+    "iCloud-Synchronisierung nicht verfügbar" : {
+
+    },
+    "nicht bestätigt" : {
+
+    },
+    "wartet auf Freigabe" : {
+
+    },
+    "Ändern" : {
+
+    },
+    "Änderung gespeichert." : {
+
+    },
+    "Änderungen" : {
+
+    },
+    "Änderungen anfordern" : {
+
+    },
+    "Änderungen angefordert" : {
+
+    },
+    "Öffnet den Bereich." : {
+
+    },
+    "Über" : {
+
+    },
+    "Über iCloud-Schlüsselbund synchronisieren" : {
+
+    },
+    "Übergeordneter Ordner" : {
+
+    },
+    "Übernahme freigeben" : {
+
+    },
+    "Übernehmen" : {
+
+    },
+    "Übernimmt: %@" : {
+
+    },
+    "Übernommen" : {
+
+    },
+    "Übernommen: %@" : {
+
+    },
+    "Übersicht" : {
+
+    },
+    "Übersprungen" : {
+
+    },
+    "Übertragen und transkribieren" : {
+
+    },
+    "„%@“ verbunden" : {
+
+    },
+    "„git init“ für neue Ordner vorschlagen" : {
+
+    }
+  },
+  "version" : "1.0"
+}

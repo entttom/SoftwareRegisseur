@@ -1,0 +1,6 @@
+# actionlint kennt das GitHub-Preview-Image `xcode-27` noch nicht (actions/runner-images#14404).
+# Es ist ein GitHub-gehosteter Runner, kein Self-hosted-Runner; der Eintrag unterdrückt nur die Warnung.
+self-hosted-runner:
+  labels:
+    - xcode-27
+    - xcode-27-xlarge

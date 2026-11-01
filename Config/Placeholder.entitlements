@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Leere Entitlements, nur verwendet solange SR_DEVELOPMENT_TEAM der Vorlagen-Platzhalter ist (Config/Base.xcconfig). Der Build bricht dann in der Phase „Signierkonfiguration prüfen“ ab. -->
+<plist version="1.0">
+<dict/>
+</plist>

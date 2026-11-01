@@ -1,0 +1,277 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "%@ hat nicht eingecheckte Änderungen." : {
+
+    },
+    "%@ ist bereits mit Projekt %@ verknüpft." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ ist bereits mit Projekt %2$@ verknüpft."
+          }
+        }
+      }
+    },
+    "%@ wurde seit dem Vorschlag geändert; bitte neu erzeugen." : {
+
+    },
+    "Agentenanweisungen sind für dieses Projekt deaktiviert." : {
+
+    },
+    "Am Mac sind keine gültigen Stammordner freigegeben." : {
+
+    },
+    "Anderes Repository (erwartet %@, gefunden %@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Anderes Repository (erwartet %1$@, gefunden %2$@)."
+          }
+        }
+      }
+    },
+    "Auf GitHub geändert." : {
+
+    },
+    "Aufgabe %@ hat einen aktiven Agentenlauf." : {
+
+    },
+    "Aufgabe %@ ist bereits mit Issue #%lld verknüpft." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Aufgabe %1$@ ist bereits mit Issue #%2$lld verknüpft."
+          }
+        }
+      }
+    },
+    "Aufgabe %@ ist keinem Projekt zugeordnet." : {
+
+    },
+    "Aufgabe %@ ist mit keinem GitHub-Issue verknüpft." : {
+
+    },
+    "Aufgabe %@ nicht gefunden." : {
+
+    },
+    "Ausdrückliche Freigabe fehlt." : {
+
+    },
+    "Ausgeschlossen: Kontextbudget überschritten" : {
+
+    },
+    "Ausgeschlossen: liegt außerhalb des Repositorys" : {
+
+    },
+    "Ausgeschlossen: mögliche Geheimnisse (Muster „%@“)" : {
+
+    },
+    "CLAUDE.md enthält einen eigenen Software-Regisseur-Block (doppelte Regelquelle)." : {
+
+    },
+    "CLAUDE.md verweist nicht auf AGENTS.md." : {
+
+    },
+    "Das Projekt hat kein GitHub-Remote. Ein Repository kann in den Projekteinstellungen angegeben werden." : {
+
+    },
+    "Das zu verknüpfende Projekt existiert nicht." : {
+
+    },
+    "Datei nicht gefunden: %@" : {
+
+    },
+    "Datei wurde zwischenzeitlich geändert: %@" : {
+
+    },
+    "Dateifehler: %@" : {
+
+    },
+    "Datenbankfehler: %@" : {
+
+    },
+    "Der Migrationsplan enthält Kollisionen." : {
+
+    },
+    "Der Ordner existiert nicht." : {
+
+    },
+    "Der Ordner ist bereits mit einem anderen Projekt verknüpft." : {
+
+    },
+    "Der Ordner liegt in einem Repository: bitte wählen, ob das ganze Repository oder nur der Unterordner gemeint ist." : {
+
+    },
+    "Der Ordnername „%@“ ist nicht zulässig (%@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Der Ordnername „%1$@“ ist nicht zulässig (%2$@)."
+          }
+        }
+      }
+    },
+    "Der Pfad enthält ungültige Zeichen." : {
+
+    },
+    "Der Pfad liegt außerhalb der freigegebenen Stammordner." : {
+
+    },
+    "Die GitHub-CLI ist nicht angemeldet. Bitte im Terminal „gh auth login“ ausführen. (%@)" : {
+
+    },
+    "Die GitHub-CLI „gh“ ist nicht installiert. Installieren Sie sie (z. B. „brew install gh“) und melden Sie sich mit „gh auth login“ an. Lokale Funktionen bleiben unverändert nutzbar." : {
+
+    },
+    "Die GitHub-Integration ist für dieses Projekt deaktiviert." : {
+
+    },
+    "Die Request-Datei wurde außerhalb der App gelöscht." : {
+
+    },
+    "Die installierte Claude-Code-Version unterstützt keine @-Importe; CLAUDE.md bleibt unverändert." : {
+
+    },
+    "Ein Ordner mit diesem Namen existiert bereits." : {
+
+    },
+    "Entwurf ohne Ordner – später mit einem Ordner verknüpfen." : {
+
+    },
+    "Frontmatter ungültig: %@" : {
+
+    },
+    "Git ist auf diesem Mac nicht verfügbar." : {
+
+    },
+    "GitHub wurde seit dem letzten Abgleich geändert (Konflikthinweis %@)." : {
+
+    },
+    "GitHub-CLI-Aufruf fehlgeschlagen: %@" : {
+
+    },
+    "Gleichzeitig geändert: %@" : {
+
+    },
+    "Konflikt %@ nicht gefunden." : {
+
+    },
+    "Lokal und auf GitHub geändert." : {
+
+    },
+    "Markierungen des verwalteten Blocks: %@" : {
+
+    },
+    "Offener Konflikt %@ muss zuerst gelöst werden." : {
+
+    },
+    "Ordner konnte nicht angelegt werden: %@" : {
+
+    },
+    "Ordner nicht gefunden: %@" : {
+
+    },
+    "Pfad abgelehnt: %@" : {
+
+    },
+    "Pfad konnte nicht geprüft werden: %@" : {
+
+    },
+    "Pfad liegt außerhalb des Repositorys: %@" : {
+
+    },
+    "Pfade mit „..“ oder „.“ sind nicht erlaubt." : {
+
+    },
+    "Pfade mit „..“ sind nicht erlaubt." : {
+
+    },
+    "Pflichtfelder fehlen oder ungültig" : {
+
+    },
+    "Projekt %@ hat auf diesem Mac keinen Ordner." : {
+
+    },
+    "Projekt %@ nicht gefunden." : {
+
+    },
+    "Projekt konnte nicht aktualisiert werden: %@" : {
+
+    },
+    "Projekt nicht gefunden." : {
+
+    },
+    "Projekt-Richtlinie: Änderungen nur vorschlagen." : {
+
+    },
+    "Projektordner fehlt: %@" : {
+
+    },
+    "Status „%@“ während eines aktiven Agentenlaufs gesetzt." : {
+
+    },
+    "Status „rejected“ als „deprecated“ übernommen" : {
+
+    },
+    "Statuswechsel %@ → %@ nicht zulässig; Datenbankstatus bleibt" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Statuswechsel %1$@ → %2$@ nicht zulässig; Datenbankstatus bleibt"
+          }
+        }
+      }
+    },
+    "Symbolische Links sind als Projektpfad nicht erlaubt." : {
+
+    },
+    "UUID fehlt oder ungültig" : {
+
+    },
+    "UUID gehört zu einem anderen Projekt" : {
+
+    },
+    "Unerwartete Ausgabe der GitHub-CLI: %@" : {
+
+    },
+    "Ungültige Ordnerstruktur: %@" : {
+
+    },
+    "Ungültige Request-Datei %@: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ungültige Request-Datei %1$@: %2$@"
+          }
+        }
+      }
+    },
+    "Unzulässiger Statuswechsel %@ → %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Unzulässiger Statuswechsel %1$@ → %2$@."
+          }
+        }
+      }
+    },
+    "Vorschlag %@ nicht gefunden oder bereits angewendet." : {
+
+    },
+    "Ziel existiert bereits und wird nicht überschrieben: %@" : {
+
+    },
+    "„git init“ wurde ohne ausdrückliche Zustimmung angefordert." : {
+
+    }
+  },
+  "version" : "1.0"
+}

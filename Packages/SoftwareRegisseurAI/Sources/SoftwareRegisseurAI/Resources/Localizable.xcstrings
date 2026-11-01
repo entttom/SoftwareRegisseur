@@ -1,0 +1,145 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "API-Schlüssel ungültig. Bitte den Schlüssel prüfen oder neu eintragen." : {
+
+    },
+    "Akzeptanzkriterien ergänzen" : {
+
+    },
+    "Antwort konnte nicht gelesen werden" : {
+
+    },
+    "Audiodatei zu groß (%@, erlaubt %@). Die Aufnahme wird in Abschnitte geteilt." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Audiodatei zu groß (%1$@, erlaubt %2$@). Die Aufnahme wird in Abschnitte geteilt."
+          }
+        }
+      }
+    },
+    "Audioformat „%@“ wird vom Anbieter nicht unterstützt." : {
+
+    },
+    "Aufnahme ohne Dauer oder Inhalt" : {
+
+    },
+    "Ausführlich" : {
+
+    },
+    "Ausgeschlossen: Kontextbudget überschritten" : {
+
+    },
+    "Ausgeschlossen: mögliche Geheimnisse (Muster „%@“)" : {
+
+    },
+    "Das Modell hat die Antwort abgelehnt." : {
+
+    },
+    "Das Modell „%@“ ist für diesen Schlüssel nicht gelistet." : {
+
+    },
+    "Das gewählte Modell ist für diesen Schlüssel nicht verfügbar." : {
+
+    },
+    "Das gewählte Modell unterstützt diese Funktion nicht." : {
+
+    },
+    "Dateigröße unbekannt" : {
+
+    },
+    "Der Anbieter ist derzeit überlastet. Bitte später erneut versuchen." : {
+
+    },
+    "Der Anbieter ist überlastet – erneut versuchen ab %@." : {
+
+    },
+    "Der Schlüsselbund ist gesperrt. Bitte das Gerät entsperren und erneut versuchen." : {
+
+    },
+    "Die Anfrage ist zu groß für den Anbieter. Bitte Kontext verkleinern." : {
+
+    },
+    "Die Anfrage wurde abgebrochen." : {
+
+    },
+    "Die Antwort des Modells ist unvollständig (Tokenlimit erreicht)." : {
+
+    },
+    "Entwurf ohne Titel" : {
+
+    },
+    "Genau ein Entwurf erwartet, %lld erhalten" : {
+
+    },
+    "Gesprächsverlauf hat sich geändert – bitte erneut vorbereiten" : {
+
+    },
+    "Guthaben oder Ausgabenlimit beim Anbieter erschöpft. Bitte im Anbieterkonto prüfen; es wird nicht automatisch wiederholt." : {
+
+    },
+    "In Aufgaben aufteilen" : {
+
+    },
+    "Kein API-Schlüssel hinterlegt. Bitte in den Einstellungen einen Schlüssel eintragen." : {
+
+    },
+    "Keine Berechtigung für diese Anfrage." : {
+
+    },
+    "Keine Internetverbindung. Die Daten bleiben erhalten; bitte später erneut versuchen." : {
+
+    },
+    "Kontingent erschöpft – bitte später erneut versuchen." : {
+
+    },
+    "Kontingent erschöpft – erneut versuchen ab %@." : {
+
+    },
+    "Kurz ausarbeiten" : {
+
+    },
+    "Modell „%@“ ist für diesen Schlüssel nicht verfügbar." : {
+
+    },
+    "Nachricht ist leer" : {
+
+    },
+    "Netzwerkfehler." : {
+
+    },
+    "Notiz ist leer" : {
+
+    },
+    "Segmentierung ergab keine Abschnitte" : {
+
+    },
+    "Serverfehler beim Anbieter (HTTP %lld). Bitte später erneut versuchen." : {
+
+    },
+    "Technische Details" : {
+
+    },
+    "Transkriptionshinweis „%@“ enthält unzulässige Zeichen (<, > oder Zeilenumbruch)." : {
+
+    },
+    "Unerwartete Antwort des Anbieters." : {
+
+    },
+    "Ungültige Anfrage." : {
+
+    },
+    "Ungültige URL" : {
+
+    },
+    "Zeitüberschreitung bei der Anfrage an den Anbieter." : {
+
+    },
+    "geschätzt" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,176 @@
+# CI für Software Regisseur (Pflichtenheft T und M1, ADR-0013, ADR-0022).
+#
+# - Jedes Swift Package unter Packages/ wird einzeln mit `swift test` geprüft (dynamische Matrix,
+#   neue Pakete werden automatisch aufgenommen).
+# - Das Xcode-Projekt wird mit XcodeGen aus project.yml erzeugt; beide Apps werden unsigniert
+#   gebaut (Scripts/build.sh inkl. Bundle-Layout-Prüfung, ADR-0020) und die Testtargets des
+#   macOS-Schemas laufen mit `xcodebuild test`.
+# - Keine Secrets: Config/Local.xcconfig entsteht aus der Vorlage mit Platzhaltern. Mit
+#   CODE_SIGNING_ALLOWED=NO lässt Scripts/check-signing-config.sh den Build durch.
+#
+# Runner: Label `xcode-27` (GitHub-Image „macOS 27 mit Xcode 27“, Status Preview, Stand
+# 2026-10-30, actions/runner-images#14404). Xcode 27.0 (27A266a) wird über DEVELOPER_DIR fest
+# gewählt, passend zur lokalen Entwicklungsumgebung (ADR-0013) und `xcodeVersion` in project.yml.
+# Drittanbieter-Actions sind auf volle Commit-SHAs gepinnt (Version im Kommentar).
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  XCODE_VERSION: "27.0"
+  DEVELOPER_DIR: /Applications/Xcode_27.0.app/Contents/Developer
+
+jobs:
+  discover-packages:
+    name: Swift Packages ermitteln
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      packages: ${{ steps.list.outputs.packages }}
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Pakete mit Package.swift auflisten
+        id: list
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          names=()
+          for manifest in Packages/*/Package.swift; do
+            names+=("$(basename "$(dirname "${manifest}")")")
+          done
+          packages="$(printf '%s\n' "${names[@]}" | sed '/^$/d' | jq -R . | jq -cs .)"
+          if [ "${packages}" = "[]" ]; then
+            echo "::error::Keine Swift Packages unter Packages/ gefunden."
+            exit 1
+          fi
+          echo "packages=${packages}" >> "${GITHUB_OUTPUT}"
+          echo "Gefundene Pakete: ${packages}"
+
+  package-tests:
+    name: swift test – ${{ matrix.package }}
+    needs: discover-packages
+    runs-on: xcode-27
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        package: ${{ fromJSON(needs.discover-packages.outputs.packages) }}
+    defaults:
+      run:
+        working-directory: Packages/${{ matrix.package }}
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Xcode prüfen
+        run: |
+          xcodebuild -version
+          swift --version
+
+      # Schlüssel: Paket + Xcode-Version + Package.resolved/Package.swift. Lokale Abhängigkeiten
+      # (andere Pakete unter Packages/) werden ohnehin neu gebaut, weil der Checkout neue mtimes setzt.
+      - name: .build-Cache wiederherstellen
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: Packages/${{ matrix.package }}/.build
+          key: spm-${{ runner.os }}-xcode${{ env.XCODE_VERSION }}-${{ matrix.package }}-${{ hashFiles(format('Packages/{0}/Package.resolved', matrix.package), format('Packages/{0}/Package.swift', matrix.package)) }}
+          restore-keys: |
+            spm-${{ runner.os }}-xcode${{ env.XCODE_VERSION }}-${{ matrix.package }}-
+
+      - name: swift test
+        run: swift test
+
+  apps:
+    name: Apps bauen und macOS-Tests
+    runs-on: xcode-27
+    timeout-minutes: 60
+    env:
+      DERIVED_DATA_PATH: ${{ github.workspace }}/DerivedData
+      CONFIGURATION: Debug
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Xcode prüfen
+        run: |
+          xcodebuild -version
+          xcrun --sdk iphonesimulator --show-sdk-version
+
+      - name: XcodeGen installieren
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: "1"
+          HOMEBREW_NO_INSTALL_CLEANUP: "1"
+        run: |
+          brew install xcodegen
+          xcodegen --version
+
+      # ADR-0013: CI nutzt bewusst die Vorlagenwerte (Platzhalter-Team XXXXXXXXXX). Config/Base.xcconfig
+      # stellt dafür auf Ad-hoc-Signatur um, und check-signing-config.sh endet bei
+      # CODE_SIGNING_ALLOWED=NO sofort erfolgreich. Echte IDs oder Schlüssel gelangen nie in die CI.
+      - name: Config/Local.xcconfig aus Vorlage erzeugen (unsigniert)
+        run: |
+          set -euo pipefail
+          if [ -e Config/Local.xcconfig ]; then
+            echo "::error::Config/Local.xcconfig ist eingecheckt – verletzt ADR-0013."
+            exit 1
+          fi
+          cp Config/Local.xcconfig.template Config/Local.xcconfig
+          if ! grep -Eq '^SR_DEVELOPMENT_TEAM[[:space:]]*=[[:space:]]*XXXXXXXXXX[[:space:]]*$' Config/Local.xcconfig; then
+            echo "::error::Vorlage enthält nicht mehr den Team-Platzhalter XXXXXXXXXX (Config/Base.xcconfig erwartet ihn für unsignierte Builds)."
+            exit 1
+          fi
+
+      - name: SwiftPM-Abhängigkeiten aus dem Cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: DerivedData/SourcePackages
+          key: xcode-spm-${{ runner.os }}-xcode${{ env.XCODE_VERSION }}-${{ hashFiles('project.yml', 'Packages/*/Package.swift', 'Packages/*/Package.resolved') }}
+          restore-keys: |
+            xcode-spm-${{ runner.os }}-xcode${{ env.XCODE_VERSION }}-
+
+      # Erzeugt das Projekt (xcodegen generate), baut macOS-App inkl. Agent Service und die iOS-App
+      # für den Simulator mit CODE_SIGNING_ALLOWED=NO und prüft das Bundle-Layout (ADR-0020).
+      - name: Beide Apps unsigniert bauen (Scripts/build.sh)
+        run: Scripts/build.sh
+
+      - name: xcodebuild test – SoftwareRegisseur-macOS
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project SoftwareRegisseur.xcodeproj \
+            -scheme SoftwareRegisseur-macOS \
+            -configuration Debug \
+            -destination "platform=macOS" \
+            -derivedDataPath "${DERIVED_DATA_PATH}" \
+            -resultBundlePath "${DERIVED_DATA_PATH}/ci/SoftwareRegisseur-macOS-Tests.xcresult" \
+            test CODE_SIGNING_ALLOWED=NO
+
+      - name: Testergebnisse hochladen
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: SoftwareRegisseur-macOS-Tests.xcresult
+          path: DerivedData/ci/SoftwareRegisseur-macOS-Tests.xcresult
+          if-no-files-found: ignore
+          retention-days: 7

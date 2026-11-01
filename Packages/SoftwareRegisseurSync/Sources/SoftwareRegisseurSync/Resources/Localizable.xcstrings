@@ -1,0 +1,114 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "%lld Änderung(en) enthalten vermutlich Zugangsdaten und werden nicht synchronisiert." : {
+
+    },
+    "%lld Datensatz/Datensätze aus iCloud konnten nicht gelesen werden." : {
+
+    },
+    "%lld Synchronisierungskonflikte warten auf Ihre Entscheidung." : {
+
+    },
+    "1 Synchronisierungskonflikt wartet auf Ihre Entscheidung." : {
+
+    },
+    "Das Löschen der iCloud-Daten ist noch nicht abgeschlossen. Die Synchronisierung bleibt pausiert, bis iCloud das Löschen bestätigt hat. Bitte erneut versuchen, sobald eine Verbindung besteht." : {
+
+    },
+    "Der iCloud-Account ist vorübergehend nicht verfügbar." : {
+
+    },
+    "Der iCloud-Account wurde gewechselt. Bitte bestätigen Sie zuerst den neuen Account." : {
+
+    },
+    "Der iCloud-Account wurde gewechselt. Die Synchronisierung ist pausiert, bis Sie bestätigen, mit dem neuen Account fortzufahren. Lokale Daten bleiben erhalten." : {
+
+    },
+    "Der iCloud-Datenbereich fehlt und wird neu angelegt." : {
+
+    },
+    "Der iCloud-Datenbereich von Software Regisseur wurde gelöscht. Lokale Daten bleiben erhalten; bitte entscheiden Sie, ob sie erneut hochgeladen werden sollen." : {
+
+    },
+    "Der iCloud-Speicher ist voll. Neue Änderungen bleiben lokal, bis wieder Speicher frei ist." : {
+
+    },
+    "Der Synchronisierungsstand ist abgelaufen; alle Daten werden neu abgeglichen." : {
+
+    },
+    "Der Synchronisierungsstand konnte nicht gespeichert werden: %@" : {
+
+    },
+    "Die Änderung enthält vermutlich Zugangsdaten und wird nicht synchronisiert. Schlüssel gehören in den Schlüsselbund." : {
+
+    },
+    "Die iCloud-Daten konnten noch nicht gelöscht werden: %@ Die Synchronisierung bleibt pausiert." : {
+
+    },
+    "Die iCloud-Daten von Software Regisseur wurden in den Einstellungen gelöscht. Lokale Daten bleiben erhalten; bitte entscheiden Sie, ob sie erneut hochgeladen werden sollen." : {
+
+    },
+    "Die iCloud-Synchronisierung ist auf diesem Gerät nicht aktiv. iCloud-Daten können hier nicht gelöscht werden." : {
+
+    },
+    "Die Löschanforderung passt nicht zum iCloud-Datenbereich dieser App. Es wurde nichts gelöscht." : {
+
+    },
+    "Die Synchronisierung wurde abgebrochen." : {
+
+    },
+    "Die verschlüsselten iCloud-Daten wurden zurückgesetzt. Lokale Daten bleiben erhalten; bitte entscheiden Sie, ob sie erneut hochgeladen werden sollen." : {
+
+    },
+    "Dieser Datentyp bleibt nur auf diesem Gerät." : {
+
+    },
+    "Ein anderes Gerät nutzt eine neuere Version von Software Regisseur. Bitte aktualisieren Sie diese App." : {
+
+    },
+    "Ein Datensatz aus iCloud ist unvollständig und wurde übersprungen." : {
+
+    },
+    "Ein Datensatz wurde gleichzeitig auf einem anderen Gerät geändert." : {
+
+    },
+    "Gerade läuft eine Synchronisierung. Bitte versuchen Sie es in einem Moment erneut." : {
+
+    },
+    "iCloud drosselt Anfragen." : {
+
+    },
+    "iCloud hat die Änderungen abgelehnt. Möglicherweise passt das iCloud-Datenschema nicht zu dieser App-Version; Änderungen bleiben lokal gespeichert." : {
+
+    },
+    "iCloud ist vorübergehend nicht erreichbar." : {
+
+    },
+    "iCloud-Synchronisierung fehlgeschlagen (Code %lld)." : {
+
+    },
+    "Ihre iCloud-Daten von Software Regisseur wurden auf Ihren Wunsch gelöscht. Die Synchronisierung ist pausiert; lokale Daten bleiben auf diesem Gerät. Mit „Wieder mit iCloud synchronisieren“ werden sie erneut hochgeladen." : {
+
+    },
+    "Kein iCloud-Account angemeldet. Bitte in den Einstellungen bei iCloud anmelden; lokale Daten bleiben erhalten." : {
+
+    },
+    "Kein iCloud-Account angemeldet. Die Synchronisierung ist pausiert; lokale Daten bleiben erhalten." : {
+
+    },
+    "Keine Verbindung zu iCloud. Änderungen bleiben lokal gespeichert und werden beim nächsten Abgleich übertragen." : {
+
+    },
+    "Nächster Versuch in %lld Sekunden." : {
+
+    },
+    "Synchronisierung fehlgeschlagen: %@" : {
+
+    },
+    "Zu viele Änderungen in einer Anfrage; sie werden in kleineren Paketen übertragen." : {
+
+    }
+  },
+  "version" : "1.0"
+}

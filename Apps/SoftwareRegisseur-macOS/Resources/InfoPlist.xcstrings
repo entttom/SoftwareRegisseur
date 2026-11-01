@@ -1,0 +1,30 @@
+{
+  "sourceLanguage" : "de-AT",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Bundle display name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Software Regisseur"
+          }
+        }
+      }
+    },
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "SoftwareRegisseur"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,17 @@
+// Vorlage für lokale Signier- und CloudKit-Werte (ADR-0013).
+// Kopieren nach Config/Local.xcconfig und ausfüllen. Local.xcconfig wird nie eingecheckt.
+
+// Apple Developer Team ID (10 Zeichen, developer.apple.com → Membership)
+SR_DEVELOPMENT_TEAM = XXXXXXXXXX
+
+// Umgekehrter Domain-Präfix für alle Bundle-IDs, z. B. at.beispiel
+SR_BUNDLE_ID_PREFIX = com.example
+
+// CloudKit-Container, muss mit "iCloud." beginnen
+SR_CLOUDKIT_CONTAINER = iCloud.com.example.SoftwareRegisseur
+
+// Sparkle-Updates (ADR-0017): Appcast in GitHub Releases eines öffentlichen Repos.
+// "//" muss in xcconfig als "/$()/" geschrieben werden.
+SR_SPARKLE_FEED_URL = https:/$()/github.com/OWNER/REPO/releases/latest/download/appcast.xml
+// Öffentlicher EdDSA-Schlüssel (generate_keys aus Sparkle); der private bleibt im Keychain.
+SR_SPARKLE_PUBLIC_ED_KEY = PUBLIC_KEY_BASE64

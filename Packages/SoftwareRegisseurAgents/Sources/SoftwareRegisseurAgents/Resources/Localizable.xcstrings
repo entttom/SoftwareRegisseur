@@ -1,0 +1,159 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "%@: %@ (%lld)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@: %2$@ (%3$lld)"
+          }
+        }
+      }
+    },
+    "Agent ist nicht einsatzbereit." : {
+
+    },
+    "Agentenprozess unerwartet beendet (Exit %@, Signal %@). %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Agentenprozess unerwartet beendet (Exit %1$@, Signal %2$@). %3$@"
+          }
+        }
+      }
+    },
+    "Claude Code %@ ist älter als die verifizierte Version %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Claude Code %1$@ ist älter als die verifizierte Version %2$@."
+          }
+        }
+      }
+    },
+    "Claude Code %@ kennt %@ nicht. Ohne diese Optionen würde die Projektkonfiguration des Repositorys (Hooks, Freigaben, MCP-Server) geladen; bitte Claude Code aktualisieren." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Claude Code %1$@ kennt %2$@ nicht. Ohne diese Optionen würde die Projektkonfiguration des Repositorys (Hooks, Freigaben, MCP-Server) geladen; bitte Claude Code aktualisieren."
+          }
+        }
+      }
+    },
+    "Claude Code nutzt den Anbieter „%@“; Remote Control ist damit nicht möglich." : {
+
+    },
+    "Codex %@ ist älter als die verifizierte Version %@; bitte aktualisieren." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Codex %1$@ ist älter als die verifizierte Version %2$@; bitte aktualisieren."
+          }
+        }
+      }
+    },
+    "Codex hat von %@ auf %@ umgeleitet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Codex hat von %1$@ auf %2$@ umgeleitet"
+          }
+        }
+      }
+    },
+    "Codex ist als npm-Paket installiert, aber `node` wurde in den Suchpfaden nicht gefunden." : {
+
+    },
+    "Codex ist nicht angemeldet (`codex login`)." : {
+
+    },
+    "Codex meldet kein Standardmodell; bitte ein Modell ausdrücklich wählen." : {
+
+    },
+    "Der Adapter für %@ ist noch nicht vollständig implementiert." : {
+
+    },
+    "Effort-Stufe ist im Headless-Modus nicht bestätigbar." : {
+
+    },
+    "Entscheidung %@ wird von diesem Agenten nicht unterstützt" : {
+
+    },
+    "Konfigurierte Werte, keine Ausführungs-Telemetrie (Codex-Schema)." : {
+
+    },
+    "Konfigurierter Pfad %@ ist nicht ausführbar (%@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Konfigurierter Pfad %1$@ ist nicht ausführbar (%2$@)."
+          }
+        }
+      }
+    },
+    "Mobile Weiterführung in der ChatGPT-App ist nicht verifiziert; Status und Freigaben laufen über Software Regisseur (ADR-0010)." : {
+
+    },
+    "Modellkatalog (initialize) nicht abrufbar; nur Anbieterstandard möglich, Jobs mit explizitem Modell werden blockiert. %@" : {
+
+    },
+    "Modellkatalog über app-server nicht abrufbar: %@" : {
+
+    },
+    "Remote Control ist noch nicht als Startmodus freigegeben (ADR-0010 proposed, reale Tests T3–T6 ausstehend); Jobs laufen headless mit Freigaben über Software Regisseur." : {
+
+    },
+    "Sitzung ist bereits beendet" : {
+
+    },
+    "Start fehlgeschlagen: %@" : {
+
+    },
+    "Startparameter nicht bestätigt: %@" : {
+
+    },
+    "Startplan für %@, erwartet %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Startplan für %1$@, erwartet %2$@"
+          }
+        }
+      }
+    },
+    "Unbekannte oder bereits beantwortete Freigabe %@" : {
+
+    },
+    "Ungültige Antwort auf %@: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ungültige Antwort auf %1$@: %2$@"
+          }
+        }
+      }
+    },
+    "Ungültiges Arbeitsverzeichnis: %@" : {
+
+    },
+    "Verbindung zum Agenten geschlossen" : {
+
+    },
+    "Von Codex bestätigte Konfiguration (keine Pro-Turn-Telemetrie)." : {
+
+    },
+    "Zeitüberschreitung bei %@" : {
+
+    }
+  },
+  "version" : "1.0"
+}

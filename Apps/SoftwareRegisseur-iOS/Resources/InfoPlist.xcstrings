@@ -1,0 +1,54 @@
+{
+  "sourceLanguage" : "de-AT",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Bundle display name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Software Regisseur"
+          }
+        }
+      }
+    },
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "SoftwareRegisseur"
+          }
+        }
+      }
+    },
+    "NSMicrophoneUsageDescription" : {
+      "comment" : "Privacy - Microphone Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Software Regisseur verwendet das Mikrofon, um gesprochene Ideen und Notizen aufzunehmen."
+          }
+        }
+      }
+    },
+    "NSSpeechRecognitionUsageDescription" : {
+      "comment" : "Privacy - Speech Recognition Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Software Regisseur wandelt Sprachaufnahmen mit der Spracherkennung von Apple in Text um, damit Sie Ideen diktieren können."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

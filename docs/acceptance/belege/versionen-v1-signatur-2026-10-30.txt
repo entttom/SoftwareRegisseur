@@ -1,0 +1,2 @@
+Authority=Apple Development: Thomas Entner (5YM43QEBQA)
+TeamIdentifier=<SR_DEVELOPMENT_TEAM>

@@ -1,0 +1,33 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "Der App fehlt die Berechtigung für den Schlüsselbund (Signierung prüfen)." : {
+
+    },
+    "Der Schlüsselbund ist derzeit nicht verfügbar." : {
+
+    },
+    "Der Schlüsselbund ist gesperrt. Bitte das Gerät entsperren und erneut versuchen." : {
+
+    },
+    "Der Schlüsselbund-Eintrag existiert bereits." : {
+
+    },
+    "Der gespeicherte Schlüssel ist beschädigt." : {
+
+    },
+    "Schlüsselbund-Fehler (%d)." : {
+
+    },
+    "Ungültiger Schlüsselbund-Eintrag." : {
+
+    },
+    "Zugriff auf den Schlüsselbund wurde verweigert." : {
+
+    },
+    "iCloud-Schlüsselbund-Synchronisierung ist in dieser Umgebung nicht möglich. Bitte den Schlüssel gerätebezogen speichern." : {
+
+    }
+  },
+  "version" : "1.0"
+}

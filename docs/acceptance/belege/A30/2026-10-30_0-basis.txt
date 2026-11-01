@@ -1,0 +1,51 @@
+### ~/Developer/SR-Testprojekte/alpha-app-wt/
+refs/heads/feature/wt deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+refs/heads/main deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+refs/remotes/origin/HEAD deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+refs/remotes/origin/main deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+worktree ~/Developer/SR-Testprojekte/alpha-app
+HEAD deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+branch refs/heads/main
+
+worktree ~/Developer/SR-Testprojekte/alpha-app-wt
+HEAD deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+branch refs/heads/feature/wt
+
+deab69c HEAD@{2026-10-30 19:51:31 +0100}: reset: moving to HEAD
+### ~/Developer/SR-Testprojekte/alpha-app/
+refs/heads/feature/wt deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+refs/heads/main deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+refs/remotes/origin/HEAD deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+refs/remotes/origin/main deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+worktree ~/Developer/SR-Testprojekte/alpha-app
+HEAD deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+branch refs/heads/main
+
+worktree ~/Developer/SR-Testprojekte/alpha-app-wt
+HEAD deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+branch refs/heads/feature/wt
+
+### ~/Developer/SR-Testprojekte/beta-service/
+refs/heads/main ea3a53c45b9f084f60d85a786f95627e691d4604
+refs/remotes/origin/HEAD ea3a53c45b9f084f60d85a786f95627e691d4604
+refs/remotes/origin/main ea3a53c45b9f084f60d85a786f95627e691d4604
+worktree ~/Developer/SR-Testprojekte/beta-service
+HEAD ea3a53c45b9f084f60d85a786f95627e691d4604
+branch refs/heads/main
+
+### ~/Developer/SR-Testprojekte/gamma-lib/
+refs/heads/main dcbae97d56c4e06e0b657e2dc8a43030ec68faeb
+worktree ~/Developer/SR-Testprojekte/gamma-lib
+HEAD dcbae97d56c4e06e0b657e2dc8a43030ec68faeb
+branch refs/heads/main
+
+### ~/Developer/SR-Testprojekte/gruppe/epsilon-repo/
+refs/heads/main 4e121808d88f04b9f9c0cb62ca3d53d504b6f24d
+worktree ~/Developer/SR-Testprojekte/gruppe/epsilon-repo
+HEAD 4e121808d88f04b9f9c0cb62ca3d53d504b6f24d
+branch refs/heads/main
+
+### REMOTE ~/Developer/SR-Testprojekte.remotes/alpha-app.git
+refs/heads/main deab69c2bc21b2d88f79c5a9a9ea613a7bf56eaa
+### REMOTE ~/Developer/SR-Testprojekte.remotes/beta-service.git
+refs/heads/main ea3a53c45b9f084f60d85a786f95627e691d4604

@@ -1,0 +1,53 @@
+// Gemeinsame Build-Einstellungen für alle Targets (ADR-0013).
+//
+// Local.xcconfig ist absichtlich ein Pflicht-Include: Fehlt die Datei, bricht der Build ab.
+// Abhilfe: cp Config/Local.xcconfig.template Config/Local.xcconfig und Werte eintragen.
+#include "Local.xcconfig"
+
+// Signierung: Team kommt ausschließlich aus Local.xcconfig, nie aus dem Projekt (Q3).
+DEVELOPMENT_TEAM = $(SR_DEVELOPMENT_TEAM)
+// Solange SR_DEVELOPMENT_TEAM noch der Vorlagen-Platzhalter ist, würde Xcode schon vor jeder
+// Build-Phase mit einem englischen Provisioning-Fehler abbrechen. Deshalb wird für genau diesen
+// Fall auf manuelle Ad-hoc-Signatur umgestellt; die Build-Phase „Signierkonfiguration prüfen“
+// (Scripts/check-signing-config.sh) bricht den Build dann mit deutscher Erklärung ab.
+// Mit echter Team-ID greift der Default: automatische Signierung mit „Apple Development“.
+SR_PLACEHOLDER_SIGN_STYLE_XXXXXXXXXX = Manual
+SR_PLACEHOLDER_SIGN_IDENTITY_XXXXXXXXXX = -
+// Leere Entitlements nur im Platzhalterfall, sonst verlangt Xcode vorab ein Provisioning-Profil (project.yml: CODE_SIGN_ENTITLEMENTS).
+SR_PLACEHOLDER_ENTITLEMENTS_XXXXXXXXXX = Config/Placeholder.entitlements
+CODE_SIGN_STYLE = $(SR_PLACEHOLDER_SIGN_STYLE_$(SR_DEVELOPMENT_TEAM):default=Automatic)
+CODE_SIGN_IDENTITY = $(SR_PLACEHOLDER_SIGN_IDENTITY_$(SR_DEVELOPMENT_TEAM):default=Apple Development)
+
+// Versionen (Q3: nachvollziehbare Versionsnummern)
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1
+
+// Mindestversionen (ADR-0013)
+IPHONEOS_DEPLOYMENT_TARGET = 26.0
+MACOSX_DEPLOYMENT_TARGET = 26.0
+
+// Swift 6 mit vollständiger Concurrency-Prüfung
+SWIFT_VERSION = 6.0
+SWIFT_STRICT_CONCURRENCY = complete
+SWIFT_EMIT_LOC_STRINGS = YES
+LOCALIZATION_PREFERS_STRING_CATALOGS = YES
+ENABLE_USER_SCRIPT_SANDBOXING = YES
+
+// Abgeleitete Kennungen – nur hier definiert, überall per Build-Variable referenziert.
+SR_IOS_BUNDLE_ID = $(SR_BUNDLE_ID_PREFIX).SoftwareRegisseur
+SR_MAC_BUNDLE_ID = $(SR_BUNDLE_ID_PREFIX).SoftwareRegisseur.Mac
+SR_AGENT_BUNDLE_ID = $(SR_MAC_BUNDLE_ID).AgentService
+SR_AGENT_PRODUCT_NAME = SoftwareRegisseurAgentService
+
+// macOS-App-Group mit Team-ID-Präfix (UI + Agent Service, ADR-0019/0020).
+SR_APP_GROUP_MAC = $(SR_DEVELOPMENT_TEAM).$(SR_BUNDLE_ID_PREFIX).SoftwareRegisseur
+// Muss ServiceEndpoint.machServiceSuffix ("agent") im Paket SoftwareRegisseurIPC entsprechen.
+SR_AGENT_MACH_SERVICE = $(SR_APP_GROUP_MAC).agent
+// launchd-Plist in Contents/Library/LaunchAgents, Name für SMAppService.agent(plistName:)
+SR_AGENT_LAUNCHD_PLIST_NAME = $(SR_AGENT_BUNDLE_ID).plist
+
+// Keychain: gemeinsame Gruppe für opt-in iCloud-Schlüsselbund (Recherche §7.3).
+SR_KEYCHAIN_SHARED_GROUP = $(SR_DEVELOPMENT_TEAM).$(SR_BUNDLE_ID_PREFIX).SoftwareRegisseur.shared-keys
+
+// Platzhalter der Vorlage, gegen den die Signierprüfung vergleicht.
+SR_TEMPLATE_TEAM_PLACEHOLDER = XXXXXXXXXX

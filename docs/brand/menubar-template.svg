@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
+  <!-- Template-Bild für die Menüleiste: 16 pt, gezeichnet auf dem @2x-Raster (1 Einheit = 0,5 pt) -->
+  <path fill="#000" d="M2 2H10V5H5V10H2ZM22 2H30V10H27V5H22ZM30 22V30H22V27H27V22ZM10 30H2V22H5V27H10Z"/>
+  <path fill="#000" fill-rule="evenodd" d="M9 23V9H17C20.3 9 22 10.8 22 13.5C22 15.6 20.9 17.1 19.1 17.7L22.5 23H19L16 18H12V23ZM12 12V15H16.6C18.1 15 18.9 14.5 18.9 13.5C18.9 12.5 18.1 12 16.6 12Z"/>
+</svg>

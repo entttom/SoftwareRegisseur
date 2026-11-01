@@ -1,0 +1,3220 @@
+{
+  "sourceLanguage" : "de-AT",
+  "strings" : {
+    "%@ (%lld)" : {
+
+    },
+    "%@ entfernen" : {
+
+    },
+    "%@ ist nicht einsatzbereit (Installation oder Anmeldung prüfen)." : {
+
+    },
+    "%@ mitsenden (synchronisierte Projektdaten)" : {
+
+    },
+    "%@ wurde auf diesem Mac nicht erkannt." : {
+
+    },
+    "%@ wurde auf diesem Mac nicht erkannt; Modell/Stufe können nicht geprüft werden." : {
+
+    },
+    "%@ wurde auf diesem Mac nicht erkannt; ohne aktuelle Fähigkeiten ist keine Auswahl möglich." : {
+
+    },
+    "%@ · %@" : {
+
+    },
+    "%@ · %lld Dateien · +%lld −%lld" : {
+
+    },
+    "%@ · angelegt %@ · geändert %@ · Revision %lld" : {
+
+    },
+    "%@ · erkannt %@" : {
+
+    },
+    "%@ ändern" : {
+
+    },
+    "%@ – nicht einsatzbereit" : {
+
+    },
+    "%@: %@" : {
+
+    },
+    "%lld" : {
+
+    },
+    "%lld Dateien · +%lld −%lld" : {
+
+    },
+    "%lld Einträge" : {
+
+    },
+    "%lld Einträge gelöscht" : {
+
+    },
+    "%lld Jobs gleichzeitig" : {
+
+    },
+    "%lld Ordner · %lld Projekte" : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld Ordner · %2$lld Projekte"
+          }
+        }
+      }
+    },
+    "%lld Projekte nicht erreichbar." : {
+
+    },
+    "%lld Zeichen" : {
+
+    },
+    "%lld aktiv" : {
+
+    },
+    "%lld aktive Agenten" : {
+
+    },
+    "%lld bereit · %lld nicht erreichbar · %lld mit Hinweisen · %lld Einrichtung ausstehend" : {
+
+    },
+    "%lld bestanden · %lld fehlgeschlagen · %lld übersprungen · %lld nicht ausgeführt" : {
+
+    },
+    "%lld blockiert · %lld fehlgeschlagen" : {
+
+    },
+    "%lld fehlgeschlagen" : {
+
+    },
+    "%lld geschwärzt" : {
+
+    },
+    "%lld min" : {
+
+    },
+    "%lld offene Freigaben" : {
+
+    },
+    "%lld waren schon entfernt" : {
+
+    },
+    "%lld wartend · %lld geplant" : {
+
+    },
+    "%lld zur Review" : {
+
+    },
+    "%lld Änderungen ausstehend" : {
+
+    },
+    "(gelöscht)" : {
+
+    },
+    "(nicht bekannt)" : {
+
+    },
+    "(nicht vorhanden)" : {
+
+    },
+    "ADR auswählen" : {
+
+    },
+    "ADR-%@ als Entwurf angelegt: %@. Es wurde nichts committet." : {
+
+    },
+    "ADR-Entwurf anlegen" : {
+
+    },
+    "ADR-Index" : {
+
+    },
+    "ADR-Ordner" : {
+
+    },
+    "ADRs" : {
+
+    },
+    "ADRs werden je Projekt verwaltet." : {
+
+    },
+    "AGENTS.md / CLAUDE.md" : {
+
+    },
+    "API-Schlüssel der KI-Anbieter" : {
+
+    },
+    "API-Schlüssel für KI-Ausarbeitung und „Mit KI besprechen“ am Mac" : {
+
+    },
+    "API-Schlüssel löschen" : {
+
+    },
+    "API-Schlüssel speichern" : {
+
+    },
+    "Abbrechen" : {
+
+    },
+    "Abgebrochen" : {
+
+    },
+    "Abgelehnt" : {
+
+    },
+    "Abgelehnte Berechtigungen" : {
+
+    },
+    "Abgeschlossen" : {
+
+    },
+    "Abhängigkeiten" : {
+
+    },
+    "Abhängigkeiten (%lld)" : {
+
+    },
+    "Ablehnen" : {
+
+    },
+    "Abweichung auf GitHub" : {
+
+    },
+    "Account gewechselt" : {
+
+    },
+    "Achtung: Für diesen Build ist keine gemeinsame Schlüsselbund-Gruppe konfiguriert (unsignierter Build oder Platzhalter-Team). Der Dienst kann so gespeicherte Schlüssel nicht lesen." : {
+
+    },
+    "Agent" : {
+
+    },
+    "Agent, Modell und Denkstufe" : {
+
+    },
+    "Agent, Modell und Stufe wählen" : {
+
+    },
+    "Agenten" : {
+
+    },
+    "Agenten & GitHub" : {
+
+    },
+    "Agenten aktiv" : {
+
+    },
+    "Agenten neu erkennen" : {
+
+    },
+    "Agenten werden erkannt …" : {
+
+    },
+    "Agentenanweisungen" : {
+
+    },
+    "Agentenerkennung alle" : {
+
+    },
+    "Agentenfilter entfernen" : {
+
+    },
+    "Agentenjob angefordert" : {
+
+    },
+    "Agentenversion" : {
+
+    },
+    "Agentenübersicht" : {
+
+    },
+    "Aktiv" : {
+
+    },
+    "Aktive Agenten" : {
+
+    },
+    "Aktive Läufe" : {
+
+    },
+    "Aktive Sperren" : {
+
+    },
+    "Aktiviert: Das Menüleistensymbol erscheint nach jeder Anmeldung, ohne Hauptfenster." : {
+
+    },
+    "Aktiviert: Der Dienst startet bei jeder Anmeldung." : {
+
+    },
+    "Aktueller Request-Inhalt" : {
+
+    },
+    "Akzeptanzkriterien" : {
+
+    },
+    "Akzeptanzkriterien ergänzen" : {
+
+    },
+    "Alle" : {
+
+    },
+    "Alle Ereignisse" : {
+
+    },
+    "Alle Labels" : {
+
+    },
+    "Alle Ordner müssen einen Namen haben." : {
+
+    },
+    "Alle Projekte" : {
+
+    },
+    "Alle Status" : {
+
+    },
+    "Alle lokalen Daten des Dienstes" : {
+
+    },
+    "Alle lokalen Daten werden in den neuen iCloud-Account hochgeladen." : {
+
+    },
+    "Alles bereit" : {
+
+    },
+    "Alles lässt sich später in den Einstellungen ändern." : {
+
+    },
+    "Als Stammordner verwenden" : {
+
+    },
+    "Als erledigt markieren" : {
+
+    },
+    "Als veraltet markieren" : {
+
+    },
+    "Anbieter" : {
+
+    },
+    "Anbieter und Modell für „Mit KI besprechen“" : {
+
+    },
+    "Anbieter: %@ · Modell: %@" : {
+
+    },
+    "Anbieterstandard" : {
+
+    },
+    "Anderes Repository zulassen (nur wenn Sie sicher sind)" : {
+
+    },
+    "Angefragt" : {
+
+    },
+    "Angefragt %@" : {
+
+    },
+    "Angelegt" : {
+
+    },
+    "Angemeldet" : {
+
+    },
+    "Angenommen" : {
+
+    },
+    "Anlegen" : {
+
+    },
+    "Anmeldeobjekte öffnen" : {
+
+    },
+    "Anmeldung" : {
+
+    },
+    "Annehmen" : {
+
+    },
+    "Ansicht" : {
+
+    },
+    "Antwort wird erstellt …" : {
+
+    },
+    "Anzeige" : {
+
+    },
+    "App" : {
+
+    },
+    "App beenden" : {
+
+    },
+    "App-Server" : {
+
+    },
+    "App-Stand behalten" : {
+
+    },
+    "Archivieren" : {
+
+    },
+    "Archiviert" : {
+
+    },
+    "Archivierte" : {
+
+    },
+    "Art" : {
+
+    },
+    "Art der Ausarbeitung" : {
+
+    },
+    "Auf diesem Mac wurde noch kein Coding-Agent erkannt. Unter „Agenten“ können Sie die Erkennung neu starten." : {
+
+    },
+    "Aufgabe" : {
+
+    },
+    "Aufgabe angelegt (%@)." : {
+
+    },
+    "Aufgabe anlegen" : {
+
+    },
+    "Aufgabe auswählen" : {
+
+    },
+    "Aufgabe bearbeiten" : {
+
+    },
+    "Aufgabe endgültig löschen?" : {
+
+    },
+    "Aufgabe löschen" : {
+
+    },
+    "Aufgabe speichern" : {
+
+    },
+    "Aufgabe wählen" : {
+
+    },
+    "Aufgaben" : {
+
+    },
+    "Aufgaben durchsuchen" : {
+
+    },
+    "Aufgaben entstehen am iPhone oder aus Request-Dateien in Ihren Repositories. Fügen Sie in „Projekte“ einen Stammordner hinzu, damit der Scanner Projekte findet." : {
+
+    },
+    "Aufgaben entstehen hier mit „Neu …“, am iPhone, aus Request-Dateien im Repository oder aus GitHub-Importen." : {
+
+    },
+    "Aufgaben und Ideen per Text oder Diktat – auf jedem Ihrer Geräte." : {
+
+    },
+    "Aufgaben/Requests" : {
+
+    },
+    "Aufgabenqueue" : {
+
+    },
+    "Aufgabensperre" : {
+
+    },
+    "Aufgelöst" : {
+
+    },
+    "Auftrag" : {
+
+    },
+    "Aus dem Status „%@“ kann kein Job gestartet werden." : {
+
+    },
+    "Ausarbeitung starten" : {
+
+    },
+    "Ausführen" : {
+
+    },
+    "Ausführlich" : {
+
+    },
+    "Ausführung auf diesem Mac" : {
+
+    },
+    "Ausgeschlossen" : {
+
+    },
+    "Ausstehend" : {
+
+    },
+    "Ausstehende Änderungen" : {
+
+    },
+    "Auswählen …" : {
+
+    },
+    "Automatisch committete Agentenausgaben" : {
+
+    },
+    "Automatisch suchen" : {
+
+    },
+    "Basis" : {
+
+    },
+    "Bearbeiten …" : {
+
+    },
+    "Bearbeitet" : {
+
+    },
+    "Beendet" : {
+
+    },
+    "Beendet Menüleiste und Fenster. Der Hintergrunddienst läuft weiter." : {
+
+    },
+    "Beendet den Hintergrunddienst. Die App bleibt in der Menüleiste." : {
+
+    },
+    "Befehl ausführen" : {
+
+    },
+    "Begründung bei Ablehnung (optional)" : {
+
+    },
+    "Bei Unterordner eines Repositorys" : {
+
+    },
+    "Bei verfügbarem Kontingent" : {
+
+    },
+    "Benutzer (Gerät %@)" : {
+
+    },
+    "Berechtigungen" : {
+
+    },
+    "Bereich" : {
+
+    },
+    "Bereit" : {
+
+    },
+    "Bestanden" : {
+
+    },
+    "Bestehende Requests" : {
+
+    },
+    "Bildschirm-Ruhezustand und manuell ausgelöster Ruhezustand bleiben unberührt. Ein nur geplanter Job verhindert nie den Ruhezustand." : {
+
+    },
+    "Bisher: %@" : {
+
+    },
+    "Bitte einen Agenten wählen." : {
+
+    },
+    "Bitte wählen" : {
+
+    },
+    "Blockiert & fehlgeschlagen" : {
+
+    },
+    "Branch" : {
+
+    },
+    "Branch und Worktree" : {
+
+    },
+    "Braucht Aufmerksamkeit" : {
+
+    },
+    "CLAUDE.md anlegen, falls sie fehlt" : {
+
+    },
+    "Cherry-pick" : {
+
+    },
+    "Codex oder Claude Code arbeiten geplant in eigenen Worktrees." : {
+
+    },
+    "Codex, Claude Code, Modell und Stufe" : {
+
+    },
+    "Coding-Agenten" : {
+
+    },
+    "Commits" : {
+
+    },
+    "Damit Agenten auch bei geschlossenem Fenster planmäßig arbeiten." : {
+
+    },
+    "Damit das zuverlässig funktioniert, werden der Dienst und das Menüleistensymbol bei Ihrer macOS-Anmeldung automatisch gestartet, ohne Hauptfenster. macOS zeigt dazu eine Mitteilung zu Anmeldeobjekten an." : {
+
+    },
+    "Das Gespräch wurde nicht gespeichert: %@" : {
+
+    },
+    "Das Löschen der iCloud-Daten ist noch nicht bestätigt (z. B. keine Verbindung). Die Synchronisierung bleibt pausiert." : {
+
+    },
+    "Das Repository wurde nicht verändert. Beheben Sie die Konflikte im Worktree oder fordern Sie Änderungen an." : {
+
+    },
+    "Das Review wird abgelehnt. Der Branch bleibt erhalten." : {
+
+    },
+    "Dashboard" : {
+
+    },
+    "Datei" : {
+
+    },
+    "Datei gelöscht" : {
+
+    },
+    "Datei nicht lesbar" : {
+
+    },
+    "Datei öffnen" : {
+
+    },
+    "Dateien werden verschoben und die Einstellungen gespeichert. Prüfen Sie vorher den Git-Status." : {
+
+    },
+    "Dateiänderung" : {
+
+    },
+    "Daten exportieren" : {
+
+    },
+    "Daten exportieren …" : {
+
+    },
+    "Daten nicht lesbar" : {
+
+    },
+    "Daten werden gelöscht …" : {
+
+    },
+    "Datenbank wird geöffnet …" : {
+
+    },
+    "Datenexport" : {
+
+    },
+    "Datenschutz" : {
+
+    },
+    "Datum und Uhrzeit sind ungültig." : {
+
+    },
+    "Deaktiviert" : {
+
+    },
+    "Denkstufe" : {
+
+    },
+    "Der ADR wird als ersetzt markiert; ADR-%@ erhält einen „supersedes“-Eintrag. Nur das Frontmatter beider Dateien ändert sich, es wird nichts committet." : {
+
+    },
+    "Der ADR wird als veraltet markiert: Im Frontmatter der Datei wird nur „status“ geändert. Es wird nichts committet." : {
+
+    },
+    "Der ADR wird angenommen: Im Frontmatter der Datei wird nur „status“ geändert. Software Regisseur committet nicht (ADR-0024)." : {
+
+    },
+    "Der Agent führt die angefragte Aktion aus." : {
+
+    },
+    "Der Agent meldet keinen Modellkatalog." : {
+
+    },
+    "Der Dienst hat nicht rechtzeitig geantwortet." : {
+
+    },
+    "Der Dienst ist nicht erreichbar; der iCloud-Status ist unbekannt." : {
+
+    },
+    "Der Diff ist zu groß für die Anzeige. Bitte im Terminal oder Editor ansehen." : {
+
+    },
+    "Der Entwurf startet als „proposed“. Die Nummer vergibt der Mac; angenommen wird nur durch Ihre ausdrückliche Entscheidung." : {
+
+    },
+    "Der Export oben liest nur und ändert nichts. Gelöscht wird ausschließlich durch den Hintergrunddienst und nur, was die Vorschau auflistet. Git-Repositories, Projektordner und Agenten-Worktrees werden nie gelöscht." : {
+
+    },
+    "Der Hintergrunddienst antwortet nicht. Agenten starten erst wieder, wenn er läuft." : {
+
+    },
+    "Der Hintergrunddienst ermittelt Repository-Struktur, akzeptierte ADRs, bestehende Requests und die angegebenen Dateien und erstellt daraus eine Ausarbeitung. Diese geht anschließend als Kontext in das Gespräch. Geheimnisse (.env, Schlüssel, Zugangsdaten) werden immer ausgeschlossen. Zusätzlich erscheint die Ausarbeitung unter „KI-Entwürfe“ und wird nur nach Ihrer Freigabe übernommen." : {
+
+    },
+    "Der Hintergrunddienst ist nicht erreichbar." : {
+
+    },
+    "Der Hintergrunddienst ist nicht erreichbar. Stammordner können Sie später unter „Projekte“ festlegen." : {
+
+    },
+    "Der Hintergrunddienst ist nicht erreichbar; Agenten können erst danach erkannt werden." : {
+
+    },
+    "Der Hintergrunddienst ist nicht registriert. Bitte versuchen Sie es erneut." : {
+
+    },
+    "Der Hintergrunddienst ist registriert, aber macOS hat ihn noch nicht freigegeben. Ohne Freigabe startet er nicht: Synchronisierung, Scans und geplante Agentenläufe finden dann nicht statt." : {
+
+    },
+    "Der Hintergrunddienst konnte nicht registriert werden: %@" : {
+
+    },
+    "Der Hintergrunddienst wurde im App-Bundle nicht gefunden. Die App muss signiert sein und aus dem Programme-Ordner gestartet werden." : {
+
+    },
+    "Der Job startet frühestens zu diesem Zeitpunkt erneut. Software Regisseur liest Reset-Zeiten nicht vom Anbieter aus." : {
+
+    },
+    "Der Job wird abgebrochen; die Aufgabe kehrt in ihren vorherigen Status zurück." : {
+
+    },
+    "Der Mac hat bereits die Nummer %@ vergeben (ADR-0018); der Typ ist damit fest. Duplizieren Sie die Aufgabe, um eine Kopie umzuklassifizieren." : {
+
+    },
+    "Der Name der launchd-Konfiguration fehlt in der Info.plist. Config/Local.xcconfig prüfen und neu bauen." : {
+
+    },
+    "Der Ordner wird nicht mehr gescannt. Projekte und Aufgaben bleiben erhalten." : {
+
+    },
+    "Der Projektordner ist auf diesem Mac nicht erreichbar oder wurde verschoben. Daten bleiben erhalten; verknüpfen Sie das Projekt mit dem neuen Ort." : {
+
+    },
+    "Der Reset-Zeitpunkt ist Ihre Angabe; er wird nicht vom Anbieter ausgelesen." : {
+
+    },
+    "Der Schlüssel wird aus dem Schlüsselbund dieses Macs entfernt." : {
+
+    },
+    "Der Vorgang ist fehlgeschlagen. Bitte erneut versuchen." : {
+
+    },
+    "Der Vorschlag wird als Entwurfsversion gespeichert; Titel, Inhalt und Priorität der Aufgabe werden durch ihn ersetzt. Die Änderung wird synchronisiert. Es wird kein Agent gestartet." : {
+
+    },
+    "Der Worktree wird entfernt. Der Branch bleibt erhalten." : {
+
+    },
+    "Der Zeitplan ist ungültig." : {
+
+    },
+    "Der externe Stand wird in die App übernommen." : {
+
+    },
+    "Der geplante Termin wurde verpasst. Bitte entscheiden Sie: jetzt nachholen oder überspringen." : {
+
+    },
+    "Der gewählte Zeitpunkt liegt in der Vergangenheit." : {
+
+    },
+    "Der nach einem Dienstneustart verwaiste Agentenprozess wird beendet." : {
+
+    },
+    "Der vollständige Text ist nicht verfügbar. Bitte ablehnen." : {
+
+    },
+    "Der zusammengeführte Stand konnte nicht erzeugt werden." : {
+
+    },
+    "Details, Zeitplan, Modell/Stufe und Steueraktionen erscheinen hier." : {
+
+    },
+    "Die App wurde nicht als Anmeldeobjekt gefunden. Sie muss signiert sein und im Ordner „Programme“ liegen." : {
+
+    },
+    "Die App-Group-Kennung fehlt in der Info.plist. Config/Local.xcconfig prüfen und neu bauen." : {
+
+    },
+    "Die App-Group-Kennung fehlt. Ohne sie findet die App die Daten des Hintergrunddienstes nicht. Config/Local.xcconfig prüfen und neu bauen." : {
+
+    },
+    "Die Aufgabe gehört noch zu keinem Projekt. Bitte zuerst einem Projekt zuordnen." : {
+
+    },
+    "Die Aufgabe ist gesperrt (%@, seit %@). Änderungen bitte als neue Notiz erfassen." : {
+
+    },
+    "Die Aufgabe wird erledigt; die Request-Datei wandert in den done-Ordner." : {
+
+    },
+    "Die Aufgabe wurde inzwischen geändert (z. B. am iPhone oder in der Datei)." : {
+
+    },
+    "Die Datei konnte nicht geöffnet werden. Ist ein Programm für Markdown-Dateien eingerichtet?" : {
+
+    },
+    "Die Datei wird mit dem Stand der App überschrieben." : {
+
+    },
+    "Die Dateien werden atomar geschrieben; benutzerdefinierte Abschnitte bleiben erhalten." : {
+
+    },
+    "Die Daten konnten nicht gelesen werden. Der Hintergrunddienst schreibt möglicherweise gerade; es wird automatisch erneut versucht." : {
+
+    },
+    "Die Datenbank des Hintergrunddienstes ist noch nicht bereit. Sobald der Dienst läuft, erscheinen hier die Daten." : {
+
+    },
+    "Die Datenbank stammt von einer neueren Version des Dienstes. Bitte die App aktualisieren." : {
+
+    },
+    "Die Datenbank wurde leer neu angelegt; bitte Stammordner neu bestätigen." : {
+
+    },
+    "Die Denkstufe ist eine Ausführungsressource des Agenten, keine Einschätzung der Aufgabe." : {
+
+    },
+    "Die Inbox ist leer" : {
+
+    },
+    "Die Mac-Ausarbeitung ist fehlgeschlagen." : {
+
+    },
+    "Die Notiz wurde nie als Datei angelegt und wird auf allen Geräten entfernt." : {
+
+    },
+    "Die Nummer %@ gilt nur in diesem Repository; die Projektzuordnung ist fest. Duplizieren Sie die Aufgabe für ein anderes Projekt." : {
+
+    },
+    "Die Nummer (z. B. FR-0001) vergibt der Mac, sobald die Request-Datei im Repository angelegt wird." : {
+
+    },
+    "Die Ordnerstruktur ändern Sie unten mit Vorschau." : {
+
+    },
+    "Die Registrierung hat nicht geklappt." : {
+
+    },
+    "Die Statusordner müssen unterschiedlich sein." : {
+
+    },
+    "Die gespeicherte Kombination ist nicht mehr zulässig. Wählen Sie über „Modell/Stufe ersetzen“ ausdrücklich eine neue." : {
+
+    },
+    "Die iCloud-Zone wird neu angelegt und alle lokalen Daten werden erneut hochgeladen." : {
+
+    },
+    "Die iCloud-Zone wird neu angelegt und alle lokalen Daten werden hochgeladen." : {
+
+    },
+    "Die Änderungen werden per %@ in den Default-Branch übernommen. Es wird nichts gepusht. Bei Konflikten bleibt das Repository unverändert." : {
+
+    },
+    "Dienst" : {
+
+    },
+    "Dienst %@ auf %@" : {
+
+    },
+    "Dienst erreichbar" : {
+
+    },
+    "Dienst fortgesetzt." : {
+
+    },
+    "Dienst fortsetzen" : {
+
+    },
+    "Dienst gestoppt" : {
+
+    },
+    "Dienst läuft" : {
+
+    },
+    "Dienst läuft seit" : {
+
+    },
+    "Dienst nicht erreichbar" : {
+
+    },
+    "Dienst nicht gefunden. Die App muss signiert sein und die launchd-Konfiguration im App-Bundle enthalten." : {
+
+    },
+    "Dienst pausieren" : {
+
+    },
+    "Dienst pausiert" : {
+
+    },
+    "Dienst pausiert: keine neuen Agentenstarts." : {
+
+    },
+    "Dienst prüfen" : {
+
+    },
+    "Dienst starten" : {
+
+    },
+    "Dienst stoppen" : {
+
+    },
+    "Dienst und App haben unterschiedliche Versionen (Dienst %lld, App %lld) – Dienst neu starten." : {
+
+    },
+    "Dienst und App sprechen unterschiedliche Protokollversionen (Dienst %lld, App %lld). Dienst stoppen und neu starten." : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Dienst und App sprechen unterschiedliche Protokollversionen (Dienst %1$lld, App %2$lld). Dienst stoppen und neu starten."
+          }
+        }
+      }
+    },
+    "Dienst wird beendet." : {
+
+    },
+    "Dienst wird registriert …" : {
+
+    },
+    "Diensteinstellungen (nur dieser Mac)" : {
+
+    },
+    "Diensteinstellungen laden" : {
+
+    },
+    "Diensteinstellungen speichern" : {
+
+    },
+    "Dienststatus wird geprüft …" : {
+
+    },
+    "Diese Agentenausgaben liegen nur im Worktree. Bitte prüfen und dort entfernen; bis dahin ist die Integration gesperrt." : {
+
+    },
+    "Diese Funktion ist im Dienst nicht verfügbar: %@" : {
+
+    },
+    "Diese Modell-/Stufenkombination meldet %@ nicht." : {
+
+    },
+    "Diese Vorschau kann nicht angewendet werden. Bitte Kollisionen beheben und neu berechnen." : {
+
+    },
+    "Diesem Build fehlt die Konfiguration des Hintergrunddienstes (launchd-Plist). Bitte installieren Sie eine signierte Version." : {
+
+    },
+    "Dieser Agent erlaubt keine Modellwahl; es gilt der Anbieterstandard." : {
+
+    },
+    "Dieser Mac" : {
+
+    },
+    "Dieser Mac (Version %lld)" : {
+
+    },
+    "Dokumentierte CLI" : {
+
+    },
+    "Duplizieren" : {
+
+    },
+    "Effektiv (bestätigt)" : {
+
+    },
+    "Eigene Programmpfade" : {
+
+    },
+    "Ein Agentenjob ist aktiv (%@). Der Status folgt dem Job; manuelle Änderungen werden abgelehnt (ADR-0012)." : {
+
+    },
+    "Ein Schritt fehlt noch: die Freigabe durch macOS." : {
+
+    },
+    "Ein paar Punkte sind noch offen. Sie können sie jetzt erledigen oder später in den Einstellungen nachholen." : {
+
+    },
+    "Eine Synchronisierung lief bereits; sie wurde zusammengelegt." : {
+
+    },
+    "Eingeplant" : {
+
+    },
+    "Einrichtung" : {
+
+    },
+    "Einrichtung nicht abgeschlossen" : {
+
+    },
+    "Einrichtungsassistent öffnen" : {
+
+    },
+    "Einrichtungsaufträge" : {
+
+    },
+    "Einstellungen" : {
+
+    },
+    "Einstellungen bearbeiten …" : {
+
+    },
+    "Einstellungen öffnen" : {
+
+    },
+    "Endgültig löschen" : {
+
+    },
+    "Endgültig löschen geht nur bei Notizen, für die noch keine Datei, Nummer oder kein Job entstanden ist. Archivieren Sie diese Aufgabe stattdessen." : {
+
+    },
+    "Endgültig löschen …" : {
+
+    },
+    "Entfernen" : {
+
+    },
+    "Entfernt: " : {
+
+    },
+    "Entscheidung" : {
+
+    },
+    "Entscheidung angefordert: %@" : {
+
+    },
+    "Entwurf Version %lld erstellt. Sie finden ihn in der Aufgabe unter „KI-Entwürfe“." : {
+
+    },
+    "Entwurf anlegen" : {
+
+    },
+    "Entwurf verwerfen" : {
+
+    },
+    "Er startet wieder bei der nächsten Anmeldung, beim nächsten Start dieser App oder über „Dienst starten“." : {
+
+    },
+    "Erben" : {
+
+    },
+    "Ereignis" : {
+
+    },
+    "Erfassen" : {
+
+    },
+    "Ergebnis" : {
+
+    },
+    "Ergebnis %@" : {
+
+    },
+    "Erkannt: %@" : {
+
+    },
+    "Erlauben" : {
+
+    },
+    "Erledigt" : {
+
+    },
+    "Erneut durchsuchen" : {
+
+    },
+    "Erneut laden" : {
+
+    },
+    "Erneut prüfen" : {
+
+    },
+    "Erneut versuchen" : {
+
+    },
+    "Ersetzen" : {
+
+    },
+    "Ersetzt" : {
+
+    },
+    "Ersetzt ADR-Nummern (optional, z. B. 3, 5)" : {
+
+    },
+    "Ersetzt durch ADR-%@" : {
+
+    },
+    "Ersetzt durch …" : {
+
+    },
+    "Erwarteten Kontingent-Reset setzen" : {
+
+    },
+    "Erwarteten Kontingent-Reset setzen …" : {
+
+    },
+    "Erwarteter Kontingent-Reset" : {
+
+    },
+    "Erwogene Alternativen" : {
+
+    },
+    "Export abgebrochen; es wurden keine Teildateien behalten." : {
+
+    },
+    "Export abgeschlossen." : {
+
+    },
+    "Export fehlgeschlagen: %@" : {
+
+    },
+    "Export wird vorbereitet …" : {
+
+    },
+    "Exportiert alle Daten (Projekte, Aufgaben, Jobs, Reviews, Verlauf, Konflikte) als JSON und Markdown, optional als ZIP. API-Schlüssel sind nie enthalten; der Export wird vor dem Speichern auf Zugangsdaten geprüft." : {
+
+    },
+    "Extern (Editor, Git)" : {
+
+    },
+    "Externe Änderung erkannt" : {
+
+    },
+    "Externen Stand übernehmen" : {
+
+    },
+    "Falls der Mac zum Termin schläft" : {
+
+    },
+    "Fast geschafft" : {
+
+    },
+    "Fehler: %@" : {
+
+    },
+    "Fehlgeschlagen" : {
+
+    },
+    "Felder" : {
+
+    },
+    "Fenster schließen" : {
+
+    },
+    "Fertig" : {
+
+    },
+    "Filter" : {
+
+    },
+    "Filter zurücksetzen" : {
+
+    },
+    "Folgen anzeigen" : {
+
+    },
+    "Fortfahren ohne Hochladen" : {
+
+    },
+    "Fortfahren und lokale Daten hochladen" : {
+
+    },
+    "Fortsetzen" : {
+
+    },
+    "Fragen stellen, Varianten diskutieren, Änderungen anfordern – ohne Agentenstart" : {
+
+    },
+    "Freigabe abgelaufen" : {
+
+    },
+    "Freigabe angefragt" : {
+
+    },
+    "Freigabe beantwortet" : {
+
+    },
+    "Freigabe in den Systemeinstellungen" : {
+
+    },
+    "Freigaben" : {
+
+    },
+    "Freigeben" : {
+
+    },
+    "Freigegeben" : {
+
+    },
+    "Frontmatter" : {
+
+    },
+    "Frühestens ab" : {
+
+    },
+    "Fähigkeiten" : {
+
+    },
+    "Fähigkeitsstand" : {
+
+    },
+    "Fügen Sie oben einen Stammordner hinzu und aktualisieren Sie den Scanner." : {
+
+    },
+    "Fügen Sie unter „Projekte“ einen Stammordner hinzu." : {
+
+    },
+    "Für %@ ist am Mac kein API-Schlüssel gespeichert. Bitte hinterlegen Sie ihn in den Einstellungen unter „KI-Schlüssel“." : {
+
+    },
+    "Für %@ ist noch kein Modell gewählt. Bitte wählen Sie es in den Einstellungen unter „KI-Schlüssel“." : {
+
+    },
+    "Für %@ ist noch kein Schlüssel gespeichert (oben eintragen)." : {
+
+    },
+    "Für KI-Ausarbeitung und „Mit KI besprechen“ am Mac verwenden Sie Ihren eigenen API-Schlüssel. Er bleibt im Schlüsselbund dieses Macs und wird nie synchronisiert oder protokolliert." : {
+
+    },
+    "Für diese Aufgabe läuft bereits ein Job." : {
+
+    },
+    "Für diesen Anbieter ist am Mac kein API-Schlüssel gespeichert." : {
+
+    },
+    "Für diesen Zustand sind keine Steueraktionen möglich." : {
+
+    },
+    "Für dieses Projekt sind noch keine Einstellungen gespeichert." : {
+
+    },
+    "Für einzelne Jobs wählen Sie Modell und Stufe direkt beim Start; Projekte können eigene Werte festlegen." : {
+
+    },
+    "Für neue Ordner „git init“ vorschlagen" : {
+
+    },
+    "Für „Mit KI besprechen“ ist noch kein Anbieter gewählt. Bitte wählen Sie in den Einstellungen unter „KI-Schlüssel“ Anbieter und Modell." : {
+
+    },
+    "Ganzes Repository" : {
+
+    },
+    "Gefundene Projekte: %lld" : {
+
+    },
+    "Gehe zu" : {
+
+    },
+    "Geheimnisse (.env, Schlüssel, Zugangsdaten) werden immer ausgeschlossen und im Manifest begründet." : {
+
+    },
+    "Gemeinsamer Vorfahr" : {
+
+    },
+    "Geplanter Start" : {
+
+    },
+    "Geprüfter Versuch" : {
+
+    },
+    "Gescannt" : {
+
+    },
+    "Geschlossen" : {
+
+    },
+    "Gesperrt" : {
+
+    },
+    "Gespräch" : {
+
+    },
+    "Gespräch beginnen" : {
+
+    },
+    "Gespräch speichern" : {
+
+    },
+    "Gesprächspartner zur Ausarbeitung – kein Coding-Agent. Es wird nie ein Agent gestartet; Vorschläge übernehmen Sie nur ausdrücklich." : {
+
+    },
+    "Gestartet" : {
+
+    },
+    "Geändert" : {
+
+    },
+    "Geänderte Dateien" : {
+
+    },
+    "Gilt für neu angelegte Projekte; bestehende Projekte behalten ihre Einstellungen." : {
+
+    },
+    "Gilt nur für diesen Mac. Gesendet wird erst, nachdem Sie den angezeigten Kontext bestätigt haben. Kosten werden nur geschätzt angezeigt." : {
+
+    },
+    "Git-Repository" : {
+
+    },
+    "Git-Repository anlegen (git init)" : {
+
+    },
+    "Git-Scanner" : {
+
+    },
+    "Git-Stammordner" : {
+
+    },
+    "Git-Stammordner wählen, dessen Unterordner indiziert werden" : {
+
+    },
+    "GitHub" : {
+
+    },
+    "GitHub (optional)" : {
+
+    },
+    "GitHub (über gh)" : {
+
+    },
+    "GitHub Issues" : {
+
+    },
+    "GitHub aktivieren" : {
+
+    },
+    "GitHub deaktivieren" : {
+
+    },
+    "GitHub für dieses Projekt" : {
+
+    },
+    "GitHub ist für dieses Projekt aktiv." : {
+
+    },
+    "GitHub ist für dieses Projekt nicht aktiv." : {
+
+    },
+    "GitHub-Abgleich alle" : {
+
+    },
+    "GitHub-Verbindung prüfen" : {
+
+    },
+    "GitHub-Zustand laden" : {
+
+    },
+    "Gleichzeitige Änderung" : {
+
+    },
+    "Global" : {
+
+    },
+    "Globale Standards" : {
+
+    },
+    "Globale Standards je Agent" : {
+
+    },
+    "Globale Standards speichern" : {
+
+    },
+    "Globaler Standard" : {
+
+    },
+    "Globaler Standard (%@)" : {
+
+    },
+    "Grund" : {
+
+    },
+    "Hauptfenster öffnen" : {
+
+    },
+    "Herkunft" : {
+
+    },
+    "Hier exportieren" : {
+
+    },
+    "Hintergrunddienst" : {
+
+    },
+    "Hintergrunddienst aktiv" : {
+
+    },
+    "Hintergrunddienst bei Anmeldung starten" : {
+
+    },
+    "Hintergrunddienst einrichten" : {
+
+    },
+    "Hinweis schließen" : {
+
+    },
+    "Hinweise" : {
+
+    },
+    "Hinzufügen …" : {
+
+    },
+    "Hinzugefügt: " : {
+
+    },
+    "Historie" : {
+
+    },
+    "Höchstens" : {
+
+    },
+    "Höchstzahl paralleler Jobs: 1 bis 16." : {
+
+    },
+    "ID" : {
+
+    },
+    "ID vergeben" : {
+
+    },
+    "Ich bin einverstanden, dass Aufgabentext und ausgewählte Repo-Inhalte an %@ übermittelt werden." : {
+
+    },
+    "Ich habe den vollständigen Text gelesen." : {
+
+    },
+    "Ich habe die Liste geprüft und möchte diese Daten endgültig löschen." : {
+
+    },
+    "Ich möchte alle iCloud-Daten von Software Regisseur endgültig löschen." : {
+
+    },
+    "Ich stimme zu, dass im Ordner „git init“ ausgeführt wird." : {
+
+    },
+    "Ideen auf iPhone oder Mac erfassen, von Coding-Agenten umsetzen lassen und jedes Ergebnis prüfen, bevor es in Ihr Repository kommt." : {
+
+    },
+    "Ihre iCloud-Daten wurden gelöscht. Die Synchronisierung ist pausiert; lokale Daten bleiben auf diesem Mac." : {
+
+    },
+    "Im ADR-Ordner dieses Projekts wurden keine Entscheidungen gefunden." : {
+
+    },
+    "Im Editor öffnen" : {
+
+    },
+    "Im Finder zeigen" : {
+
+    },
+    "Im Gesprächskontext: %@" : {
+
+    },
+    "Im Standardeditor öffnen" : {
+
+    },
+    "Im Terminal öffnen" : {
+
+    },
+    "Immer enthalten: Originalnotiz bzw. Transkript und der aktuelle Request-Inhalt." : {
+
+    },
+    "Importieren" : {
+
+    },
+    "In Arbeit" : {
+
+    },
+    "In Aufgaben aufteilen" : {
+
+    },
+    "In Inbox speichern" : {
+
+    },
+    "In den letzten 30 Tagen gibt es keine passenden Ereignisse." : {
+
+    },
+    "In die Aufgabe übernehmen" : {
+
+    },
+    "In die Aufgabe übernehmen …" : {
+
+    },
+    "In wenigen Schritten eingerichtet" : {
+
+    },
+    "Inbox" : {
+
+    },
+    "Inbox (ohne Projekt)" : {
+
+    },
+    "Inhalt" : {
+
+    },
+    "Inhalt (Markdown)" : {
+
+    },
+    "Inhalte werden als Daten gesendet, nicht als Anweisungen; mögliche Geheimnisse werden geschwärzt." : {
+
+    },
+    "Installieren Sie %@ nach der Anleitung des Anbieters und wählen Sie dann „Agenten neu erkennen“. Liegt das Programm an einem eigenen Ort, tragen Sie den Pfad in den Einstellungen unter „Agenten & GitHub“ ein." : {
+
+    },
+    "Installieren Sie Codex oder Claude Code und starten Sie die Erkennung neu. Die Erkennung läuft auch beim Dienststart und alle 30 Minuten." : {
+
+    },
+    "Integrationskonflikt" : {
+
+    },
+    "Integrationsstrategie" : {
+
+    },
+    "Integrationsstrategie des Projekts: %@. Ändern Sie sie in den Projekteinstellungen." : {
+
+    },
+    "Integrieren (%@)" : {
+
+    },
+    "Integriert" : {
+
+    },
+    "Integriert als %@%@" : {
+
+    },
+    "Integriert per %@ als %@. Es wurde nichts gepusht." : {
+
+    },
+    "Issues" : {
+
+    },
+    "Issues importieren und mit Aufgaben verknüpfen – über die Anmeldung der GitHub-CLI „gh“. Software Regisseur speichert kein eigenes GitHub-Token." : {
+
+    },
+    "Issues laden" : {
+
+    },
+    "Jetzt abgleichen" : {
+
+    },
+    "Jetzt synchronisieren" : {
+
+    },
+    "Job" : {
+
+    },
+    "Job aktualisiert: %@." : {
+
+    },
+    "Job angelegt: %@." : {
+
+    },
+    "Job anlegen" : {
+
+    },
+    "Job auswählen" : {
+
+    },
+    "Job starten oder planen …" : {
+
+    },
+    "Job wiederholt" : {
+
+    },
+    "Job-ID" : {
+
+    },
+    "Jobdetails laden" : {
+
+    },
+    "Jobs" : {
+
+    },
+    "Jobstatus geändert" : {
+
+    },
+    "KI" : {
+
+    },
+    "KI-Ausarbeitung am Mac, mit Repo-Kontext" : {
+
+    },
+    "KI-Ausarbeitung starten" : {
+
+    },
+    "KI-Ausarbeitungen vom iPhone automatisch am Mac ausführen" : {
+
+    },
+    "KI-Entwürfe" : {
+
+    },
+    "KI-Schlüssel" : {
+
+    },
+    "KI-Schlüssel (optional)" : {
+
+    },
+    "KI-Vorschlag übernehmen" : {
+
+    },
+    "Kanban" : {
+
+    },
+    "Kandidaten suchen" : {
+
+    },
+    "Kein Eintrag passt zu Filter und Suche." : {
+
+    },
+    "Kein Inhalt." : {
+
+    },
+    "Kein Projekt passt zum Filter." : {
+
+    },
+    "Kein Worktree mehr vorhanden (Branch bleibt erhalten)." : {
+
+    },
+    "Keine ADRs" : {
+
+    },
+    "Keine Aufgaben" : {
+
+    },
+    "Keine Commits erfasst." : {
+
+    },
+    "Keine Dateiliste erfasst." : {
+
+    },
+    "Keine Datenbank" : {
+
+    },
+    "Keine Ereignisse" : {
+
+    },
+    "Keine Issues." : {
+
+    },
+    "Keine Jobs in dieser Ansicht" : {
+
+    },
+    "Keine Kandidaten gefunden." : {
+
+    },
+    "Keine Originalnotiz." : {
+
+    },
+    "Keine Projekte" : {
+
+    },
+    "Keine Reviews" : {
+
+    },
+    "Keine Testergebnisse erfasst." : {
+
+    },
+    "Keine Verbindung. Der Hintergrunddienst ist nicht aktiviert, nicht freigegeben oder die App ist nicht mit dem eigenen Team signiert." : {
+
+    },
+    "Keine neuen Agentenstarts. Laufende Jobs, Sync und Scanner laufen weiter." : {
+
+    },
+    "Keine offenen Konflikte." : {
+
+    },
+    "Keine offenen Sync-Konflikte." : {
+
+    },
+    "Keine offenen Vorschläge. Die Anweisungsdateien entsprechen der Konfiguration." : {
+
+    },
+    "Keine passenden Aufgaben" : {
+
+    },
+    "Keine Änderungen." : {
+
+    },
+    "Keiner – beim Start wählen" : {
+
+    },
+    "Kommentar" : {
+
+    },
+    "Konfiguration ersetzt" : {
+
+    },
+    "Konfigurationsfehler" : {
+
+    },
+    "Konflikt" : {
+
+    },
+    "Konflikt erkannt" : {
+
+    },
+    "Konflikt zusammenführen" : {
+
+    },
+    "Konflikte" : {
+
+    },
+    "Konsequenzen" : {
+
+    },
+    "Kontext" : {
+
+    },
+    "Kontext prüfen …" : {
+
+    },
+    "Kontingent-Reset setzen" : {
+
+    },
+    "Kopf" : {
+
+    },
+    "Kosten: %@" : {
+
+    },
+    "Kosten: geschätzt – für dieses Modell ist am Mac kein Preis hinterlegt; maßgeblich ist die Abrechnung Ihres Anbieters." : {
+
+    },
+    "Kurz" : {
+
+    },
+    "Label" : {
+
+    },
+    "Labels (durch Komma getrennt)" : {
+
+    },
+    "Leer" : {
+
+    },
+    "Leere Abschnitte behalten den Text der Vorlage." : {
+
+    },
+    "Leerlauf-Ruhezustand verhindern, solange ein Agent arbeitet" : {
+
+    },
+    "Letzte Änderung" : {
+
+    },
+    "Letzter Abruf" : {
+
+    },
+    "Letzter Fehler" : {
+
+    },
+    "Letzter Scan: %@" : {
+
+    },
+    "Letztes Senden" : {
+
+    },
+    "Links stehen der gemeinsame Vorfahr (falls bekannt), der Stand dieses Macs und der iCloud-Stand. Schreiben Sie rechts den zusammengeführten Text; alle anderen Felder bleiben wie auf diesem Mac." : {
+
+    },
+    "Lokale Daten bleiben erhalten. Wählen Sie, wie es weitergeht." : {
+
+    },
+    "Lokale Daten löschen" : {
+
+    },
+    "Lokale Datenbank und Zwischenspeicher" : {
+
+    },
+    "Los geht’s" : {
+
+    },
+    "Läuft" : {
+
+    },
+    "Läuft: %@" : {
+
+    },
+    "Löschen" : {
+
+    },
+    "Löschen erneut versuchen" : {
+
+    },
+    "Mac" : {
+
+    },
+    "Mac bereit" : {
+
+    },
+    "Mac eingeschränkt" : {
+
+    },
+    "Mac offline" : {
+
+    },
+    "Mac pausiert" : {
+
+    },
+    "Mac startet" : {
+
+    },
+    "Mac übernehmen" : {
+
+    },
+    "Mac-Ausarbeitung mit Repo-Kontext (Version %lld)" : {
+
+    },
+    "Mac-Dienst" : {
+
+    },
+    "Manuelles Review" : {
+
+    },
+    "Markdown abgleichen" : {
+
+    },
+    "Markdown jetzt abgleichen" : {
+
+    },
+    "Markdown-Abgleich alle" : {
+
+    },
+    "Markdown-Quelltext anzeigen" : {
+
+    },
+    "Melden Sie sich einmal im Terminal bei %@ an und wählen Sie dann „Agenten neu erkennen“." : {
+
+    },
+    "Menüleisten-App beim Anmelden öffnen" : {
+
+    },
+    "Merge-Commit" : {
+
+    },
+    "Migration anwenden" : {
+
+    },
+    "Mit Agent umsetzen" : {
+
+    },
+    "Mit Agent umsetzen …" : {
+
+    },
+    "Mit Datei abgleichen" : {
+
+    },
+    "Mit KI ausarbeiten (Mac, mit Repo-Kontext)" : {
+
+    },
+    "Mit KI ausarbeiten …" : {
+
+    },
+    "Mit KI besprechen" : {
+
+    },
+    "Mit diesem Konto nicht nutzbar" : {
+
+    },
+    "Modell" : {
+
+    },
+    "Modell aus: %@, Stufe aus: %@" : {
+
+    },
+    "Modell geerbt" : {
+
+    },
+    "Modell und Denkstufe" : {
+
+    },
+    "Modell und Stufe ersetzen" : {
+
+    },
+    "Modell und Stufe je Agent" : {
+
+    },
+    "Modell und Stufe lassen sich wählen, sobald der Dienst die Fähigkeiten eines Agenten geprüft hat." : {
+
+    },
+    "Modell und Stufe speichern" : {
+
+    },
+    "Modell-ID" : {
+
+    },
+    "Modell-ID des Anbieters" : {
+
+    },
+    "Modell/Stufe" : {
+
+    },
+    "Modell/Stufe ersetzen" : {
+
+    },
+    "Modell/Stufe ersetzen …" : {
+
+    },
+    "Modellkatalog und Effort-Matrix" : {
+
+    },
+    "Modellkatalog und Effort-Matrix …" : {
+
+    },
+    "Modellliste nicht abrufbar (%@). Sie können die Modell-ID direkt eingeben." : {
+
+    },
+    "Modellwahl" : {
+
+    },
+    "Nach Abschluss eines Agentenjobs erscheinen hier Diff, Commits und Tests." : {
+
+    },
+    "Nach Updates suchen …" : {
+
+    },
+    "Nachfragen" : {
+
+    },
+    "Nachholregel" : {
+
+    },
+    "Nachricht an die KI" : {
+
+    },
+    "Name" : {
+
+    },
+    "Name des neuen Ordners" : {
+
+    },
+    "Neu laden" : {
+
+    },
+    "Neu verknüpfen" : {
+
+    },
+    "Neue Aufgabe …" : {
+
+    },
+    "Neue Notiz" : {
+
+    },
+    "Neue Notiz oder Aufgabe" : {
+
+    },
+    "Neue Notiz …" : {
+
+    },
+    "Neuen ADR-Entwurf anlegen …" : {
+
+    },
+    "Neuen Schlüssel eingeben" : {
+
+    },
+    "Neuer ADR-Entwurf" : {
+
+    },
+    "Neuer Unterordner" : {
+
+    },
+    "Nicht aktiviert: Der Dienst startet nicht automatisch." : {
+
+    },
+    "Nicht aktiviert: Nach der Anmeldung läuft nur der Hintergrunddienst; das Menüleistensymbol erscheint erst, wenn Sie die App öffnen." : {
+
+    },
+    "Nicht angemeldet" : {
+
+    },
+    "Nicht ausgeführt" : {
+
+    },
+    "Nicht committet – sieht wie ein Geheimnis aus" : {
+
+    },
+    "Nicht erreichbar" : {
+
+    },
+    "Nicht mehr durchsuchen; Projekte und Aufgaben bleiben erhalten" : {
+
+    },
+    "Nicht verfügbar" : {
+
+    },
+    "Nicht zutreffend" : {
+
+    },
+    "Noch kein Kontext ermittelt." : {
+
+    },
+    "Noch kein Repository" : {
+
+    },
+    "Noch kein Scan." : {
+
+    },
+    "Noch kein Stammordner. Ohne Stammordner scannt der Dienst nichts." : {
+
+    },
+    "Noch keine Agenten erkannt" : {
+
+    },
+    "Noch keine Agenten erkannt." : {
+
+    },
+    "Noch keine Agentenjobs." : {
+
+    },
+    "Noch keine Aufgaben" : {
+
+    },
+    "Noch keine Ereignisse." : {
+
+    },
+    "Noch keine KI-Entwürfe." : {
+
+    },
+    "Noch keine Projekte" : {
+
+    },
+    "Noch nicht geprüft" : {
+
+    },
+    "Noch nicht gescannt" : {
+
+    },
+    "Noch nie erfolgreich synchronisiert" : {
+
+    },
+    "Notiz in der Inbox erfassen" : {
+
+    },
+    "Notizen ohne Projekt können nicht von einem Agenten umgesetzt werden." : {
+
+    },
+    "Notiztext" : {
+
+    },
+    "Nummer" : {
+
+    },
+    "Nur %@" : {
+
+    },
+    "Nur Vorschläge" : {
+
+    },
+    "Nur diesen Unterordner" : {
+
+    },
+    "Nur speichern (manuell freigeben)" : {
+
+    },
+    "Nutzung bisher: %lld Eingabe-, %lld Ausgabe-Tokens" : {
+
+    },
+    "Nächster Kontingentversuch" : {
+
+    },
+    "Nächster Start: %@" : {
+
+    },
+    "Nächster Versuch %@" : {
+
+    },
+    "OK" : {
+
+    },
+    "Offen" : {
+
+    },
+    "Offen (%lld)" : {
+
+    },
+    "Offene Aufgaben" : {
+
+    },
+    "Offene Fragen" : {
+
+    },
+    "Offene Freigaben" : {
+
+    },
+    "Offene Freigaben (%lld)" : {
+
+    },
+    "Ohne Hintergrunddienst fortfahren" : {
+
+    },
+    "Ohne Hintergrunddienst sind Synchronisierung, Scans und Agentenläufe nicht verfügbar. Sie können die Registrierung erneut versuchen oder später in den Einstellungen unter „Dienst“ aktivieren." : {
+
+    },
+    "Ohne Projekteinstellungen ist keine Migration möglich." : {
+
+    },
+    "Ohne Titel" : {
+
+    },
+    "Ohne eigenen Pfad sucht der Dienst Codex und Claude Code an den dokumentierten Installationsorten. Eine Änderung wirkt sofort: Der Dienst erkennt den Agenten neu, ohne Neustart." : {
+
+    },
+    "Ohne erkannten Agenten lassen sich Modell und Stufe nicht prüfen und daher nicht festlegen." : {
+
+    },
+    "Ordner" : {
+
+    },
+    "Ordner auswählen …" : {
+
+    },
+    "Ordner fehlt" : {
+
+    },
+    "Ordner hierher ziehen" : {
+
+    },
+    "Ordner werden durchsucht …" : {
+
+    },
+    "Ordner wählen …" : {
+
+    },
+    "Ordnerstruktur" : {
+
+    },
+    "Original" : {
+
+    },
+    "Originalnotiz" : {
+
+    },
+    "Parallele Jobs erlauben" : {
+
+    },
+    "Parallelität" : {
+
+    },
+    "Pausieren" : {
+
+    },
+    "Pausiert" : {
+
+    },
+    "Pausiert – Entscheidung nötig" : {
+
+    },
+    "Pfad" : {
+
+    },
+    "Pfad übernehmen" : {
+
+    },
+    "Pfade dürfen das Repository nicht verlassen („..“)." : {
+
+    },
+    "Pfade müssen relativ zum Repository sein." : {
+
+    },
+    "Pfade, Diffs und Worktree kennt nur der Dienst auf diesem Mac: %@" : {
+
+    },
+    "Plan" : {
+
+    },
+    "Priorität" : {
+
+    },
+    "Priorität ändern" : {
+
+    },
+    "Priorität: %@" : {
+
+    },
+    "Programm" : {
+
+    },
+    "Programm wählen" : {
+
+    },
+    "Projekt" : {
+
+    },
+    "Projekt anlegen" : {
+
+    },
+    "Projekt anlegen oder verknüpfen" : {
+
+    },
+    "Projekt anlegen oder verknüpfen …" : {
+
+    },
+    "Projekt auswählen" : {
+
+    },
+    "Projekt einrichten" : {
+
+    },
+    "Projekt neu verknüpfen" : {
+
+    },
+    "Projekt verknüpfen" : {
+
+    },
+    "Projekt wählen" : {
+
+    },
+    "Projekt zuweisen" : {
+
+    },
+    "Projekt „%@“ mit %@ verknüpfen?" : {
+
+    },
+    "Projekt-/Globalstandard" : {
+
+    },
+    "Projekte" : {
+
+    },
+    "Projekte suchen" : {
+
+    },
+    "Projekte, Aufgaben und Freigaben werden über iCloud mit Ihren anderen Geräten abgeglichen. Melden Sie sich auf iPhone und iPad mit demselben Apple Account an und öffnen Sie dort Software Regisseur." : {
+
+    },
+    "Projekteinstellungen" : {
+
+    },
+    "Projekteinstellungen speichern" : {
+
+    },
+    "Projektname" : {
+
+    },
+    "Projektweite Sperre" : {
+
+    },
+    "Projektweite Sperre: nur ein Agent pro Repository" : {
+
+    },
+    "Projektübersicht" : {
+
+    },
+    "Protokoll" : {
+
+    },
+    "Prozess" : {
+
+    },
+    "Prüfen" : {
+
+    },
+    "Quelle" : {
+
+    },
+    "Registriert, aber noch nicht freigegeben. Bitte in den Systemeinstellungen unter „Anmeldeobjekte“ freigeben." : {
+
+    },
+    "Remote" : {
+
+    },
+    "Remote-App" : {
+
+    },
+    "Repo-Kontext am Mac ermitteln" : {
+
+    },
+    "Repo-Kontext ermitteln" : {
+
+    },
+    "Repo-Kontext ist nur für Aufgaben mit Projekt verfügbar." : {
+
+    },
+    "Repo-Kontext über die Mac-Ausarbeitung einbeziehen" : {
+
+    },
+    "Repository" : {
+
+    },
+    "Requests-Ordner" : {
+
+    },
+    "Reset erwartet um" : {
+
+    },
+    "Review" : {
+
+    },
+    "Review auswählen" : {
+
+    },
+    "Review entschieden" : {
+
+    },
+    "Review-Details laden" : {
+
+    },
+    "Review-Details sind noch nicht geladen." : {
+
+    },
+    "SDK" : {
+
+    },
+    "Scan" : {
+
+    },
+    "Scan abgeschlossen: %lld Ordner, %lld neue und %lld aktualisierte Projekte." : {
+
+    },
+    "Scan fehlgeschlagen" : {
+
+    },
+    "Scanner aktualisieren" : {
+
+    },
+    "Scanner läuft …" : {
+
+    },
+    "Schließen" : {
+
+    },
+    "Schlüssel eintragen" : {
+
+    },
+    "Schlüssel gelöscht." : {
+
+    },
+    "Schlüssel gespeichert." : {
+
+    },
+    "Schlüssel gültig" : {
+
+    },
+    "Schlüssel liegen nur im Schlüsselbund dieses Macs (gerätebezogen) und werden nie in Datenbank, iCloud, Markdown oder Logs gespeichert. Der Hintergrunddienst liest sie über die gemeinsame Schlüsselbund-Gruppe." : {
+
+    },
+    "Schlüssel löschen?" : {
+
+    },
+    "Schlüssel ungültig" : {
+
+    },
+    "Schnellaktionen" : {
+
+    },
+    "Schritt %lld von %lld: %@" : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Schritt %1$lld von %2$lld: %3$@"
+          }
+        }
+      }
+    },
+    "Senden" : {
+
+    },
+    "Setzen" : {
+
+    },
+    "Sie" : {
+
+    },
+    "Sie können den Start bei der Anmeldung jederzeit in den Einstellungen unter „Dienst“ oder in den Systemeinstellungen unter „Anmeldeobjekte“ ändern." : {
+
+    },
+    "Sitzung" : {
+
+    },
+    "Sofort nachholen" : {
+
+    },
+    "Sofort starten" : {
+
+    },
+    "Software Regisseur" : {
+
+    },
+    "Software Regisseur arbeitet mit einem Hintergrunddienst auf diesem Mac. Er synchronisiert Aufgaben mit iCloud, durchsucht Ihre Stammordner, startet Coding-Agenten zu den von Ihnen geplanten Zeiten und leitet Freigaben an Ihr iPhone weiter – auch wenn das Fenster geschlossen ist." : {
+
+    },
+    "Software Regisseur ist eingerichtet. Erfassen Sie Ihre erste Aufgabe – am Mac oder auf dem iPhone." : {
+
+    },
+    "Software Regisseur speichert kein eigenes GitHub-Token; es verwendet die Anmeldung der GitHub-CLI. Pro Projekt aktivieren Sie GitHub unter „Projekte“." : {
+
+    },
+    "Software Regisseur startet Codex oder Claude Code auf diesem Mac. Installation und Anmeldung erkennt der Hintergrunddienst selbst." : {
+
+    },
+    "Software Regisseur – %@" : {
+
+    },
+    "Sortieren nach" : {
+
+    },
+    "Sortierung" : {
+
+    },
+    "Speichern" : {
+
+    },
+    "Sperre freigegeben" : {
+
+    },
+    "Sperre gesetzt" : {
+
+    },
+    "Später festlegen" : {
+
+    },
+    "Squash-Merge" : {
+
+    },
+    "Stammordner" : {
+
+    },
+    "Stammordner entfernen" : {
+
+    },
+    "Stammordner hinzufügen" : {
+
+    },
+    "Stammordner laden" : {
+
+    },
+    "Stammordner und Agenten im Fenster festlegen." : {
+
+    },
+    "Stammordner, Agenten und Verbindungen Schritt für Schritt einrichten." : {
+
+    },
+    "Stammordner-Scan alle" : {
+
+    },
+    "Stand auf GitHub" : {
+
+    },
+    "Stand der KI-Ausarbeitung" : {
+
+    },
+    "Stand dieses Macs behalten" : {
+
+    },
+    "Stand in der App" : {
+
+    },
+    "Stand in der Datei" : {
+
+    },
+    "Standard für neue Aufträge" : {
+
+    },
+    "Standard übernehmen" : {
+
+    },
+    "Standard übernehmen (%@)" : {
+
+    },
+    "Standard übernommen" : {
+
+    },
+    "Standardagent" : {
+
+    },
+    "Standardagent speichern" : {
+
+    },
+    "Standardmodell" : {
+
+    },
+    "Standardmäßig wird nur der Text dieser Notiz bzw. dieses Requests gesendet. Weitere Projektdaten und Repo-Kontext wählen Sie im nächsten Schritt ausdrücklich aus." : {
+
+    },
+    "Standards für neue Projekte bearbeiten …" : {
+
+    },
+    "Start" : {
+
+    },
+    "Start bei der Anmeldung" : {
+
+    },
+    "Status" : {
+
+    },
+    "Status geändert" : {
+
+    },
+    "Status prüfen" : {
+
+    },
+    "Status unbekannt" : {
+
+    },
+    "Status unbekannt – der Hintergrunddienst ist nicht erreichbar." : {
+
+    },
+    "Status wird geprüft …" : {
+
+    },
+    "Status ändern" : {
+
+    },
+    "Status: %@" : {
+
+    },
+    "Statuswechsel nur auf Ihre ausdrückliche Entscheidung. Geändert wird nur das Frontmatter der Datei; Software Regisseur committet nicht." : {
+
+    },
+    "Statusänderung während eines aktiven Jobs" : {
+
+    },
+    "Statusübersicht wird geladen …" : {
+
+    },
+    "Stellen Sie eine Frage, diskutieren Sie Varianten oder bitten Sie um eine Änderung des Entwurfs." : {
+
+    },
+    "Stufe" : {
+
+    },
+    "Stufe geerbt" : {
+
+    },
+    "Suchen" : {
+
+    },
+    "Suchen (Titel, Text, ID, Label)" : {
+
+    },
+    "Sync-Konflikte (%lld)" : {
+
+    },
+    "Synchronisiert gerade" : {
+
+    },
+    "Synchronisiert: %lld empfangen, %lld gesendet, %lld Konflikte." : {
+
+    },
+    "Synchronisierung fehlgeschlagen." : {
+
+    },
+    "Synchronisierung pausiert – Entscheidung nötig." : {
+
+    },
+    "Synchronisierung zurückgestellt." : {
+
+    },
+    "Tabelle" : {
+
+    },
+    "Technische Details" : {
+
+    },
+    "Technische Hinweise" : {
+
+    },
+    "Termin verpasst" : {
+
+    },
+    "Testfälle" : {
+
+    },
+    "Tests" : {
+
+    },
+    "Tests %lld/%lld" : {
+
+    },
+    "Tests und manuelles Review" : {
+
+    },
+    "Text" : {
+
+    },
+    "Texte zusammenführen …" : {
+
+    },
+    "Titel" : {
+
+    },
+    "Titel (optional)" : {
+
+    },
+    "Titel, Inhalt und Priorität der Aufgabe werden durch diesen Entwurf ersetzt. Es wird kein Agent gestartet." : {
+
+    },
+    "Transkript" : {
+
+    },
+    "Typ" : {
+
+    },
+    "Typ geändert" : {
+
+    },
+    "Typ ändern" : {
+
+    },
+    "Umfang" : {
+
+    },
+    "Unbekannt" : {
+
+    },
+    "Unbekannte Aufgabe" : {
+
+    },
+    "Unbekannte Zeitzone „%@“." : {
+
+    },
+    "Unbekannter Status der Anmeldeobjekte." : {
+
+    },
+    "Unbekanntes Projekt" : {
+
+    },
+    "Ungültige Commit-Angabe." : {
+
+    },
+    "Unterordner eines Repositories" : {
+
+    },
+    "Update auf Version %@ ansehen …" : {
+
+    },
+    "Updates" : {
+
+    },
+    "Veraltet" : {
+
+    },
+    "Verbindung prüfen" : {
+
+    },
+    "Verbindungen" : {
+
+    },
+    "Verfügbar" : {
+
+    },
+    "Verfügbarkeit" : {
+
+    },
+    "Verfügbarkeit prüfen" : {
+
+    },
+    "Verknüpfen" : {
+
+    },
+    "Verlauf" : {
+
+    },
+    "Verpassten Termin jetzt nachholen" : {
+
+    },
+    "Verpassten Termin überspringen" : {
+
+    },
+    "Version" : {
+
+    },
+    "Version %@ (%@) · Laufzeit %@" : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Version %1$@ (%2$@) · Laufzeit %3$@"
+          }
+        }
+      }
+    },
+    "Version %lld" : {
+
+    },
+    "Version & Updates" : {
+
+    },
+    "Verwaisten Prozess beenden" : {
+
+    },
+    "Verwaister Agentenprozess nach Dienstneustart." : {
+
+    },
+    "Verwalteter Block in AGENTS.md" : {
+
+    },
+    "Verwerfen" : {
+
+    },
+    "Verworfen" : {
+
+    },
+    "Vollständigen Text anzeigen" : {
+
+    },
+    "Vollständigen Text laden" : {
+
+    },
+    "Vorgeschlagen" : {
+
+    },
+    "Vorgeschlagene neue Fassung" : {
+
+    },
+    "Vorhandener Ordner" : {
+
+    },
+    "Vorschau berechnen" : {
+
+    },
+    "Vorschau der iCloud-Löschung erstellt." : {
+
+    },
+    "Vorschau erstellen" : {
+
+    },
+    "Vorschau gültig bis %@." : {
+
+    },
+    "Vorschau verwerfen" : {
+
+    },
+    "Vorschau: %lld Verschiebungen, %lld Kollisionen" : {
+
+    },
+    "Vorschlag neu berechnen" : {
+
+    },
+    "Vorschlag verwerfen" : {
+
+    },
+    "Vorschlag vom %@" : {
+
+    },
+    "Vorschlag übernehmen: %@" : {
+
+    },
+    "Vorschlag übernehmen?" : {
+
+    },
+    "Vorschläge laden" : {
+
+    },
+    "Vorübergehend nicht verfügbar" : {
+
+    },
+    "Warte auf den Hintergrunddienst" : {
+
+    },
+    "Wartend & geplant" : {
+
+    },
+    "Warteschlange" : {
+
+    },
+    "Wartet" : {
+
+    },
+    "Wartet auf Kontingent" : {
+
+    },
+    "Was Software Regisseur für Sie erledigt" : {
+
+    },
+    "Weiter" : {
+
+    },
+    "Weitere Aktionen" : {
+
+    },
+    "Weitere Macs" : {
+
+    },
+    "Werkzeug verwenden" : {
+
+    },
+    "Wieder mit iCloud synchronisieren" : {
+
+    },
+    "Wiederhergestellt" : {
+
+    },
+    "Wiederherstellen" : {
+
+    },
+    "Wiederholen" : {
+
+    },
+    "Wiederholungen" : {
+
+    },
+    "Willkommen" : {
+
+    },
+    "Willkommen bei Software Regisseur" : {
+
+    },
+    "Wird ausgeführt mit %@ · %@ (Modell aus %@, Stufe aus %@). Spätere Änderungen an Projekt- oder Globalstandards ändern diesen Job nicht." : {
+
+    },
+    "Wird gescannt" : {
+
+    },
+    "Wird gesendet, wenn Sie bestätigen" : {
+
+    },
+    "Wird mit Prozess und Worktree abgeglichen" : {
+
+    },
+    "Wo Ihre Repositories liegen" : {
+
+    },
+    "Wo liegen Ihre Git-Projekte?" : {
+
+    },
+    "Worktree" : {
+
+    },
+    "Worktree entfernen" : {
+
+    },
+    "Wurden die iCloud-Daten gelöscht, legt der Dienst die Zone neu an und lädt alles erneut hoch." : {
+
+    },
+    "Wählen Sie die Ordner, unter denen Ihre Git-Projekte liegen." : {
+
+    },
+    "Wählen Sie einen Ordner, unter dem Ihre Git-Projekte liegen." : {
+
+    },
+    "Wählen Sie einen oder mehrere Stammordner. Der Hintergrunddienst durchsucht deren Unterordner nach Git-Repositories und zeigt sie als Projekte an – verschoben oder verändert wird dabei nichts." : {
+
+    },
+    "Wählen Sie links ein Projekt, um Details, Einstellungen und Vorschläge zu sehen." : {
+
+    },
+    "Wählen …" : {
+
+    },
+    "Während ein Agentenjob läuft, bleiben Typ und Projekt unverändert (ADR-0012)." : {
+
+    },
+    "ZIP" : {
+
+    },
+    "Zeigt den Diff dieser Datei" : {
+
+    },
+    "Zeigt die aktiven Jobs dieses Agenten" : {
+
+    },
+    "Zeitplan" : {
+
+    },
+    "Zeitpunkt" : {
+
+    },
+    "Zeitzone" : {
+
+    },
+    "Ziel" : {
+
+    },
+    "Zone neu anlegen und hochladen" : {
+
+    },
+    "Zu einem Zeitpunkt" : {
+
+    },
+    "Zuletzt angelegt" : {
+
+    },
+    "Zuletzt geprüft" : {
+
+    },
+    "Zuletzt geprüft: %@" : {
+
+    },
+    "Zuletzt geändert" : {
+
+    },
+    "Zuletzt synchronisiert %@" : {
+
+    },
+    "Zur Review" : {
+
+    },
+    "Zurück" : {
+
+    },
+    "Zurücksetzen" : {
+
+    },
+    "Zusammenfassung des Agenten" : {
+
+    },
+    "Zusammengeführt speichern" : {
+
+    },
+    "Zustand" : {
+
+    },
+    "Zusätzliche Dateien (relativ zum Repository, eine pro Zeile)" : {
+
+    },
+    "Zwischengespeichert vom Mac" : {
+
+    },
+    "aktiv" : {
+
+    },
+    "aktueller Schritt" : {
+
+    },
+    "auch auf anderen Geräten" : {
+
+    },
+    "auf diesem Mac nicht verknüpft" : {
+
+    },
+    "aus" : {
+
+    },
+    "ausstehend" : {
+
+    },
+    "automatisch suchen" : {
+
+    },
+    "automatischer Start" : {
+
+    },
+    "bereit, keine aktiven Läufe" : {
+
+    },
+    "binär" : {
+
+    },
+    "ca. %lld Tokens (geschätzt), %lld Zeichen" : {
+
+    },
+    "ein Agent pro Repository" : {
+
+    },
+    "einsatzbereit" : {
+
+    },
+    "erbt den Standard" : {
+
+    },
+    "erlaubt" : {
+
+    },
+    "erlaubt, höchstens %lld Jobs" : {
+
+    },
+    "erledigt" : {
+
+    },
+    "ersetzt %@" : {
+
+    },
+    "ersetzt durch %@" : {
+
+    },
+    "fehlt" : {
+
+    },
+    "fertig: %lld Einträge übermittelt, %lld ausgeschlossen, ca. %lld Tokens" : {
+
+    },
+    "gekürzt" : {
+
+    },
+    "gespeichert (iCloud-Schlüsselbund angefordert)" : {
+
+    },
+    "gespeichert (nur dieser Mac)" : {
+
+    },
+    "gespeichert – wartet auf manuelle Freigabe" : {
+
+    },
+    "geändert" : {
+
+    },
+    "gh nicht verfügbar" : {
+
+    },
+    "gh verfügbar und angemeldet" : {
+
+    },
+    "git diff fehlgeschlagen: %@" : {
+
+    },
+    "git wurde auf diesem Mac nicht gefunden." : {
+
+    },
+    "iCloud" : {
+
+    },
+    "iCloud (Version %lld)" : {
+
+    },
+    "iCloud bereit" : {
+
+    },
+    "iCloud gleicht mit iPhone und iPad ab; GitHub und KI-Schlüssel sind optional und lassen sich jederzeit nachholen." : {
+
+    },
+    "iCloud nicht verfügbar" : {
+
+    },
+    "iCloud pausiert – Entscheidung nötig" : {
+
+    },
+    "iCloud synchronisiert …" : {
+
+    },
+    "iCloud übernehmen" : {
+
+    },
+    "iCloud, GitHub und KI-Schlüssel" : {
+
+    },
+    "iCloud-Abfrage alle" : {
+
+    },
+    "iCloud-Account" : {
+
+    },
+    "iCloud-Account gewechselt" : {
+
+    },
+    "iCloud-Daten auf Ihren Wunsch gelöscht" : {
+
+    },
+    "iCloud-Daten löschen" : {
+
+    },
+    "iCloud-Daten neu anlegen" : {
+
+    },
+    "iCloud-Fehler" : {
+
+    },
+    "iCloud-Stand übernehmen" : {
+
+    },
+    "iCloud-Synchronisierung" : {
+
+    },
+    "iCloud-Synchronisierung ist in diesem Build nicht verfügbar." : {
+
+    },
+    "iCloud: %lld Konflikte" : {
+
+    },
+    "integriert" : {
+
+    },
+    "kein Agent einsatzbereit" : {
+
+    },
+    "kein Remote" : {
+
+    },
+    "kein Schlüssel" : {
+
+    },
+    "kein laufender Prozess" : {
+
+    },
+    "keine" : {
+
+    },
+    "keine offizielle mobile Fortsetzung erkannt" : {
+
+    },
+    "keiner" : {
+
+    },
+    "keiner festgelegt" : {
+
+    },
+    "keiner – Auswahl beim Start" : {
+
+    },
+    "leer = erste Zeile des Textes" : {
+
+    },
+    "läuft" : {
+
+    },
+    "läuft (PID %@)" : {
+
+    },
+    "läuft (ca. %lld Tokens, %lld Einträge)" : {
+
+    },
+    "neu" : {
+
+    },
+    "nicht aktiv" : {
+
+    },
+    "nicht angemeldet" : {
+
+    },
+    "nicht ausführbar" : {
+
+    },
+    "nicht einsatzbereit" : {
+
+    },
+    "nicht erlaubt" : {
+
+    },
+    "nicht erreichbar" : {
+
+    },
+    "nicht erreichbar – Einstellungen › Dienst" : {
+
+    },
+    "nicht installiert" : {
+
+    },
+    "nicht unterstützt" : {
+
+    },
+    "nicht verbunden (optional)" : {
+
+    },
+    "noch ohne ID" : {
+
+    },
+    "oder" : {
+
+    },
+    "offiziell mobil fortsetzbar" : {
+
+    },
+    "offiziell mobil fortsetzbar (%@)" : {
+
+    },
+    "unterstützt" : {
+
+    },
+    "unterstützt, Standard" : {
+
+    },
+    "verbunden" : {
+
+    },
+    "verknüpft mit %@" : {
+
+    },
+    "verworfen" : {
+
+    },
+    "· %lld offen · %lld Review" : {
+
+    },
+    "· gültig bis %@" : {
+
+    },
+    "Ändern" : {
+
+    },
+    "Änderung an AGENTS.md" : {
+
+    },
+    "Änderungen anfordern" : {
+
+    },
+    "Änderungen angefordert" : {
+
+    },
+    "Änderungen ansehen und Freigaben erteilen – auch unterwegs am iPhone." : {
+
+    },
+    "Änderungen gelten für neue Jobs; bereits angelegte Jobs behalten ihre Konfiguration (A38)." : {
+
+    },
+    "Änderungen laufen über den Hintergrunddienst und werden synchronisiert." : {
+
+    },
+    "Öffnen" : {
+
+    },
+    "Öffnen Sie die Anmeldeobjekte und aktivieren Sie „Software Regisseur“ unter „Im Hintergrund erlauben“. Den Start bei der Anmeldung können Sie später in den Einstellungen unter „Dienst“ wieder abschalten." : {
+
+    },
+    "Öffnet die Aufgabe" : {
+
+    },
+    "Überblick und los geht’s" : {
+
+    },
+    "Übergeordneter Ordner" : {
+
+    },
+    "Übermittelter Kontext (ca. %lld Tokens)" : {
+
+    },
+    "Übernehmen" : {
+
+    },
+    "Übernehmen ersetzt Titel, Inhalt und Priorität der Aufgabe; Originalnotiz und Transkript bleiben erhalten. Es wird kein Agent gestartet." : {
+
+    },
+    "Übernehmen legt den Vorschlag als neue Entwurfsversion an und ersetzt Titel, Inhalt und Priorität dieser Aufgabe; Originalnotiz, Transkript, Labels und Abhängigkeiten bleiben. Verwerfen behält das Gespräch und ändert nichts. Es wird kein Agent gestartet." : {
+
+    },
+    "Übernommen: %@" : {
+
+    },
+    "Übersicht" : {
+
+    },
+    "Übersprungen" : {
+
+    },
+    "übernommen" : {
+
+    },
+    "„%@“ abgeschlossen." : {
+
+    },
+    "„%@“ fehlgeschlagen: Der Hintergrunddienst ist nicht erreichbar. Bitte in den Einstellungen den Dienst aktivieren oder starten." : {
+
+    },
+    "„%@“ ist nicht möglich: %@ ist in diesem Dienst nicht verfügbar." : {
+
+    },
+    "„%@“ wurde angenommen und läuft im Hintergrund." : {
+
+    },
+    "„%@“: Der Dienst hat nicht rechtzeitig geantwortet. Der Vorgang kann im Hintergrund weiterlaufen – bitte den Status prüfen." : {
+
+    },
+    "„Erben“ verwendet die Voreinstellung des Agenten. Projekte und einzelne Aufträge können eigene Werte festlegen; nicht unterstützte Kombinationen werden vor dem Start gemeldet, nie still ersetzt." : {
+
+    }
+  },
+  "version" : "1.0"
+}

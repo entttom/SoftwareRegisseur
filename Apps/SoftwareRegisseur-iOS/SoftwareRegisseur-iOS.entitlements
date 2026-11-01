@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- iOS-App. Werte aus Config/Local.xcconfig (ADR-0013). CloudKit + aps-environment für CKSyncEngine (stille Pushes, keine sichtbaren Mitteilungen, ADR-0011). Keine App Group: Datenbank im eigenen App-Container (ADR-0019). -->
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>$(SR_APS_ENVIRONMENT)</string>
+	<key>com.apple.developer.icloud-container-identifiers</key>
+	<array>
+		<string>$(SR_CLOUDKIT_CONTAINER)</string>
+	</array>
+	<key>com.apple.developer.icloud-services</key>
+	<array>
+		<string>CloudKit</string>
+	</array>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>$(SR_DEVELOPMENT_TEAM).$(SR_IOS_BUNDLE_ID)</string>
+		<string>$(SR_KEYCHAIN_SHARED_GROUP)</string>
+	</array>
+</dict>
+</plist>
