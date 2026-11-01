@@ -135,7 +135,9 @@ struct ContractTests {
         let job = try await env.request(orchestrator, item, schedule: JobSchedule(kind: .whenQuotaAvailable(expectedReset: reset, requestedAt: t0)))
         #expect(await orchestrator.tick(now: t0).started.isEmpty)
         let status = try await orchestrator.scheduleStatus(jobId: job.jobId, now: t0)
-        #expect(status.text == "Start bei verfügbarem Kontingent, frühestens 22:00 (erwarteter Reset laut Benutzer)")
+        // A quota schedule has no zone of its own and is shown in the device's zone (CI runs in UTC).
+        let earliest = ScheduleStatusText.format(reset, now: t0, timeZone: .current)
+        #expect(status.text == "Start bei verfügbarem Kontingent, frühestens \(earliest) (erwarteter Reset laut Benutzer)")
         #expect(status.nextQuotaAttempt?.isUserRequested == true)
         #expect(await orchestrator.tick(now: reset).started == [job.jobId])
         await orchestrator.waitUntilSessionEnds(job.jobId)
