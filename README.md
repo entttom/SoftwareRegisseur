@@ -125,14 +125,6 @@ Dann entscheiden Sie: **Freigeben**, **Änderungen anfordern** oder **Ablehnen**
 
 Beim ersten Start führt Sie die App Schritt für Schritt durch die Einrichtung – dauert nur wenige Minuten, und alles lässt sich später ändern.
 
-## Ehrlicher Stand
-
-Software Regisseur 1.0 ist **vollständig gebaut**: iPhone-/iPad-App, Mac-App, Hintergrunddienst und alle oben beschriebenen Funktionen sind vorhanden und automatisiert getestet. Drei Dinge sollten Sie vor dem Loslegen wissen:
-
-- **Noch kein fertiges Download-Paket.** Zum Ausprobieren wird die App derzeit mit Ihrem eigenen Apple-Entwicklerzugang gebaut und signiert (Anleitung: [Entwicklerhinweise](docs/ENTWICKLUNG.md)). Ohne diese Signierung starten die Apps zwar, aber iCloud-Abgleich und Hintergrunddienst bleiben aus.
-- **Echte Praxisläufe stehen noch aus.** Die abschließende Abnahme mit richtigen Agentenläufen auf echter Hardware ist noch nicht abgeschlossen ([Abnahmeprotokoll](docs/acceptance/abnahmematrix.md)).
-- **Weitermachen in der Claude-/ChatGPT-App** auf dem Handy ist noch nicht nachgewiesen. Status und Freigaben laufen stattdessen über Software Regisseur selbst – das funktioniert bereits.
-
 ## Mehr erfahren
 
 - 📖 **[Handbuch](docs/handbuch/README.md)** – Installation, Einrichtung, KI-Schlüssel, Agenten, Synchronisierung, Datenschutz, häufige Fragen
