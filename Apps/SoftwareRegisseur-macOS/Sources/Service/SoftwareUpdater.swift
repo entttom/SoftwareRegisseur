@@ -9,8 +9,9 @@ import SwiftUI
 // Sparkle-2-Anbindung der Mac-App (ADR-0017, Pflichtenheft Q3).
 //
 // Bewusst in einer Datei gekapselt: Die Einbindung in die UI besteht nur aus
-// `SoftwareUpdater` (einmal pro App), `CheckForUpdatesButton` (Menüleiste) und
-// `SoftwareUpdateCommands` (App-Menü). Beim Umbau der Oberfläche diese drei Stellen mitnehmen.
+// `SoftwareUpdater` (einmal pro App), `CheckForUpdatesButton` (Einstellungen),
+// `MenuBarUpdateButton` (Menüleiste, MenuBarContentView.swift) und `SoftwareUpdateCommands` (App-Menü).
+// Beim Umbau der Oberfläche diese Stellen mitnehmen.
 //
 // Die App läuft ohne App Sandbox (ADR-0020); Sparkle braucht daher weder
 // Installer-XPC-Entitlements noch `SUEnableInstallerLauncherService`.

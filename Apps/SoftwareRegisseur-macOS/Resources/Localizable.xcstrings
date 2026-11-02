@@ -46,6 +46,16 @@
     "%lld" : {
 
     },
+    "%lld %@" : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld %2$@"
+          }
+        }
+      }
+    },
     "%lld Dateien · +%lld −%lld" : {
 
     },
@@ -120,6 +130,9 @@
 
     },
     "(nicht vorhanden)" : {
+
+    },
+    "1 = nur Ordner direkt im Stammordner. Bei mehr Ebenen erscheinen auch Unterordner am iPhone zur Auswahl. Wegfallende Ordner werden auch aus iCloud entfernt; Ordner mit verknüpftem Projekt bleiben erhalten." : {
 
     },
     "ADR auswählen" : {
@@ -528,6 +541,9 @@
 
     },
     "Bitte wählen" : {
+
+    },
+    "Blockiert" : {
 
     },
     "Blockiert & fehlgeschlagen" : {
@@ -1222,6 +1238,9 @@
 
     },
     "Gemeinsamer Vorfahr" : {
+
+    },
+    "Geplant" : {
 
     },
     "Geplanter Start" : {
@@ -1998,6 +2017,9 @@
     "Noch nie erfolgreich synchronisiert" : {
 
     },
+    "Notiz" : {
+
+    },
     "Notiz in der Inbox erfassen" : {
 
     },
@@ -2092,6 +2114,9 @@
 
     },
     "Ordnerstruktur" : {
+
+    },
+    "Ordnertiefe unter Stammordnern" : {
 
     },
     "Original" : {
@@ -2280,6 +2305,9 @@
     "Scan fehlgeschlagen" : {
 
     },
+    "Scanner" : {
+
+    },
     "Scanner aktualisieren" : {
 
     },
@@ -2287,6 +2315,9 @@
 
     },
     "Schließen" : {
+
+    },
+    "Schließt das Hauptfenster. Menüleiste und Hintergrunddienst bleiben aktiv." : {
 
     },
     "Schlüssel eintragen" : {
@@ -2361,6 +2392,16 @@
     },
     "Software Regisseur – %@" : {
 
+    },
+    "Software Regisseur – %@, %lld brauchen Aufmerksamkeit" : {
+      "localizations" : {
+        "de-AT" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Software Regisseur – %1$@, %2$lld brauchen Aufmerksamkeit"
+          }
+        }
+      }
     },
     "Sortieren nach" : {
 
@@ -2500,6 +2541,9 @@
     "Suchen (Titel, Text, ID, Label)" : {
 
     },
+    "Sync" : {
+
+    },
     "Sync-Konflikte (%lld)" : {
 
     },
@@ -2591,6 +2635,9 @@
 
     },
     "Unterordner eines Repositories" : {
+
+    },
+    "Update %@" : {
 
     },
     "Update auf Version %@ ansehen …" : {
@@ -2718,6 +2765,9 @@
 
     },
     "Warte auf den Hintergrunddienst" : {
+
+    },
+    "Wartend" : {
 
     },
     "Wartend & geplant" : {
