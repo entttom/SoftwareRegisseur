@@ -40,6 +40,7 @@ Jeder neue relevante Architekturentscheid erhält die nächste freie Nummer und 
 | [0024](./0024-keine-commits-durch-software-regisseur.md) | Software Regisseur committet Request- und ADR-Dateien nie selbst | `accepted` |
 | [0025](./0025-ipad-unterstuetzung.md) | Die iOS-App unterstützt iPhone und iPad | `accepted` |
 | [0026](./0026-geraete-eigentum-host-pfade-job-branch-commits.md) | Geräte-Eigentum synchronisierter Daten, vom Mac berechnete Pfade und Commits auf dem Job-Branch | `accepted` |
+| [0027](./0027-cloudkit-immer-production.md) | Alle Builds verwenden die CloudKit-Umgebung Production | `accepted` |
 
 ## Arbeitsregel für Implementierungs-Agenten
 

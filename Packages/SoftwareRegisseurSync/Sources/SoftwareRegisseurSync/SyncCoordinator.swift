@@ -24,6 +24,9 @@ public struct SyncConfiguration: Sendable {
     public var engineStateScope: String
     public var metadataScope: String
     public var assetDirectory: URL
+    /// CloudKit environment this build talks to (`Production`, ADR-0027; from the Info.plist). Engine state
+    /// and server change tags of another environment are discarded on `start()`. nil = not checked.
+    public var cloudEnvironment: String?
 
     public init(
         deviceId: DeviceID,
@@ -35,7 +38,8 @@ public struct SyncConfiguration: Sendable {
         fullUploadBatchSize: Int = 500,
         engineStateScope: String = "cloudkit.private",
         metadataScope: String = "cloudkit.coordinator",
-        assetDirectory: URL = FileManager.default.temporaryDirectory.appendingPathComponent("SoftwareRegisseurSyncAssets", isDirectory: true)
+        assetDirectory: URL = FileManager.default.temporaryDirectory.appendingPathComponent("SoftwareRegisseurSyncAssets", isDirectory: true),
+        cloudEnvironment: String? = nil
     ) {
         self.deviceId = deviceId
         self.role = role
@@ -47,6 +51,7 @@ public struct SyncConfiguration: Sendable {
         self.engineStateScope = engineStateScope
         self.metadataScope = metadataScope
         self.assetDirectory = assetDirectory
+        self.cloudEnvironment = cloudEnvironment
     }
 }
 
@@ -70,6 +75,9 @@ struct CoordinatorMetadata: Codable, Equatable {
     /// means it was deleted (by another device or in Settings) and needs a user decision instead of a silent
     /// re-creation. nil = metadata from an earlier build (derived from `lastSuccessfulSend`).
     var zoneConfirmed: Bool?
+    /// CloudKit environment the engine state and server change tags belong to. nil = metadata from a build
+    /// before ADR-0027 (environment unknown).
+    var cloudEnvironment: String?
 
     struct CloudDeletionState: Codable, Equatable {
         var request: CloudDataDeletionRequest
@@ -135,6 +143,7 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
         if let data = try await store.engineState(scope: configuration.metadataScope), !data.isEmpty {
             metadata = (try? JSONDecoder().decode(CoordinatorMetadata.self, from: data)) ?? CoordinatorMetadata()
         }
+        try await adoptCloudEnvironment()
         // Crash recovery (spec N3): operations handed to CloudKit but never acknowledged are sent again.
         _ = try await store.resetInFlightOperations(at: now())
         try await createEngine()
@@ -147,6 +156,33 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
         }
         await refreshCounts()
         publish()
+    }
+
+    /// Engine state, server change tags and zone/account confirmations belong to one CloudKit environment.
+    /// Before ADR-0027 Xcode Debug builds used Development and release builds Production on the same local
+    /// database, so a release build reused Development state: everything counted as sent, and nothing reached
+    /// Production. On a different (or unknown) environment the state is discarded and all local data is
+    /// uploaded again; local data itself is never touched. A user's iCloud deletion (A34) stays in force.
+    private func adoptCloudEnvironment() async throws {
+        guard let current = configuration.cloudEnvironment, metadata.cloudEnvironment != current else { return }
+        let stored = try await store.engineState(scope: configuration.engineStateScope)
+        let syncedBefore = !(stored?.isEmpty ?? true) || metadata.lastSuccessfulFetch != nil || metadata.lastSuccessfulSend != nil
+        let previous = metadata.cloudEnvironment ?? "unbekannt"
+        metadata.cloudEnvironment = current
+        if syncedBefore {
+            SyncLog.logger.notice("CloudKit-Umgebung gewechselt (\(previous, privacy: .public) → \(current, privacy: .public)): Synchronisierungsstand verworfen, alle lokalen Daten werden neu hochgeladen.")
+            try await store.saveEngineState(Data(), scope: configuration.engineStateScope, at: now())
+            metadata.lastSuccessfulFetch = nil
+            metadata.lastSuccessfulSend = nil
+            // User record names of the other environment say nothing about this one.
+            metadata.knownUserRecordName = nil
+            metadata.pendingUserRecordName = nil
+            if metadata.accountPause == .switched { metadata.accountPause = nil }
+            metadata.zoneDeletion = nil
+            metadata.zoneConfirmed = false
+            scheduleFullUpload()
+        }
+        await persistMetadata()
     }
 
     private func createEngine() async throws {
@@ -204,6 +240,9 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
             rerunRequested = false
             result = await runOnce(engine, fetch: true)
         } while rerunRequested && result.report != nil
+        if let report = result.report {
+            SyncLog.logger.info("Abgleich (\(String(describing: reason), privacy: .public)) fertig: gesendet \(report.sent), Fehler beim Senden \(report.sendFailures), neu eingereiht \(report.requeuedForUpload), ungültig \(report.invalid)")
+        }
         isRunning = false
         status.isSyncing = false
         await refreshCounts()
@@ -510,6 +549,7 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
                 await persistMetadata()
             }
             for failure in failedZoneSaves where failure.zoneID == configuration.zoneID {
+                SyncLog.logger.error("Zone \(failure.zoneID.zoneName, privacy: .public) nicht angelegt: \(SyncLog.describe(failure.error), privacy: .public)")
                 status.lastError = SyncErrorText.message(for: failure.error)
                 if failure.error.code == .quotaExceeded { quotaExceeded = true }
             }
@@ -701,6 +741,7 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
 
     private func noteInvalid(_ error: any Error) {
         report.invalid += 1
+        SyncLog.logger.error("Datensatz aus iCloud übersprungen: \(SyncLog.describe(error), privacy: .public)")
         if case SyncMappingError.unsupportedSchema = error {
             newerSchemaSeen = true
         } else {
@@ -785,6 +826,7 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
         }
         for (recordID, error) in sent.failedRecordDeletes {
             report.sendFailures += 1
+            SyncLog.logger.error("Löschung \(recordID.recordName, privacy: .public) fehlgeschlagen: \(SyncLog.describe(error), privacy: .public)")
             await markFailed(inFlight.removeValue(forKey: recordID.recordName) ?? [], error: error)
         }
     }
@@ -795,6 +837,7 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
         let operations = inFlight.removeValue(forKey: name) ?? []
         mapper.cleanUpAsset(of: record)
         report.sendFailures += 1
+        SyncLog.logger.error("Datensatz \(name, privacy: .public) nicht gespeichert: \(SyncLog.describe(failure.error), privacy: .public)")
         // Not acknowledged: back to pending, so a resend in this run (or the next run) picks them up.
         try? await store.markPending(operations, at: now())
         guard let engine, let parsed = SyncRecordSchema.parse(recordName: name) else { return }
@@ -967,6 +1010,7 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
         switch change {
         case let .signedIn(user):
             if let known = metadata.knownUserRecordName, known != user {
+                SyncLog.logger.notice("Anderer iCloud-Account angemeldet: Synchronisierung pausiert bis zur Bestätigung.")
                 metadata.pendingUserRecordName = user
                 metadata.accountPause = .switched
                 status.accountState = .switched
@@ -980,6 +1024,7 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
             if metadata.accountPause != .switched { metadata.accountPause = .signedOut }
             status.accountState = metadata.accountPause == .switched ? .switched : .signedOut
         case let .switched(_, current):
+            SyncLog.logger.notice("iCloud-Account gewechselt: Synchronisierung pausiert bis zur Bestätigung.")
             metadata.pendingUserRecordName = current
             metadata.accountPause = .switched
             status.accountState = .switched
@@ -987,6 +1032,7 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
     }
 
     private func handleRunError(_ error: any Error) async -> SyncFailure {
+        SyncLog.logger.error("Abgleich fehlgeschlagen: \(SyncLog.describe(error), privacy: .public)")
         let ckError = error as? CKError
         if let seconds = ckError?.retryAfterSeconds { noteRetryAfter(seconds) }
         switch ckError?.code {

@@ -79,7 +79,8 @@ enum AgentServiceMain {
         let database = try AppDatabase.openWriter(at: storage.databaseURL)
         let bundleConfiguration = ServiceBundleConfiguration(bundle: .main)
         let cloudSync: CloudSyncSetup = switch bundleConfiguration.cloudKit {
-        case let .available(container): .available(CloudKitSyncEngineAdapter.factory(containerIdentifier: container))
+        case let .available(container):
+            .available(CloudKitSyncEngineAdapter.factory(containerIdentifier: container), environment: bundleConfiguration.cloudKitEnvironment)
         case let .unavailable(reason): .unavailable(reason: reason)
         }
         let git = try? GitClient.locate()

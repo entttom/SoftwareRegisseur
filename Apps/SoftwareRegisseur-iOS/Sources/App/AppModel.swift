@@ -30,6 +30,8 @@ final class AppModel {
     private(set) var syncStatus = SyncStatus()
     private(set) var syncStartError: String?
     let cloudAvailability: CloudSyncAvailability
+    /// CloudKit environment from the entitlement (ADR-0027); the coordinator discards state of another one.
+    let cloudEnvironment: String?
     /// Bumped after every local write and every sync run; views reload on change.
     private(set) var dataVersion = 0
     /// Section the user is on (spec P, iPhone views 1–8). Switch sections with `show(_:)`.
@@ -77,6 +79,7 @@ final class AppModel {
         self.keychain = keychain
         keys = ProviderKeyService(store: keychain)
         cloudAvailability = CloudSyncAvailability.detect(bundle: bundle)
+        cloudEnvironment = CloudSyncAvailability.environment(bundle: bundle)
         let initial = UserDefaults.standard.string(forKey: "SRInitialTab").flatMap(AppTab.init(rawValue:))
         selectedTab = initial ?? .overview
         onboarding = MobileOnboarding(progress: Self.onboardingProgress())
@@ -264,7 +267,8 @@ final class AppModel {
     private func startSync() async {
         guard let database, case let .available(container) = cloudAvailability else { return }
         let configuration = SyncConfiguration(
-            deviceId: deviceId, role: .mobile, assetDirectory: directories.syncAssetDirectory
+            deviceId: deviceId, role: .mobile, assetDirectory: directories.syncAssetDirectory,
+            cloudEnvironment: cloudEnvironment
         )
         let coordinator = SyncCoordinator(
             store: database.sync, configuration: configuration,
@@ -568,6 +572,12 @@ enum CloudSyncAvailability: Equatable, Sendable {
         let container = value("SRCloudKitContainerIdentifier")
         guard container.hasPrefix("iCloud."), !container.contains("$(") else { return .unavailable(.missingContainer) }
         return .available(container: container)
+    }
+
+    /// `SRCloudKitEnvironment` (Config/Base.xcconfig, same value as the entitlement); nil if not substituted.
+    static func environment(bundle: Bundle) -> String? {
+        let value = (bundle.object(forInfoDictionaryKey: "SRCloudKitEnvironment") as? String)?.trimmingCharacters(in: .whitespaces) ?? ""
+        return value.isEmpty || value.contains("$(") ? nil : value
     }
 }
 

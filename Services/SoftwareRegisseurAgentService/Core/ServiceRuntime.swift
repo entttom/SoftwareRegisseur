@@ -16,7 +16,8 @@ import SoftwareRegisseurWorkspace
 enum CloudSyncSetup: Sendable {
     /// Unsignierter Build, Platzhalter-Team oder fehlender Container: kein `CKContainer` (würde abstürzen).
     case unavailable(reason: String)
-    case available(SyncEngineFactory)
+    /// `environment`: CloudKit environment of the entitlement (ADR-0027), checked by the coordinator.
+    case available(SyncEngineFactory, environment: String? = nil)
 }
 
 /// Austauschbare Abhängigkeiten des Dienstes (Produktion: `AgentServiceMain`, Tests: Fakes).
@@ -209,10 +210,11 @@ actor ServiceRuntime {
         switch deps.cloudSync {
         case let .unavailable(reason):
             unavailableReason = reason
-        case let .available(factory):
+        case let .available(factory, cloudEnvironment):
             coordinator = SyncCoordinator(
                 store: database.sync,
-                configuration: SyncConfiguration(deviceId: deviceId, role: .executionHost(hostId), assetDirectory: deps.storage.syncAssetsURL),
+                configuration: SyncConfiguration(deviceId: deviceId, role: .executionHost(hostId), assetDirectory: deps.storage.syncAssetsURL,
+                                                 cloudEnvironment: cloudEnvironment),
                 now: { clock.now() },
                 engineFactory: factory
             )

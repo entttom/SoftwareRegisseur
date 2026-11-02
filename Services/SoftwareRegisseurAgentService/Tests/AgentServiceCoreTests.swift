@@ -178,6 +178,14 @@ struct ServiceBuildingBlockTests {
         ])
         #expect(signed.cloudKit == .available(container: "iCloud.at.beispiel.SR"))
         #expect(signed.keychainAccessGroup == "ABCDE12345.at.beispiel.SR.shared-keys")
+        #expect(signed.cloudKitEnvironment == nil)
+    }
+
+    @Test func cloudKitEnvironmentComesFromInfoPlist() {
+        let production = ServiceBundleConfiguration(values: ["SRCloudKitEnvironment": "Production"])
+        #expect(production.cloudKitEnvironment == "Production")
+        let unsubstituted = ServiceBundleConfiguration(values: ["SRCloudKitEnvironment": "$(SR_CLOUDKIT_ENVIRONMENT)"])
+        #expect(unsubstituted.cloudKitEnvironment == nil)
     }
 
     @Test func logRedactionRemovesSecrets() {

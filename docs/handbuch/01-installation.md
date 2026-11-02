@@ -42,7 +42,7 @@ Mit den Vorlagenwerten (Platzhalter-Team) oder mit `Scripts/build.sh` entsteht e
 - die App kann sich nicht mit dem Dienst verbinden (die XPC-Verbindung verlangt, dass beide Teile vom selben Team signiert sind),
 - API-Schlüssel können nicht in der gemeinsamen Schlüsselbund-Gruppe gespeichert werden.
 
-> **Hinweis CloudKit-Schema:** Entwicklungs-Builds legen die Datensatztypen in der Development-Umgebung des CloudKit-Containers an. Release-Builds (Developer ID) verwenden die Production-Umgebung; dorthin muss das Schema im CloudKit-Dashboard übertragen werden. Dieser Schritt ist im Projekt noch nicht real durchlaufen.
+> **Hinweis CloudKit:** Alle Builds, auch Xcode-Debug-Builds, verwenden die Production-Umgebung des CloudKit-Containers (ADR-0027). Das Schema ist dort deployt. Es liegt als `Config/CloudKit/schema.ckdb` im Repository; Änderungen beschreibt `Config/CloudKit/README.md`. Wer vorher mit Development-Builds synchronisiert hat: Beim ersten Start mit dem neuen Stand lädt jedes Gerät seine Daten einmal vollständig nach Production hoch.
 
 ### Hintergrunddienst aktivieren (Login-Agent)
 

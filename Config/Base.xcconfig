@@ -49,5 +49,10 @@ SR_AGENT_LAUNCHD_PLIST_NAME = $(SR_AGENT_BUNDLE_ID).plist
 // Keychain: gemeinsame Gruppe für opt-in iCloud-Schlüsselbund (Recherche §7.3).
 SR_KEYCHAIN_SHARED_GROUP = $(SR_DEVELOPMENT_TEAM).$(SR_BUNDLE_ID_PREFIX).SoftwareRegisseur.shared-keys
 
+// CloudKit-Umgebung für alle Builds, auch Xcode-Debug (ADR-0027): Entitlement
+// com.apple.developer.icloud-container-environment und Info.plist-Schlüssel SRCloudKitEnvironment.
+// Neue Datensatztypen/Felder: Config/CloudKit/schema.ckdb nach Development importieren und deployen.
+SR_CLOUDKIT_ENVIRONMENT = Production
+
 // Platzhalter der Vorlage, gegen den die Signierprüfung vergleicht.
 SR_TEMPLATE_TEAM_PLACEHOLDER = XXXXXXXXXX

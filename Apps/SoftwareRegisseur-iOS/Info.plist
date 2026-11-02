@@ -32,6 +32,8 @@
 	<string>Software Regisseur wandelt Sprachaufnahmen mit der Spracherkennung von Apple in Text um, damit Sie Ideen diktieren können.</string>
 	<key>SRCloudKitContainerIdentifier</key>
 	<string>$(SR_CLOUDKIT_CONTAINER)</string>
+	<key>SRCloudKitEnvironment</key>
+	<string>$(SR_CLOUDKIT_ENVIRONMENT)</string>
 	<key>SRCodeSigningAllowed</key>
 	<string>$(CODE_SIGNING_ALLOWED)</string>
 	<key>SRDevelopmentTeam</key>

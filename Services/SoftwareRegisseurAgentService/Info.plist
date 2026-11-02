@@ -28,6 +28,8 @@
 	<string>$(SR_APP_GROUP_MAC)</string>
 	<key>SRCloudKitContainerIdentifier</key>
 	<string>$(SR_CLOUDKIT_CONTAINER)</string>
+	<key>SRCloudKitEnvironment</key>
+	<string>$(SR_CLOUDKIT_ENVIRONMENT)</string>
 	<key>SRCodeSigningAllowed</key>
 	<string>$(CODE_SIGNING_ALLOWED)</string>
 	<key>SRDevelopmentTeam</key>

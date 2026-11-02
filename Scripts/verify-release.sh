@@ -321,6 +321,7 @@ if [ -d "${agent}" ]; then
     expect_key "Agent Service" "${agent_ent}" com.apple.developer.icloud-services CloudKit
     expect_key "Agent Service" "${agent_ent}" com.apple.developer.icloud-container-identifiers "iCloud."
     expect_key "Agent Service" "${agent_ent}" com.apple.developer.aps-environment production
+    expect_key "Agent Service" "${agent_ent}" com.apple.developer.icloud-container-environment Production
     expect_key "Agent Service" "${agent_ent}" com.apple.security.application-groups "${team}."
     expect_key "Agent Service" "${agent_ent}" keychain-access-groups "${team}."
     check_profile "Agent Service" "${agent}"

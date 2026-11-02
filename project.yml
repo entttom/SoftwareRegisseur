@@ -124,6 +124,7 @@ targets:
         # CloudKit nur, wenn der Build signiert ist und ein echtes Team hat (sonst fehlt die
         # iCloud-Berechtigung und CKContainer würde abstürzen). Auswertung: CloudSyncAvailability.
         SRCloudKitContainerIdentifier: $(SR_CLOUDKIT_CONTAINER)
+        SRCloudKitEnvironment: $(SR_CLOUDKIT_ENVIRONMENT)
         SRCodeSigningAllowed: $(CODE_SIGNING_ALLOWED)
         SRDevelopmentTeam: $(SR_DEVELOPMENT_TEAM)
         SRTemplateTeamPlaceholder: $(SR_TEMPLATE_TEAM_PLACEHOLDER)
@@ -293,6 +294,7 @@ targets:
         # CloudKit nur in signierten Builds mit echtem Team (sonst fehlt die iCloud-Berechtigung und
         # CKContainer würde abstürzen). Auswertung: ServiceBundleConfiguration.
         SRCloudKitContainerIdentifier: $(SR_CLOUDKIT_CONTAINER)
+        SRCloudKitEnvironment: $(SR_CLOUDKIT_ENVIRONMENT)
         SRCodeSigningAllowed: $(CODE_SIGNING_ALLOWED)
         SRDevelopmentTeam: $(SR_DEVELOPMENT_TEAM)
         SRTemplateTeamPlaceholder: $(SR_TEMPLATE_TEAM_PLACEHOLDER)

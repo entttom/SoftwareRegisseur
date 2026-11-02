@@ -8,6 +8,8 @@ struct ServiceBundleConfiguration: Sendable, Hashable {
     }
 
     var cloudKit: CloudKit
+    /// CloudKit environment from the entitlement (ADR-0027); the coordinator discards state of another one.
+    var cloudKitEnvironment: String?
     /// Gemeinsame Schlüsselbund-Gruppe für API-Schlüssel (UI schreibt, Dienst liest), falls gesetzt.
     var keychainAccessGroup: String?
 
@@ -29,6 +31,8 @@ struct ServiceBundleConfiguration: Sendable, Hashable {
                 cloudKit = .unavailable(reason: "kein gültiger CloudKit-Container konfiguriert")
             }
         }
+        let environment = value("SRCloudKitEnvironment")
+        cloudKitEnvironment = environment.isEmpty || environment.contains("$(") ? nil : environment
         let group = value("SRKeychainSharedGroup")
         keychainAccessGroup = group.isEmpty || group.contains("$(") || group.hasPrefix(value("SRTemplateTeamPlaceholder") + ".")
             ? nil : group
@@ -36,7 +40,7 @@ struct ServiceBundleConfiguration: Sendable, Hashable {
 
     init(bundle: Bundle) {
         let keys = ["SRCodeSigningAllowed", "SRDevelopmentTeam", "SRTemplateTeamPlaceholder", "SRCloudKitContainerIdentifier",
-                    "SRKeychainSharedGroup"]
+                    "SRCloudKitEnvironment", "SRKeychainSharedGroup"]
         var values: [String: String] = [:]
         for key in keys {
             if let value = bundle.object(forInfoDictionaryKey: key) as? String { values[key] = value }
