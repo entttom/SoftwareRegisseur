@@ -146,9 +146,3 @@ Der Quellcode ist öffentlich einsehbar, aber **nicht Open Source im Sinne der O
 [PolyForm Shield License 1.0.0](LICENSE). Jede Nutzung ist erlaubt, auch durch Unternehmen und für eigene
 Zwecke; ausgeschlossen ist, ein Produkt oder einen Dienst anzubieten, der mit Software Regisseur
 konkurriert (etwa Weiterverkauf, umbenannte Kopie oder gehosteter Dienst darauf).
-
-<br>
-
-<div align="center">
-<sub>Software Regisseur wird mit Claude Code entwickelt.</sub>
-</div>
