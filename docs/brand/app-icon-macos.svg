@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-  <!-- macOS-Icon-Raster: 824 × 824 Körper mit 100 px Rand, Eckenradius 185,4 -->
-  <rect x="100" y="100" width="824" height="824" rx="185.4" fill="#F2EBDD"/>
-  <g transform="translate(100 100) scale(0.8046875) translate(128 128) scale(1.5)">
-    <path d="M112 203V112H203V140H140V203ZM309 112H400V203H372V140H309ZM400 309V400H309V372H372V309ZM203 400H112V309H140V372H203Z" fill="#7C302D"/>
-    <path fill="#7C302D" fill-rule="evenodd" d="M171 341V171H253C302 171 327 193 327 229C327 256 312 274 285 283L341 341H297L247 290H209V341ZM209 207V254H251C276 254 290 246 290 230C290 214 276 207 251 207Z"/>
-  </g>
-</svg>

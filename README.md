@@ -127,10 +127,10 @@ Beim ersten Start führt Sie die App Schritt für Schritt durch die Einrichtung 
 
 ## Mehr erfahren
 
-- 📖 **[Handbuch](docs/handbuch/README.md)** – Installation, Einrichtung, KI-Schlüssel, Agenten, Synchronisierung, Datenschutz, häufige Fragen
-- 🔒 **[Datenschutz](docs/handbuch/06-datenschutz.md)** – was gespeichert wird, was nie, und wie Sie alles exportieren oder löschen
-- ❓ **[Grenzen und FAQ](docs/handbuch/07-grenzen-und-faq.md)**
-- 🛠️ **[Für Entwickler](docs/ENTWICKLUNG.md)** – Aufbau des Projekts, Bauen, Testen, Architekturentscheidungen
+- **[Handbuch](docs/handbuch/README.md)** – Installation, Einrichtung, KI-Schlüssel, Agenten, Synchronisierung, Datenschutz, häufige Fragen
+- **[Datenschutz](docs/handbuch/06-datenschutz.md)** – was gespeichert wird, was nie, und wie Sie alles exportieren oder löschen
+- **[Grenzen und FAQ](docs/handbuch/07-grenzen-und-faq.md)**
+- **[Für Entwickler](docs/ENTWICKLUNG.md)** – Aufbau des Projekts, Bauen, Testen, Architekturentscheidungen
 
 ## Lizenz
 
