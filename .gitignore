@@ -22,3 +22,6 @@ SoftwareRegisseur.xcodeproj/
 
 # Signierte lokale Builds für die E2E-Abnahme
 /DerivedData-signed/
+
+# Pflichtenheft bleibt nur lokal (nicht im Repository)
+/Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md
