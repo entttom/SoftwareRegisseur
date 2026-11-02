@@ -19,7 +19,7 @@ Details zu Grenzen: [Handbuch, Kapitel 7](handbuch/07-grenzen-und-faq.md).
 
 | Pfad | Inhalt |
 |---|---|
-| `Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md` | Verbindliches Pflichtenheft (Version-1.0-Spezifikation) mit 42 Abnahmekriterien |
+| `Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md` | Verbindliches Pflichtenheft (Version-1.0-Spezifikation) mit 42 Abnahmekriterien; liegt nur lokal beim Eigentümer, nicht im Repository |
 | `AGENTS.md` | Unmittelbar für Coding-Agenten gültige Arbeitsanweisungen |
 | `CLAUDE.md` | Bindet `AGENTS.md` für Claude Code ein (`@AGENTS.md`) |
 | `project.yml` | XcodeGen-Spezifikation; erzeugt das nicht eingecheckte `SoftwareRegisseur.xcodeproj` ([ADR-0022](adr/0022-xcodegen-projekt-statt-workspace.md)) |
@@ -78,7 +78,7 @@ Scripts/sync-string-catalogs.sh                           # UI-Strings in die St
 
 | Thema | Dokument |
 |---|---|
-| Pflichtenheft | [Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md](../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md) |
+| Pflichtenheft | `Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md` (nur lokal, nicht im Repository) |
 | Architekturentscheidungen | [docs/adr/README.md](adr/README.md) |
 | Handbuch (Installation, Einrichtung, Schlüssel, Agenten, Synchronisierung, Datenschutz, Grenzen, FAQ) | [docs/handbuch/README.md](handbuch/README.md) |
 | Release, Signierung, Notarisierung, Updates | [docs/release/README.md](release/README.md) |

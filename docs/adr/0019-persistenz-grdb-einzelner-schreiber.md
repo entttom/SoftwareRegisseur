@@ -37,6 +37,6 @@ Migrationstests von leerer und älterer Datenbank; Mehrprozesstest (Service schr
 
 ## Verweise
 
-- [Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte C, N
+- Pflichtenheft, Abschnitte C, N
 - [ADR-0003](0003-git-markdown-und-cloudkit.md), [ADR-0011](0011-cloudkit-ohne-sichtbare-push-benachrichtigungen.md), [ADR-0013](0013-mindestversionen-und-lokale-signierkonfiguration.md)
 - [ADR-Index](README.md)

@@ -2,7 +2,7 @@
 
 ## Verbindlicher Auftrag
 
-1. Lies **vollständig** `Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md`.
+1. Lies **vollständig** `Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md`. Die Datei liegt nur lokal beim Eigentümer und ist nicht im Repository; fehlt sie, gelten ADRs und Abnahmematrix als maßgebliche Grundlage, und offene Punkte werden beim Eigentümer erfragt.
 2. Lies den ADR-Index `docs/adr/README.md` und alle `accepted`-ADRs vor Architekturänderungen.
 3. **Jede besprochene Funktion ist Bestandteil von Version 1.0.** Es gibt keinen funktionsreduzierten MVP. Meilensteine dienen nur der internen Umsetzung.
 4. Achte besonders auf ADR-0006: pro Agent auswählbares **Modell und Reasoning-/Effort-Level** auf iOS und macOS, global/pro Projekt/pro Auftrag, dynamische Kompatibilitätsprüfung und keine stillen Fallbacks.

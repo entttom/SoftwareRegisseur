@@ -33,5 +33,5 @@ A10, A17–A19, A24, A26, A33.
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)

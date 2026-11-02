@@ -36,6 +36,6 @@ Entwickler brauchen XcodeGen (`brew install xcodegen`); `Scripts/build.sh` erzeu
 
 ## Verweise
 
-- [Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitt T
+- Pflichtenheft, Abschnitt T
 - [ADR-0013](0013-mindestversionen-und-lokale-signierkonfiguration.md), [ADR-0020](0020-agent-service-unsandboxed-xpc.md)
 - [ADR-Index](README.md)

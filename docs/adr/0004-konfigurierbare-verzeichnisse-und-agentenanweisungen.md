@@ -33,5 +33,5 @@ A05, A06, A23, A30; manuelle AGENTS.md-Inhalte bleiben intakt.
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)

@@ -33,5 +33,5 @@ A03, A04, A10, A24, A33, A34; idempotente Updates und Konflikttests.
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)

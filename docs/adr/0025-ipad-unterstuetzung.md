@@ -36,6 +36,6 @@ Screenshots und UI-Prüfung auf iPad-Simulatoren in Vollbild und Split View; A07
 
 ## Verweise
 
-- [Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte B, H1, P
+- Pflichtenheft, Abschnitte B, H1, P
 - [ADR-0002](0002-native-apple-menuleiste-hintergrunddienst.md)
 - [ADR-Index](README.md)

@@ -37,5 +37,5 @@ Tests mit und ohne `gh`, Konfliktfall lokal vs. GitHub; A25, A27.
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitt M3
+- Verbindliches Pflichtenheft, Abschnitt M3
 - [ADR-Index](README.md)

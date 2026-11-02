@@ -37,6 +37,6 @@ Jobs-Tests für Weiterleitung, Ablauf und Doppelantwort; End-to-End mit signiert
 
 ## Verweise
 
-- [Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte J4, J6, L3
+- Pflichtenheft, Abschnitte J4, J6, L3
 - [ADR-0010](0010-offizielle-mobile-agenten-sitzungen.md), [ADR-0011](0011-cloudkit-ohne-sichtbare-push-benachrichtigungen.md), [ADR-0021](0021-agenten-adapter-schnittstellen.md)
 - [ADR-Index](README.md)

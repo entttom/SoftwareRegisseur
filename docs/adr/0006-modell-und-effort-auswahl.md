@@ -33,5 +33,5 @@ A35–A42. Tests für Stufenfilter, globale/Projekt-/Job-Vererbung, Offline-Meta
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)

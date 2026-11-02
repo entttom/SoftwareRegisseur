@@ -4,7 +4,7 @@ Dieses Handbuch beschreibt, was in Version 1.0 implementiert ist. Teile, die noc
 
 > **Nicht verifiziert:** … (mit Verweis auf den offenen Test oder ADR)
 
-Maßgeblich bleiben das [Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md) und die [ADRs](../adr/README.md). Der Prüfstand aller Abnahmekriterien steht in der [Abnahmematrix](../acceptance/abnahmematrix.md).
+Maßgeblich bleiben das Pflichtenheft und die [ADRs](../adr/README.md). Der Prüfstand aller Abnahmekriterien steht in der [Abnahmematrix](../acceptance/abnahmematrix.md).
 
 | Kapitel | Inhalt |
 |---|---|

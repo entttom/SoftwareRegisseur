@@ -1,6 +1,6 @@
 # Abnahmematrix Software Regisseur 1.0 (A01–A42)
 
-Die Szenarien und Muss-Ergebnisse stehen im [Pflichtenheft, Abschnitt R](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md). Diese Datei hält den Prüfstand fest. Die Abläufe für die realen Nachweise stehen im [E2E-Testplan](e2e-testplan.md).
+Die Szenarien und Muss-Ergebnisse stehen im Pflichtenheft, Abschnitt R. Diese Datei hält den Prüfstand fest. Die Abläufe für die realen Nachweise stehen im [E2E-Testplan](e2e-testplan.md).
 
 **Stand:** 2026-10-30
 

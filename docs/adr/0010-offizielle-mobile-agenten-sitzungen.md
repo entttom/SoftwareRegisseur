@@ -33,5 +33,5 @@ A13, A14, A20, A31, A32; nachvollziehbarer E2E-Spike pro Anbieter. Entscheidung 
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)

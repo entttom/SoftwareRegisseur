@@ -1,6 +1,6 @@
 # End-to-End-Testplan Software Regisseur 1.0 (A01–A42)
 
-**Stand:** 2026-10-30. Gehört zur [Abnahmematrix](abnahmematrix.md). Szenarien und Muss-Ergebnisse: [Pflichtenheft, Abschnitt R](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md).
+**Stand:** 2026-10-30. Gehört zur [Abnahmematrix](abnahmematrix.md). Szenarien und Muss-Ergebnisse: Pflichtenheft, Abschnitt R.
 
 Dieser Plan beschreibt die **realen** Nachweise, die automatisierte Tests nicht ersetzen können. Er wird gemeinsam abgearbeitet:
 

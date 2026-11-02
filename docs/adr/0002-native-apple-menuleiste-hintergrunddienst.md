@@ -33,5 +33,5 @@ A01, A10, A17–A21; Hintergrunddienst übersteht geschlossene Fenster, keine un
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)

@@ -38,6 +38,6 @@ Spike-Protokoll zu den Nutzungsbedingungen von Codex und Claude Code unter `docs
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte B, J5, Q3, Q4
+- Verbindliches Pflichtenheft, Abschnitte B, J5, Q3, Q4
 - [ADR-0001](0001-version-1-vollumfang-und-adr-governance.md), [ADR-0009](0009-direktvertrieb-signierung-sandbox-prufung.md)
 - [ADR-Index](README.md)

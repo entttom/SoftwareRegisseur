@@ -35,6 +35,6 @@ Build ohne `Local.xcconfig` scheitert mit Hinweis; Build mit Vorlage-Werten erze
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte B, Q3, Q4
+- Verbindliches Pflichtenheft, Abschnitte B, Q3, Q4
 - [ADR-0009](0009-direktvertrieb-signierung-sandbox-prufung.md)
 - [ADR-Index](README.md)

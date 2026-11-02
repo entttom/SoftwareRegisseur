@@ -33,5 +33,5 @@ A07–A11, A27, A34; iOS-offline und Provider-Fehler testen.
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)

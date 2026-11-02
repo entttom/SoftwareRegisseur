@@ -64,6 +64,6 @@ Unit-Tests für alle erlaubten und verbotenen Übergänge jeder Zustandsmaschine
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte E2, F5, J2a, K2, N3, O
+- Verbindliches Pflichtenheft, Abschnitte E2, F5, J2a, K2, N3, O
 - [ADR-0006](0006-modell-und-effort-auswahl.md), [ADR-0007](0007-job-queue-locks-worktrees-review.md)
 - [ADR-Index](README.md)

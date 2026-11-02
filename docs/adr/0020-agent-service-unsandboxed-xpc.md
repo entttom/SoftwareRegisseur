@@ -36,6 +36,6 @@ Spikes S1–S3 aus der M0-Recherche; A01, A21, A28, A30.
 
 ## Verweise
 
-- [Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte C, D3, L3, Q2
+- Pflichtenheft, Abschnitte C, D3, L3, Q2
 - [ADR-0002](0002-native-apple-menuleiste-hintergrunddienst.md), [ADR-0009](0009-direktvertrieb-signierung-sandbox-prufung.md), [ADR-0017](0017-sparkle-updates.md), [ADR-0019](0019-persistenz-grdb-einzelner-schreiber.md)
 - [ADR-Index](README.md)

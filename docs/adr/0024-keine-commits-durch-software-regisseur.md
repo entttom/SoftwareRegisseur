@@ -37,6 +37,6 @@ Integrationstests: Übernahme mit nicht committeten Request-Dateien gelingt; Üb
 
 ## Verweise
 
-- [Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte A.4, G, L2, M1
+- Pflichtenheft, Abschnitte A.4, G, L2, M1
 - [ADR-0004](0004-konfigurierbare-verzeichnisse-und-agentenanweisungen.md), [ADR-0015](0015-integrationsstrategie-squash.md)
 - [ADR-Index](README.md)

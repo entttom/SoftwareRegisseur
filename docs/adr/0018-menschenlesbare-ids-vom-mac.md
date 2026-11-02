@@ -37,6 +37,6 @@ Unit-Tests für Parsen/Formatieren; Integrationstest: zwei offline angelegte Auf
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitt F3
+- Verbindliches Pflichtenheft, Abschnitt F3
 - [ADR-0003](0003-git-markdown-und-cloudkit.md), [ADR-0012](0012-getrennte-status-zustandsmaschinen.md)
 - [ADR-Index](README.md)

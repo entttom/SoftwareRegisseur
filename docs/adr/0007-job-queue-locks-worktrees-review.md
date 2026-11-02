@@ -33,5 +33,5 @@ A13–A23, A30, A33, A39; Tests mit abgebrochenen und parallelen Läufen.
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)

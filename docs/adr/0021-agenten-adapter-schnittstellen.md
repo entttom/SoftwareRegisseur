@@ -49,6 +49,6 @@ Offene reale Tests O1–O7 (Codex) und T0–T9 (Claude Code) aus den Spike-Proto
 
 ## Verweise
 
-- [Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte J, K2, L3
+- Pflichtenheft, Abschnitte J, K2, L3
 - [ADR-0005](0005-dynamische-coding-agenten-provider.md), [ADR-0006](0006-modell-und-effort-auswahl.md), [ADR-0010](0010-offizielle-mobile-agenten-sitzungen.md), [ADR-0014](0014-eigengebrauch-in-version-1.md)
 - [ADR-Index](README.md)

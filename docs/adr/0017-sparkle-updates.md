@@ -38,6 +38,6 @@ Release-Skript erzeugt signierten Appcast; Test: Update von Version n auf n+1 au
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitt Q3
+- Verbindliches Pflichtenheft, Abschnitt Q3
 - [ADR-0007](0007-job-queue-locks-worktrees-review.md), [ADR-0009](0009-direktvertrieb-signierung-sandbox-prufung.md)
 - [ADR-Index](README.md)

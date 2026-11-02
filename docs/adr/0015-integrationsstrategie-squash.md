@@ -37,6 +37,6 @@ Integrationstests auf temporären Repos für alle drei Strategien inkl. Konflikt
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md), Abschnitte L2, M1, O
+- Verbindliches Pflichtenheft, Abschnitte L2, M1, O
 - [ADR-0007](0007-job-queue-locks-worktrees-review.md), [ADR-0012](0012-getrennte-status-zustandsmaschinen.md)
 - [ADR-Index](README.md)

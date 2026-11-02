@@ -33,5 +33,5 @@ V1-Abnahmematrix A01–A42; ADR-Index und Statusänderungs-Historie vorhanden.
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)

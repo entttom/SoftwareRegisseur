@@ -33,5 +33,5 @@ A01, A28, A30; reale Signatur-/Notarisierungs- und Sandbox-Prüfung erforderlich
 
 ## Verweise
 
-- [Verbindliches Pflichtenheft](../../Software_Regisseur_1.0_Codex_Entwicklungsauftrag.md)
+- Verbindliches Pflichtenheft
 - [ADR-Index](README.md)
