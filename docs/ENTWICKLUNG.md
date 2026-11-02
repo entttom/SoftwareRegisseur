@@ -86,7 +86,7 @@ Scripts/sync-string-catalogs.sh                           # UI-Strings in die St
 | Abnahme | [docs/acceptance/abnahmematrix.md](acceptance/abnahmematrix.md) |
 | Machbarkeitsprüfungen | [Apple-Plattform](integration-spikes/apple-platform.md), [Codex](integration-spikes/codex.md), [Claude Code](integration-spikes/claude-code.md), [KI-Anbieter](integration-spikes/ai-providers.md) |
 | XPC-Vertrag Mac-App ↔ Dienst | [Packages/SoftwareRegisseurIPC/README.md](../Packages/SoftwareRegisseurIPC/README.md) |
-| CI | [.github/README.md](../.github/README.md) |
+| CI | [.github/CI.md](../.github/CI.md) |
 
 ## Regeln für Mitwirkende
 
