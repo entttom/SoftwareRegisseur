@@ -140,6 +140,13 @@ Software Regisseur 1.0 ist **vollständig gebaut**: iPhone-/iPad-App, Mac-App, H
 - ❓ **[Grenzen und FAQ](docs/handbuch/07-grenzen-und-faq.md)**
 - 🛠️ **[Für Entwickler](docs/ENTWICKLUNG.md)** – Aufbau des Projekts, Bauen, Testen, Architekturentscheidungen
 
+## Lizenz
+
+Der Quellcode ist öffentlich einsehbar, aber **nicht Open Source im Sinne der OSI**: Er steht unter der
+[PolyForm Shield License 1.0.0](LICENSE). Jede Nutzung ist erlaubt, auch durch Unternehmen und für eigene
+Zwecke; ausgeschlossen ist, ein Produkt oder einen Dienst anzubieten, der mit Software Regisseur
+konkurriert (etwa Weiterverkauf, umbenannte Kopie oder gehosteter Dienst darauf).
+
 <br>
 
 <div align="center">
