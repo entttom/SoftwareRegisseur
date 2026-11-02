@@ -1,5 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
   <!-- Template-Bild für die Menüleiste: 16 pt, gezeichnet auf dem @2x-Raster (1 Einheit = 0,5 pt) -->
-  <path fill="#000" d="M2 2H10V5H5V10H2ZM22 2H30V10H27V5H22ZM30 22V30H22V27H27V22ZM10 30H2V22H5V27H10Z"/>
-  <path fill="#000" fill-rule="evenodd" d="M9 23V9H17C20.3 9 22 10.8 22 13.5C22 15.6 20.9 17.1 19.1 17.7L22.5 23H19L16 18H12V23ZM12 12V15H16.6C18.1 15 18.9 14.5 18.9 13.5C18.9 12.5 18.1 12 16.6 12Z"/>
+  <!-- Kopf mit zwei ausgesparten Augen -->
+  <path fill="#000" fill-rule="evenodd" d="M16 4.5A7 7 0 0 1 23 11.5A7 7 0 0 1 21 16.4V19H11V16.4A7 7 0 0 1 9 11.5A7 7 0 0 1 16 4.5ZM12.2 10.2A1.5 1.5 0 1 0 12.2 13.2A1.5 1.5 0 1 0 12.2 10.2ZM19.8 10.2A1.5 1.5 0 1 0 19.8 13.2A1.5 1.5 0 1 0 19.8 10.2Z"/>
+  <!-- Zwei Karten -->
+  <rect x="1" y="3" width="6.5" height="6.5" rx="1.5" fill="#000"/>
+  <rect x="24.5" y="3" width="6.5" height="6.5" rx="1.5" fill="#000"/>
+  <!-- Vier Arme -->
+  <g fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10.5 16.5C6.5 16.5 4.2 14.5 4.2 10.5"/>
+    <path d="M21.5 16.5C25.5 16.5 27.8 14.5 27.8 10.5"/>
+    <path d="M12 19C12 24.5 9.5 27 5.5 25.5"/>
+    <path d="M20 19C20 24.5 22.5 27 26.5 25.5"/>
+  </g>
 </svg>
