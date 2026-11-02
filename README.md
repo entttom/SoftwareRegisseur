@@ -71,6 +71,8 @@ Das iPhone ist Ihr Notizblock und Ihre Fernbedienung. Es funktioniert auch ohne 
 - **Aufgaben im Blick:** was ist offen, was läuft gerade, was wartet auf Ihre Prüfung?
 - **Freigaben von unterwegs:** will der KI-Helfer etwas Heikles tun, fragt er bei Ihnen nach. Sie antworten bequem vom Sofa.
 
+**iPhone- und iPad-App testen:** Über [TestFlight](https://testflight.apple.com/join/zpzB45HG) können Sie die App direkt installieren (iOS bzw. iPadOS 26 oder neuer).
+
 ## Zuhause: der Mac
 
 Der Mac ist die Werkstatt. Die App wohnt in der **Menüleiste** und arbeitet im Hintergrund – auch wenn das Fenster zu ist.

@@ -84,7 +84,7 @@ Updates laufen über Sparkle mit EdDSA-signiertem Appcast ([ADR-0017](../adr/001
 
 ### Weg B: TestFlight
 
-Über Xcode (Schema `SoftwareRegisseur-iOS` › Product › Archive › Organizer) in App Store Connect hochladen und über TestFlight auf Ihren Geräten installieren. Ein eigenes Skript dafür gibt es nicht. Auf der Kommandozeile geht es so:
+Öffentlicher Beta-Link: <https://testflight.apple.com/join/zpzB45HG> (Gruppe „GitHub“). Selbst hochladen geht über Xcode (Schema `SoftwareRegisseur-iOS` › Product › Archive › Organizer) in App Store Connect hochladen und über TestFlight auf Ihren Geräten installieren. Ein eigenes Skript dafür gibt es nicht. Auf der Kommandozeile geht es so:
 
 ```bash
 xcodebuild archive -scheme SoftwareRegisseur-iOS -configuration Release -destination 'generic/platform=iOS' -archivePath build/Archives/SoftwareRegisseur-iOS.xcarchive -allowProvisioningUpdates CURRENT_PROJECT_VERSION=<build>
