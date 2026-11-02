@@ -181,6 +181,14 @@ struct ServiceBuildingBlockTests {
         #expect(signed.cloudKitEnvironment == nil)
     }
 
+    @Test func folderScanDepthLimitsTheCatalogScan() {
+        let storage = ServiceStorageLayout(rootURL: URL(filePath: "/tmp/sr", directoryHint: .isDirectory))
+        let roots = [ServiceStateStore.RootFolder(path: "/Users/me/Developer", addedAt: .now)]
+        #expect(ServiceRuntime.catalogConfiguration(roots: roots, storage: storage, scanDepth: 1).options.maxDepth == 1)
+        #expect(ServiceRuntime.catalogConfiguration(roots: roots, storage: storage, scanDepth: 4).options.maxDepth == 4)
+        #expect(ServiceSettings().folderScanDepth == 1)
+    }
+
     @Test func cloudKitEnvironmentComesFromInfoPlist() {
         let production = ServiceBundleConfiguration(values: ["SRCloudKitEnvironment": "Production"])
         #expect(production.cloudKitEnvironment == "Production")

@@ -65,6 +65,7 @@ final class LoginAgentController {
         do {
             if register {
                 try service.register()
+                noteRegisteredBuild()
             } else {
                 try service.unregister()
             }
@@ -72,6 +73,32 @@ final class LoginAgentController {
             lastError = error.localizedDescription
         }
         refresh()
+    }
+
+    /// Nach einem Update einmal neu registrieren, damit launchd den ausgetauschten Dienst startet
+    /// (`ServiceReregistrationPolicy`, Spike S3). Laufende Agentenjobs übernimmt die Wiederherstellung des
+    /// Dienstes (D3); Sparkle installiert ohnehin nur nach Bestätigung.
+    func reregisterAfterUpdateIfNeeded(defaults: UserDefaults = .standard) async {
+        guard let service else { return }
+        refresh()
+        let currentBuild = ServiceReregistrationPolicy.currentBuild
+        guard ServiceReregistrationPolicy.needsReregistration(
+            registeredBuild: defaults.string(forKey: ServiceReregistrationPolicy.registeredBuildKey),
+            currentBuild: currentBuild, isEnabled: status == .enabled
+        ) else { return }
+        lastError = nil
+        do {
+            try await service.unregister()
+            try service.register()
+            defaults.set(currentBuild, forKey: ServiceReregistrationPolicy.registeredBuildKey)
+        } catch {
+            lastError = error.localizedDescription
+        }
+        refresh()
+    }
+
+    private func noteRegisteredBuild(defaults: UserDefaults = .standard) {
+        defaults.set(ServiceReregistrationPolicy.currentBuild, forKey: ServiceReregistrationPolicy.registeredBuildKey)
     }
 
     /// Nach `requiresApproval`: Systemeinstellungen öffnen statt erneut zu fragen (Q4).
@@ -91,6 +118,7 @@ extension LoginAgentController: BackgroundServiceRegistering {
             refresh()
             // Ohne Freigabe meldet das System einen Fehler, obwohl der Dienst registriert ist.
             if status == .requiresApproval {
+                noteRegisteredBuild()
                 openAppAtLoginAfterConsent()
                 return .requiresApproval
             }
@@ -98,7 +126,10 @@ extension LoginAgentController: BackgroundServiceRegistering {
             return .failed(error.localizedDescription)
         }
         refresh()
-        if status == .enabled || status == .requiresApproval { openAppAtLoginAfterConsent() }
+        if status == .enabled || status == .requiresApproval {
+            noteRegisteredBuild()
+            openAppAtLoginAfterConsent()
+        }
         return Self.result(for: status)
     }
 

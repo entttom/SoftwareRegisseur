@@ -166,7 +166,8 @@ actor ServiceRuntime {
         }
 
         let environment = WorkspaceEnvironment(database: database, hostId: hostId, git: deps.git, now: { clock.now() })
-        let catalog = ProjectCatalog(environment: environment, configuration: Self.catalogConfiguration(roots: roots, storage: deps.storage))
+        let catalogConfiguration = Self.catalogConfiguration(roots: roots, storage: deps.storage, scanDepth: settings.folderScanDepth)
+        let catalog = ProjectCatalog(environment: environment, configuration: catalogConfiguration)
         let setupService = ProjectSetupService(environment: environment, catalog: catalog)
         let repositorySync = RepositorySyncService(environment: environment)
         let reconfigurable = deps.makeProviders(hostId, deps.storage.detectionURL, Self.executableOverrides(settings)).providers
@@ -273,10 +274,11 @@ actor ServiceRuntime {
         return result
     }
 
-    static func catalogConfiguration(roots: [ServiceStateStore.RootFolder], storage: ServiceStorageLayout) -> CatalogConfiguration {
+    /// `scanDepth`: Ebenen unter jedem Stammordner (`ServiceSettings.folderScanDepth`, ADR-0028).
+    static func catalogConfiguration(roots: [ServiceStateStore.RootFolder], storage: ServiceStorageLayout, scanDepth: Int) -> CatalogConfiguration {
         CatalogConfiguration(
             roots: roots.map { URL(filePath: $0.path, directoryHint: .isDirectory) },
-            options: ScanOptions(excludedPaths: [storage.rootURL])
+            options: ScanOptions(excludedPaths: [storage.rootURL], maxDepth: scanDepth)
         )
     }
 

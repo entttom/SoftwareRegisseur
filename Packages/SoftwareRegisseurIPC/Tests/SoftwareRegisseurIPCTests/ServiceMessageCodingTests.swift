@@ -145,6 +145,8 @@ struct ServiceMessageCodingTests {
         #expect(settings.preventIdleSleepWhileAgentsRun)
         #expect(!settings.processQueuedAIElaborations)
         #expect(settings.agentExecutablePaths.isEmpty)
+        #expect(settings.folderScanDepth == 1)
+        #expect(try roundTripJSON(ServiceSettings(folderScanDepth: 3)).folderScanDepth == 3)
         let withPath = ServiceSettings(agentExecutablePaths: ["codex": "/usr/local/bin/codex"])
         #expect(try roundTripJSON(withPath).executablePath(for: .codex) == "/usr/local/bin/codex")
     }
@@ -178,6 +180,8 @@ struct ServiceMessageCodingTests {
         #expect(clamped.syncPollInterval == 15)
         #expect(clamped.workspaceScanInterval == 60)
         #expect(clamped.jobsIdleInterval == 5)
+        #expect(ServiceSettings(folderScanDepth: 0).clamped.folderScanDepth == 1)
+        #expect(ServiceSettings(folderScanDepth: 20).clamped.folderScanDepth == 8)
     }
 
     @Test func storageLayoutDerivesAllPathsFromOneRoot() {

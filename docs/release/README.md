@@ -176,12 +176,21 @@ lokal per HTTPS ausliefern – Sparkle muss die Installation verweigern).
 - Die UI-App läuft ohne App Sandbox (ADR-0020); Sparkle braucht daher keinen Installer-XPC
   (`SUEnableInstallerLauncherService`). Wird die UI später sandboxed, ist Spike S6 nötig.
 
-## Offene Punkte für den Agent Service (Spike S3)
+## Agent Service nach einem Update (Spike S3)
 
 Sparkle ersetzt das gesamte Bundle, also auch `Contents/Library/LoginItems/SoftwareRegisseurAgentService.app`
-und die launchd-Plist. **Nicht belegt** ist, dass launchd den laufenden Dienst danach neu startet
-(Recherche §3.4). Bis dahin läuft nach einem Update ggf. der alte Dienst weiter. Für den
-Agent-Service-Verantwortlichen (hier bewusst nicht umgesetzt):
+und die launchd-Plist. **Belegt am 2026-11-02 (Update 1.0.0 → 1.0.1):** launchd startet den Dienst danach
+**nicht** neu. Der alte Prozess läuft mit altem Code weiter. Jeder Neustart scheitert mit
+`OS_REASON_CODESIGNING | Launch Constraint Violation`, weil die bei der Registrierung über `SMAppService`
+hinterlegte Startbedingung nicht zum neuen Binary passt (`launchctl print gui/<uid>/<label>`:
+`needs LWCR update`). Abhilfe war, „Hintergrunddienst bei Anmeldung starten“ aus- und wieder einzuschalten.
+
+**Umgesetzt ab 1.0.2:** Die Mac-App merkt sich die Build-Nummer, mit der sie den Dienst registriert hat
+(`ServiceReregistrationPolicy`). Startet eine neue Build-Nummer und ist der Dienst registriert, ruft sie einmal
+`unregister()`/`register()` auf. Damit wird die Startbedingung erneuert und der neue Dienst gestartet. Der
+Übergang von 1.0.1 auf 1.0.2 ist der erste reale Beleg und noch zu prüfen.
+
+Weitere, noch offene Punkte:
 
 1. **Versionen angleichen:** Das Agent-Target sollte `CFBundleShortVersionString: $(MARKETING_VERSION)`
    und `CFBundleVersion: $(CURRENT_PROJECT_VERSION)` in `project.yml` setzen – erledigt, das Agent-Target nutzt beide Variablen;

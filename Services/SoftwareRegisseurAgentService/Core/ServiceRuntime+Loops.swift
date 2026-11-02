@@ -204,7 +204,7 @@ extension ServiceRuntime {
     }
 
     private func performScan() async throws -> ScanInfo {
-        await catalog.configure(Self.catalogConfiguration(roots: rootFolders, storage: deps.storage))
+        await catalog.configure(Self.catalogConfiguration(roots: rootFolders, storage: deps.storage, scanDepth: settings.folderScanDepth))
         let report = try await catalog.scan()
         let info = ScanInfo(
             createdProjects: report.createdProjects.count, updatedProjects: report.updatedProjects.count,

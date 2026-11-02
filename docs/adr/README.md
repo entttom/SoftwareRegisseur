@@ -41,6 +41,7 @@ Jeder neue relevante Architekturentscheid erhält die nächste freie Nummer und 
 | [0025](./0025-ipad-unterstuetzung.md) | Die iOS-App unterstützt iPhone und iPad | `accepted` |
 | [0026](./0026-geraete-eigentum-host-pfade-job-branch-commits.md) | Geräte-Eigentum synchronisierter Daten, vom Mac berechnete Pfade und Commits auf dem Job-Branch | `accepted` |
 | [0027](./0027-cloudkit-immer-production.md) | Alle Builds verwenden die CloudKit-Umgebung Production | `accepted` |
+| [0028](./0028-ordnertiefe-und-ordnerindex-in-icloud.md) | Einstellbare Ordnertiefe; entfernte Ordner-Einträge werden in iCloud gelöscht | `accepted` |
 
 ## Arbeitsregel für Implementierungs-Agenten
 

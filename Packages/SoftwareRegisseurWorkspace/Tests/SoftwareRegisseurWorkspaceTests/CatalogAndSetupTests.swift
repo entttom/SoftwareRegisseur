@@ -206,3 +206,33 @@ struct ProjectSetupTests {
         #expect(try await h.database.projects.fetch(draft.projectId)?.status == .ready)
     }
 }
+
+@Suite("Folder scan depth (ADR-0028)")
+struct FolderScanDepthTests {
+    @Test func narrowingTheDepthRemovesDeepFoldersButKeepsLinkedProjects() async throws {
+        let h = try Harness()
+        let dev = try h.sandbox.mkdir("Developer")
+        try await h.sandbox.repository("Developer/App")
+        try h.sandbox.mkdir("Developer/App/Sources/Feature")
+        try await h.sandbox.repository("Developer/Gruppe/Tief")
+        let catalog = ProjectCatalog(environment: h.environment, configuration: CatalogConfiguration(roots: [dev]))
+        try await catalog.scan()
+        let deep = Set(try await h.database.indexedFolders.list(hostId: h.hostId).map(\.displayName))
+        #expect(deep.isSuperset(of: ["App", "Sources", "Feature", "Gruppe", "Tief"]))
+        #expect(Set(try await h.database.projects.list(statuses: []).map(\.name)) == ["App", "Tief"])
+
+        await catalog.configure(CatalogConfiguration(roots: [dev], options: ScanOptions(maxDepth: 1)))
+        try await catalog.scan()
+        let folders = try await h.database.indexedFolders.list(hostId: h.hostId)
+        let names = Set(folders.map(\.displayName))
+        // Only the folders directly in the root (and the root itself) …
+        #expect(names.isSuperset(of: ["App", "Gruppe"]))
+        #expect(!names.contains("Sources") && !names.contains("Feature"))
+        // … plus a deeper folder that is linked to a project; the project stays usable.
+        #expect(folders.first { $0.displayName == "Tief" }?.projectId != nil)
+        let projects = try await h.database.projects.list(statuses: [])
+        #expect(projects.allSatisfy { $0.status != .unavailable })
+        // Depth 1 still recognizes a repository directly in the root without entering it.
+        #expect(folders.first { $0.displayName == "App" }?.kind == .gitRepository)
+    }
+}

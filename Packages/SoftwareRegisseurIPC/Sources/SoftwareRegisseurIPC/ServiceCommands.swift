@@ -22,6 +22,9 @@ public struct ServiceSettings: Codable, Sendable, Hashable {
     public var preventIdleSleepWhileAgentsRun: Bool
     /// Vom iPhone eingereihte KI-Ausarbeitungen mit Repo-Kontext automatisch ausführen (H4).
     public var processQueuedAIElaborations: Bool
+    /// Wie viele Ebenen unter einem Stammordner erfasst werden (ADR-0028). 1 = nur Ordner direkt im
+    /// Stammordner (Standard). Wegfallende Einträge werden auch in iCloud entfernt.
+    public var folderScanDepth: Int
     /// Benutzerdefinierte Programmpfade je Agent (Rohwert der `ProviderID` → absoluter Pfad, J1). Seit
     /// Protokoll 3; geändert nur über `setAgentExecutablePath`, `updateServiceSettings` lässt sie unverändert.
     public var agentExecutablePaths: [String: String]
@@ -36,6 +39,7 @@ public struct ServiceSettings: Codable, Sendable, Hashable {
         jobsIdleInterval: TimeInterval = 60,
         preventIdleSleepWhileAgentsRun: Bool = false,
         processQueuedAIElaborations: Bool = true,
+        folderScanDepth: Int = ServiceSettings.defaultFolderScanDepth,
         agentExecutablePaths: [String: String] = [:]
     ) {
         self.syncPollInterval = syncPollInterval
@@ -47,13 +51,18 @@ public struct ServiceSettings: Codable, Sendable, Hashable {
         self.jobsIdleInterval = jobsIdleInterval
         self.preventIdleSleepWhileAgentsRun = preventIdleSleepWhileAgentsRun
         self.processQueuedAIElaborations = processQueuedAIElaborations
+        self.folderScanDepth = folderScanDepth
         self.agentExecutablePaths = agentExecutablePaths
     }
+
+    public static let defaultFolderScanDepth = 1
+    /// Erlaubter Bereich der Ordnertiefe (der Scanner geht nie tiefer als 8 Ebenen).
+    public static let folderScanDepthRange = 1...8
 
     private enum CodingKeys: String, CodingKey {
         case syncPollInterval, syncMaxBackoff, workspaceScanInterval, reconcileInterval, agentDetectionInterval
         case gitHubSyncInterval, jobsIdleInterval, preventIdleSleepWhileAgentsRun, processQueuedAIElaborations
-        case agentExecutablePaths
+        case folderScanDepth, agentExecutablePaths
     }
 
     /// Fehlende Felder (gespeicherte Einstellungen oder Clients älterer Protokolle) erhalten ihren Standard.
@@ -73,6 +82,7 @@ public struct ServiceSettings: Codable, Sendable, Hashable {
             ?? defaults.preventIdleSleepWhileAgentsRun
         processQueuedAIElaborations = try container.decodeIfPresent(Bool.self, forKey: .processQueuedAIElaborations)
             ?? defaults.processQueuedAIElaborations
+        folderScanDepth = try container.decodeIfPresent(Int.self, forKey: .folderScanDepth) ?? defaults.folderScanDepth
         agentExecutablePaths = try container.decodeIfPresent([String: String].self, forKey: .agentExecutablePaths) ?? [:]
     }
 
@@ -91,6 +101,7 @@ public struct ServiceSettings: Codable, Sendable, Hashable {
         copy.agentDetectionInterval = max(300, agentDetectionInterval)
         copy.gitHubSyncInterval = max(120, gitHubSyncInterval)
         copy.jobsIdleInterval = max(5, min(jobsIdleInterval, 600))
+        copy.folderScanDepth = min(max(folderScanDepth, Self.folderScanDepthRange.lowerBound), Self.folderScanDepthRange.upperBound)
         return copy
     }
 }

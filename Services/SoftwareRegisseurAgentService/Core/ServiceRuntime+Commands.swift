@@ -416,7 +416,7 @@ extension ServiceRuntime {
         guard !rootFolders.contains(where: { $0.path == canonical }) else { return rootFolderState() }
         rootFolders.append(.init(path: canonical, addedAt: clock.now()))
         try await stateStore.saveRootFolders(rootFolders)
-        await catalog.configure(Self.catalogConfiguration(roots: rootFolders, storage: deps.storage))
+        await catalog.configure(Self.catalogConfiguration(roots: rootFolders, storage: deps.storage, scanDepth: settings.folderScanDepth))
         ServiceLog.workspace.notice("Stammordner bestätigt (\(self.rootFolders.count, privacy: .public) insgesamt)")
         scanSignal.signal()
         return rootFolderState()
@@ -431,7 +431,7 @@ extension ServiceRuntime {
         }
         rootFolders.remove(at: index)
         try await stateStore.saveRootFolders(rootFolders)
-        await catalog.configure(Self.catalogConfiguration(roots: rootFolders, storage: deps.storage))
+        await catalog.configure(Self.catalogConfiguration(roots: rootFolders, storage: deps.storage, scanDepth: settings.folderScanDepth))
         // Projekte und Aufgaben bleiben; nur noch nicht verknüpfte Ordner verschwinden beim nächsten Scan.
         if !rootFolders.isEmpty { scanSignal.signal() }
         return rootFolderState()

@@ -20,7 +20,8 @@ Abgelehnt wird ein Stammordner, der die Ablage des Dienstes enthält oder darin 
 
 ### Was der Scanner tut
 
-- Er indiziert **alle geeigneten Unterordner**, nicht nur Git-Repositories, und unterscheidet: eigenes Git-Repository, Unterordner eines Repositorys, noch nicht initialisierter Projektordner.
+- Er indiziert **alle geeigneten Unterordner** bis zur eingestellten **Ordnertiefe**, nicht nur Git-Repositories, und unterscheidet: eigenes Git-Repository, Unterordner eines Repositorys, noch nicht initialisierter Projektordner.
+- **Ordnertiefe** (Einstellungen › Dienst › „Ordnertiefe unter Stammordnern“, 1–8, Standard 1): Bei 1 werden nur die Ordner direkt im Stammordner erfasst; ein Repository direkt im Stammordner wird trotzdem als Repository erkannt. Mit mehr Ebenen stehen am iPhone auch Unterordner zur Auswahl. Wird die Tiefe verringert, entfernt der Dienst die wegfallenden Ordner auch aus iCloud. Ordner mit verknüpftem Projekt bleiben erhalten (ADR-0028).
 - Er erkennt verschachtelte Repositories, Worktrees, Bare-Repositories und Submodules; Worktrees erscheinen nicht als eigene Projekte.
 - Große generierte Ordner wie `node_modules`, `.build`, `DerivedData` und `.git/objects` werden nicht durchsucht; symbolische Links werden zyklussicher behandelt.
 - Die Projekt-Identität stammt aus Git-Metadaten, nicht aus dem Ordnernamen. Umbenennen oder Verschieben löscht keine Daten.

@@ -71,6 +71,15 @@ private struct ServiceSettingsPage: View {
             if let binding = Binding($settings) {
                 minutes("iCloud-Abfrage alle", binding.syncPollInterval)
                 minutes("Stammordner-Scan alle", binding.workspaceScanInterval)
+                Stepper(value: binding.folderScanDepth, in: ServiceSettings.folderScanDepthRange) {
+                    HStack {
+                        Text("Ordnertiefe unter Stammordnern")
+                        Spacer()
+                        Text("\(binding.wrappedValue.folderScanDepth) \(binding.wrappedValue.folderScanDepth == 1 ? "Ebene" : "Ebenen")").monospacedDigit()
+                    }
+                }
+                Text("1 = nur Ordner direkt im Stammordner. Bei mehr Ebenen erscheinen auch Unterordner am iPhone zur Auswahl. Wegfallende Ordner werden auch aus iCloud entfernt; Ordner mit verknüpftem Projekt bleiben erhalten.")
+                    .font(.caption).foregroundStyle(.secondary)
                 minutes("Markdown-Abgleich alle", binding.reconcileInterval)
                 minutes("Agentenerkennung alle", binding.agentDetectionInterval)
                 minutes("GitHub-Abgleich alle", binding.gitHubSyncInterval)

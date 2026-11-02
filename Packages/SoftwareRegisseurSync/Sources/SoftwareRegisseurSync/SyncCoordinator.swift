@@ -367,6 +367,8 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
     private func enqueueOutbox(_ engine: any SyncEngine) async throws {
         let blocked = try await blockedRecordNames()
         var seen = Set<String>()
+        // Kinds deleted on the server (ADR-0028): the latest operation decides between save and delete.
+        var latestServerDeleting: [String: (type: SyncEntityType, operation: SyncOperation)] = [:]
         var cursor: SyncOutboxCursor?
         repeat {
             let page = try await store.pendingOperations(limit: configuration.outboxScanLimit, after: cursor)
@@ -375,12 +377,33 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
                 guard let type = SyncEntityType(rawValue: operation.entityType),
                       SyncRecordSchema.recordType(for: type) != nil else { continue }
                 let name = SyncRecordSchema.recordName(type, operation.entityId)
-                guard !blocked.contains(name), seen.insert(name).inserted else { continue }
+                guard !blocked.contains(name) else { continue }
+                if SyncRecordSchema.deletesRecordOnServer(type) {
+                    if let known = latestServerDeleting[name], known.operation.version >= operation.version { continue }
+                    latestServerDeleting[name] = (type, operation)
+                    continue
+                }
+                guard seen.insert(name).inserted else { continue }
                 changes.append(.saveRecord(SyncRecordSchema.recordID(type, operation.entityId, zoneID: configuration.zoneID)))
             }
             if !changes.isEmpty { engine.add(pendingRecordZoneChanges: changes) }
             cursor = page.next
         } while cursor != nil
+
+        var changes: [CKSyncEngine.PendingRecordZoneChange] = []
+        var superseded: [CKSyncEngine.PendingRecordZoneChange] = []
+        for (type, operation) in latestServerDeleting.values {
+            let recordID = SyncRecordSchema.recordID(type, operation.entityId, zoneID: configuration.zoneID)
+            if operation.type == .delete {
+                changes.append(.deleteRecord(recordID))
+                superseded.append(.saveRecord(recordID))
+            } else {
+                changes.append(.saveRecord(recordID))
+                superseded.append(.deleteRecord(recordID))
+            }
+        }
+        if !superseded.isEmpty { engine.remove(pendingRecordZoneChanges: superseded) }
+        if !changes.isEmpty { engine.add(pendingRecordZoneChanges: changes) }
     }
 
     /// Entities with an open conflict are not sent until the user resolved it.
@@ -576,7 +599,8 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
                 let chunk = remaining.prefix(configuration.batchSize)
                 remaining = remaining.dropFirst(chunk.count)
                 let keys = chunk.compactMap { change -> SyncEntityKey? in
-                    guard case .saveRecord = change, let parsed = SyncRecordSchema.parse(recordName: change.recordID.recordName) else { return nil }
+                    guard let parsed = SyncRecordSchema.parse(recordName: change.recordID.recordName) else { return nil }
+                    if case .deleteRecord = change, !SyncRecordSchema.deletesRecordOnServer(parsed.type) { return nil }
                     return SyncEntityKey(entityType: parsed.type, entityId: parsed.id)
                 }
                 let byRecord = Dictionary(grouping: try await store.pendingOperations(for: keys)) { operation in
@@ -585,16 +609,28 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
                 for change in chunk where batch.count < configuration.batchSize {
                     let recordID = change.recordID
                     guard recordID.zoneID == configuration.zoneID else { continue }
+                    let name = recordID.recordName
                     if case .deleteRecord = change {
+                        // ADR-0028: the outbox operations are acknowledged once the server confirms the deletion.
+                        if let operations = byRecord[name], !operations.isEmpty {
+                            inFlight[name] = operations.map(\.operationId)
+                            batchOperations += operations.map(\.operationId)
+                        }
                         batch.recordIDsToDelete.append(recordID)
                         continue
                     }
-                    let name = recordID.recordName
                     guard let parsed = SyncRecordSchema.parse(recordName: name),
                           let entityOperations = byRecord[name], !entityOperations.isEmpty,
                           !blocked.contains(name)
                     else {
                         obsolete.append(change)
+                        continue
+                    }
+                    if SyncRecordSchema.deletesRecordOnServer(parsed.type),
+                       entityOperations.max(by: { $0.version < $1.version })?.type == .delete {
+                        // Deleted on the server, not uploaded as a tombstone record (ADR-0028).
+                        obsolete.append(change)
+                        engine.add(pendingRecordZoneChanges: [.deleteRecord(recordID)])
                         continue
                     }
                     do {
@@ -825,9 +861,16 @@ public actor SyncCoordinator: SyncEngineEventHandler, SyncTriggering {
             await handleFailedSave(failure)
         }
         for (recordID, error) in sent.failedRecordDeletes {
+            let operations = inFlight.removeValue(forKey: recordID.recordName) ?? []
+            if error.code == .unknownItem {
+                // Already gone on the server (never uploaded, or deleted before): that is the goal.
+                for operation in operations { try? await store.markSent(operation, systemFields: nil, at: now()) }
+                report.sent += 1
+                continue
+            }
             report.sendFailures += 1
             SyncLog.logger.error("Löschung \(recordID.recordName, privacy: .public) fehlgeschlagen: \(SyncLog.describe(error), privacy: .public)")
-            await markFailed(inFlight.removeValue(forKey: recordID.recordName) ?? [], error: error)
+            await markFailed(operations, error: error)
         }
     }
 

@@ -78,6 +78,10 @@ struct AppEnvironment {
         monitor.startMonitoring()
         library.start()
         let loginAgent = LoginAgentController(configuration: configuration)
+        Task {
+            await loginAgent.reregisterAfterUpdateIfNeeded()
+            await monitor.refresh()
+        }
         let flags = UserDefaultsOnboardingFlags()
         let onboarding = BackgroundServiceOnboarding(registrar: loginAgent, flags: flags)
         return AppEnvironment(

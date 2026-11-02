@@ -175,3 +175,21 @@ struct AppLoginItemTextTests {
         }
     }
 }
+
+@Suite("Dienst nach einem Update neu registrieren (Spike S3)")
+struct ServiceReregistrationPolicyTests {
+    @Test func reregistersOnceAfterAnUpdateWhenEnabled() {
+        // Registriert von einer Version vor diesem Fix (kein gespeicherter Build) oder einem älteren Build.
+        #expect(ServiceReregistrationPolicy.needsReregistration(registeredBuild: nil, currentBuild: "3", isEnabled: true))
+        #expect(ServiceReregistrationPolicy.needsReregistration(registeredBuild: "2", currentBuild: "3", isEnabled: true))
+        // Danach nicht mehr.
+        #expect(!ServiceReregistrationPolicy.needsReregistration(registeredBuild: "3", currentBuild: "3", isEnabled: true))
+    }
+
+    @Test func neverRegistersAServiceTheUserDidNotEnable() {
+        #expect(!ServiceReregistrationPolicy.needsReregistration(registeredBuild: nil, currentBuild: "3", isEnabled: false))
+        #expect(!ServiceReregistrationPolicy.needsReregistration(registeredBuild: "2", currentBuild: "3", isEnabled: false))
+        // Ohne lesbare Build-Nummer lieber nichts tun.
+        #expect(!ServiceReregistrationPolicy.needsReregistration(registeredBuild: "2", currentBuild: "", isEnabled: true))
+    }
+}

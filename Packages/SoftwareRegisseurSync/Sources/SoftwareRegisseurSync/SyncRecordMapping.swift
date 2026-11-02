@@ -49,6 +49,14 @@ public enum SyncRecordSchema {
                                  isDeleted, modifiedAt, payload, payloadAsset]
     }
 
+    /// Deletions of these kinds remove the CloudKit record instead of uploading a tombstone record
+    /// (ADR-0028). Only for data the Mac alone writes (ADR-0026) and that is rebuilt by rescanning, so no
+    /// other device needs a version to detect conflicts: the folder index (narrowing the scan depth would
+    /// otherwise leave thousands of tombstones in iCloud). Other devices apply the deletion from the fetch.
+    public static func deletesRecordOnServer(_ type: SyncEntityType) -> Bool {
+        type == .indexedFolder
+    }
+
     /// CloudKit record type. Exhaustive on purpose: a new entity kind needs an explicit decision.
     /// `nil` = never leaves the device (spec N1: audio stays local).
     public static func recordType(for type: SyncEntityType) -> CKRecord.RecordType? {
